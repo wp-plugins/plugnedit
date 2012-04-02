@@ -18,3 +18,6 @@ PlugNedit WYSIWYG web page builder for WordPress is a tool that allows specializ
 3. Settings can be configured in the 'Options' area of your blog.
 
 
+== Screenshots ==
+
+1. Editor
