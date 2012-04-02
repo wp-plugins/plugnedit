@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: WYSIWYG, Web Page Builder, HTML, Blog Editor, Text on images, Formating
 Requires at least: 3.3.1
 Tested up to: 3.3.1
-Stable tag: 1.0
+Stable tag: 1.1
 
 PlugNedit WYSIWYG web page builder for WordPress.
 
@@ -21,3 +21,5 @@ PlugNedit WYSIWYG web page builder for WordPress is a tool that allows specializ
 == Screenshots ==
 
 1. Editor
+2. Toolbars
+3. Blog Entry
