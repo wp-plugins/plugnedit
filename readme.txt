@@ -20,7 +20,7 @@ PlugNedit WYSIWYG web page builder for WordPress is a tool that allows specializ
 
 
 <strong>Plug N edit !</strong> Thats all you need to build dynamic content not utilized by the wordpress standard features. Plug N Edit uses movable windows (layers)
-for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor allows for multiple layers of items to be stacked (Watch the video For Details). 
+for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor allows for multiple layers of items to be stacked (Watch The Video For Details). 
 
 <a href="http://www.Plugnedit.com/">PlugNedit Website</a>
 
