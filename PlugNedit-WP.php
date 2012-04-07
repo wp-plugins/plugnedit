@@ -20,6 +20,7 @@ return $content;
 if (isset($_POST['plugneditcontent'])){ add_filter( 'wp_default_editor', 'my_default_editor' );}
 add_filter( 'the_editor_content', 'my_the_content_filter' );
 add_action('edit_form_advanced','do_aPlugnedit');
+add_action('edit_page_form','do_aPlugnedit'); 
 function do_aPlugnedit() {
 add_action( 'admin_footer', 'do_pPlugnedit' );}
 function do_pPlugnedit(){
