@@ -2,7 +2,7 @@
 /*
 Plugin Name: PlugNedit
 Plugin URI: Http://plugnedit.com/WordPressPlugin.cfm
-Version: 1.0
+Version: 1.2
 Author: 2sticks inc.
 Description:PlugNedit web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 */
