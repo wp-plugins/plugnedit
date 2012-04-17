@@ -113,7 +113,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php echo stripslashes($_POST["plugneditcontent"]) ?></textarea>
 
 <script language="JavaScript">
-var Iframeview
+var Iframeview=''
 if (!document.getElementById("PlugNeditView"))
 {
 Iframeview='<iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'
