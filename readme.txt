@@ -5,13 +5,13 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.2
 
-PlugNedit WYSIWYG Web Page Editor, Page Builder For WordPress.
+PlugNedit Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
 
 == Description ==
 
 
 
-PlugNedit WYSIWYG web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
+PlugNedit Visual Ediotr WYSIWYG web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. Based on a floating layers, allows for drag and drop movement of text and pictures and the ability to stack text and pictures on top of one another.
 
 
 Watch The Video, A description will not explain it!
