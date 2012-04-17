@@ -1,19 +1,20 @@
 === PlugNedit ===
 Contributors: cactikelly
-Tags: WYSIWYG, Editor, Web Page Builder, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Text on images, Formating, layer, color, software, publish, post, wordpress, picture on picture
+Tags: Visual Editor, WYSIWYG, Editor, Web Page Builder, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Text on images, Formating, layer, color, software, publish, post, wordpress, picture on picture
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.2
 
-PlugNedit WYSIWYG Web Page Editor, Page builder for WordPress.
+PlugNedit WYSIWYG Web Page Editor, Page Builder For WordPress.
 
 == Description ==
 
-Watch The Video, A description will not explain it!
 
 
 PlugNedit WYSIWYG web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 
+
+Watch The Video, A description will not explain it!
 
 [youtube http://www.youtube.com/watch?v=pJwxqYimqZQ]
 
