@@ -11,7 +11,7 @@ PlugNedit Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
 
 
 
-PlugNedit Visual Ediotr WYSIWYG web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. Based on a floating layers, allows for drag and drop movement of text and pictures and the ability to stack text and pictures on top of one another.
+PlugNedit Visual Ediotr WYSIWYG web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. Based on floating layers and a palette menu control interface, allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another.
 
 
 Watch The Video, A description will not explain it!
