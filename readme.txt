@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: Visual Editor, WYSIWYG, Editor, Web Page Builder, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Text on images, Formating, layer, color, software, publish, post, wordpress, picture on picture
 Requires at least: 3.0
 Tested up to: 3.3.1
-Stable tag: 1.2
+Stable tag: 1.3
 
 PlugNedit Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
 

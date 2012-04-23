@@ -2,11 +2,25 @@
 /*
 Plugin Name: PlugNedit
 Plugin URI: Http://plugnedit.com/WordPressPlugin.cfm
-Version: 1.2
+Version: 1.3
 Author: 2sticks inc.
 Description:PlugNedit web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 */
 
+
+function doStyleHeadPlugNedit() {
+?><script language="JavaScript" type="text/javascript">
+function PlugNeditPost(PlugneditMinWid) {
+document.write('<style> #page {min-width: '+ PlugneditMinWid +'px;}</style>')}</script><?php }
+function do_pPlugneditStyleFooter(){?>
+<script language="JavaScript" type="text/javascript">
+if(document.getElementById('ICG1ADDON')){PlugNeditPost('710')}
+</script>
+<?php
+}
+
+add_action('wp_head','doStyleHeadPlugNedit'); 
+add_action( 'wp_footer', 'do_pPlugneditStyleFooter' );
 if (is_admin() ) {
 function my_default_editor() {
 $r = 'html'; // html or tinymce
@@ -40,12 +54,12 @@ var strContent=document.getElementById('content').value
 <?php if (isset($_POST['plugneditcontent'])){?>
 var NewPlugNeditContent=1
 <?php }?>
-SubStringContentPlugnedit='<style>body { min-width: 800px;text-align: center; } </style>'
+SubStringContentPlugnedit=''
 var ICGWarning=''
 
 
 if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.match('ICG1ADDON')){document.getElementById('postdivrich').innerHTML='<iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
-document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button" >Use PlugNedit Web Page Builder</a>'+ICGWarning;
+document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button" >PlugNedit Web Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
@@ -133,10 +147,12 @@ document.getElementById('content').value=document.getElementById('plugneditretur
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="<?php echo $currentUrl; ?>">
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
+<input type="hidden" name="PlugNeditVersion" value="Version 1.3" id="PlugNeditVersion">
 </form>
 <form action="#" method="post"  name="PlugNeditFormGet">
 <input type="hidden"  name="PlugNeditContent2" id="PlugNeditContent2" value="">
 <input type="hidden"  name="GetPlugneditfiles" value="0">
+<input type="hidden" name="PlugNeditVersion" value="Version 1.3" id="PlugNeditVersion">
 </form>
 <?php if (isset($_POST['GetPlugneditfiles'])) {?>
 <script language="JavaScript"
