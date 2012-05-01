@@ -1,6 +1,6 @@
 === PlugNedit ===
 Contributors: cactikelly
-Tags: Posts, Visual Editor, Post, Image, Images, WYSIWYG, Editor, Web Page Builder, PlugiN, admin, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Plugins, Text on images, Formating, layer, color, software, publish, post, wordpress, picture on picture
+Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, admin, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Plugins, Text on images, Formating, layer, color, software, publish, wordpress, picture, page layout, publish
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.3
