@@ -1,14 +1,16 @@
 === PlugNedit ===
 Contributors: cactikelly
-Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, admin, content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Plugins, Text on images, Formating, layer, color, software, publish, wordpress, picture, page layout, publish
+Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, admin, content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Blog Editor, Plugins, Text on images, Formating, layers, color, software, publish, wordpress, picture, page layout, publish, drag and drop, drag, drop, drag n drop 
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.3
 
-PlugNedit Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
+PlugNedit Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
 
 == Description ==
 
+
+Drag And Drop Visual Editor.
 
 PlugNedit Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
@@ -50,4 +52,4 @@ for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor
 = 1.3 = 
 
 * Added Javascript support for the header to support handheld's added version control for future backwards compatibility. 
-* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / arabic and other languages. Better div alignment (more art then science). Added left hand side docked toolbars and Updated divs to support W3s rule naming.
+* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / arabic and other languages. Better div alignment (more art then science). Added left hand side docked toolbars and Updated divs to support W3s rule naming, updated outdated tags to HTML 5 validation.
