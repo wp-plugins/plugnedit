@@ -5,14 +5,12 @@ Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.3
 
-PlugNedit Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
+Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
 
 == Description ==
 
 
-Drag And Drop Visual Editor.
-
-PlugNedit Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
+PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
 [youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
 
