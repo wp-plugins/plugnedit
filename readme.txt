@@ -55,4 +55,4 @@ for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor
 = 1.3 = 
 
 * Added Javascript support for the header to support handheld's added version control for future backwards compatibility. 
-* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / arabic and other languages. Better div alignment (more art then science). Added left hand side docked toolbars and Updated Html to comply W3C rules for HTML 5 validation. New Items, Linked Layers for drop shadows.
+* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / Arabic and other RTL languages. Better div alignment (more art then science). Added left hand side docked toolbars and Updated Html to comply W3C rules for HTML 5 validation. New Items, Linked Layers for drop shadows.
