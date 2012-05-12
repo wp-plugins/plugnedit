@@ -30,7 +30,7 @@ for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor
 
 1. Upload PlugNedit-WP folder to the `/wp-content/plugins/` directory .
 2. Activate the plugin through the 'Plugins' menu in WordPress.
-3. Settings can be configured in the 'Options' area of your blog.
+3. No Settings need configured.
 
 
 == Screenshots ==
