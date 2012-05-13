@@ -28,9 +28,9 @@ Feature Settings & Controls:
 Drag and drop images<BR>
 Drag and drop divs and text<BR>
 Drag and drop videos<BR>
-Drag and drop Embeds<BR>
+Drag and drop embeds<BR>
 Text fonts, align, borders, padding, text drop shadows, Boxes with rounded corners, box drop shadows<BR>
-Dragable picture resize<BR>
+Draggable picture resize<BR>
 Layer Elements<BR>
 Adjestable Layer Levels<BR>
 Transparency of pictures and divs<BR>
@@ -38,6 +38,7 @@ Stackable Items<BR>
 Color Items<BR>
 Linking <BR>
 Create pages and blog items<BR>
+Page Layout Like A Desktop Publishing Software.
 
 
 
