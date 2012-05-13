@@ -25,19 +25,19 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor allows for multiple layers of items to be stacked (Watch The Video For Details). 
 
 Feature Settings & Controls:
-Drag and drop images.
-Drag and drop divs and text
-Drag and drop videos
-Drag and drop Embeds
-Text fonts, align, borders, padding, text drop shadows, Boxes with rounded corners, box drop shadows.
-Dragable picture resize
-Layer Elements
-Adjestable Layer Levels
-Transparency of pictures and divs
-Stackable Items.
-Color Items
-Linking 
-Create pages and blog items.
+Drag and drop images<BR>
+Drag and drop divs and text<BR>
+Drag and drop videos<BR>
+Drag and drop Embeds<BR>
+Text fonts, align, borders, padding, text drop shadows, Boxes with rounded corners, box drop shadows<BR>
+Dragable picture resize<BR>
+Layer Elements<BR>
+Adjestable Layer Levels<BR>
+Transparency of pictures and divs<BR>
+Stackable Items<BR>
+Color Items<BR>
+Linking <BR>
+Create pages and blog items<BR>
 
 
 
