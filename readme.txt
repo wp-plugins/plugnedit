@@ -12,6 +12,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress
 
 Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com website in order to use media files
 you will need to import links of your media which are stored temporarily. 
+<BR><BR><Strong>PlugNedit Does Not Replace The WordPress Editor. PlugNedit Places A Button On Your Editor Page, And Gives A Second Choice Of Which Editor To Use. Test with other popular editor addons with no conflicts.</strong><BR><BR>
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
 
