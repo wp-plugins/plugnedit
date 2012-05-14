@@ -9,14 +9,15 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress
 
 == Description ==
 
-
+<Strong>
 Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com website in order to use media files
-you will need to import links of your media which are stored temporarily. 
+you will need to import links of your media which are stored temporarily.
+</strong> 
 <BR><BR><Strong>PlugNedit Does Not Replace The WordPress Editor. PlugNedit Places A Button On Your Editor Page, And Gives A Second Choice Of Which Editor To Use. Tested with other popular editor addons with no conflicts.</strong><BR><BR>
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
-
-PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
+<strong>
+PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. </strong>
 
 [youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
 
@@ -24,7 +25,7 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 
 <strong>Plug N edit !</strong> Thats all you need to build dynamic content not utilized by the wordpress standard features. Plug N Edit uses movable windows (layers)
 for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor allows for multiple layers of items to be stacked (Watch The Video For Details). 
-
+<BR><BR><strong>
 Feature Settings & Controls:<br>
 Drag and drop images<BR>
 Drag and drop divs and text<BR>
@@ -47,7 +48,7 @@ Boxes with rounded corners<BR>
 Box drop shadows<BR>
 Page Layout Like A Desktop Publishing Software.
 
-
+</strong>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Website</a>
 
