@@ -1,6 +1,6 @@
 === PlugNedit ===
 Contributors: cactikelly
-Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, drop Shadow, Admin, Content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Editor, Plugins, Text on images, Formating, layers, color, software, publish, wordpress, picture, Page Layout, Publish, drag and drop, drag, drop, drag n drop, layout, Shadows
+Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, drop Shadow, Admin, Content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Editor, Plugins, Text on images, Formating, layers, color, software, publish, wordpress, picture, Page Layout, Publish, drag and drop, drag, drop, drag n drop, layout, Shadows, paypal, embeds
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.3
@@ -33,7 +33,7 @@ Drag and drop images<BR>
 Drag and drop divs and text<BR>
 Drag and drop videos<BR>
 Drag and drop embeds<BR>
-Text fonts 
+Text fonts <BR>
 Draggable picture resize<BR>
 Layer Elements<BR>
 Adjestable Layer Levels<BR>
@@ -48,6 +48,11 @@ Padding<BR>
 Text drop shadows<BR> 
 Boxes with rounded corners<BR>
 Box drop shadows<BR>
+Embeds for adding html layers<BR>
+Embeds for paypal<BR>
+Embeds for youtube<BR>
+
+
 Page Layout Like A Desktop Publishing Software.
 
 </strong>
