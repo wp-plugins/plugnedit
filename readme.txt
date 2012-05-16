@@ -60,9 +60,6 @@ Page Layout Like A Desktop Publishing Software.
 
 
 
-Sneak Peek At Next Versions With Inline Blog Load Feature (This Version Not Yet Available For Download, Not Fully Functional.) <a href="http://plugnedit.com/plugneditbeta/httpget.cfm"><STRONG>Version 1.4 Build Visual Editor Demo</STRONG></a> Anyone who would like the beta plugin to help test contact us at Contact@plugnedit.com.
-
-
 </strong>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Website</a>
