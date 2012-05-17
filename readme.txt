@@ -14,8 +14,6 @@ Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com 
 you will need to import links of your media which are stored temporarily.
 
 
-
-
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
 <BR>
 
@@ -31,7 +29,7 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 <strong>Plug N edit !</strong> Thats all you need to build dynamic content not utilized by the wordpress standard features. Plug N Edit uses movable windows (layers)
 for drag and drop ease of use. The WYSIWYG (What You See Is What You Get) Editor allows for multiple layers of items to be stacked (Watch The Video For Details). 
 <BR><BR><strong>
-Feature Settings & Controls:<br>
+Feature Settings & Controls:<BR>
 Drag and drop images.<BR>
 Drag and drop divs and text.<BR>
 Drag and drop videos.<BR>
