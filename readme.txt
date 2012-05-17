@@ -1,6 +1,6 @@
 === Drag And Drop Visual Editor Plug N Edit! ===
 Contributors: cactikelly
-Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, drop Shadow, Admin, Content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Editor, Plugins, Text on images, Formating, layers, color, software, publish, wordpress, picture, Page Layout, Publish, drag and drop, drag, drop, drag n drop, layout, Shadows, Paypal, Embeds
+Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Text on Images, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag, Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds
 Requires at least: 3.0
 Tested up to: 3.3.1
 Stable tag: 1.3
