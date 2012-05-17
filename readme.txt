@@ -1,4 +1,4 @@
-=== Drag And Drop Visual Editor. PlugNedit! ===
+=== Drag And Drop Visual Editor Plug N Edit! ===
 Contributors: cactikelly
 Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, drop Shadow, Admin, Content, Cusotm, Page, Visual, font, font color, picture, placement, HTML, Editor, Plugins, Text on images, Formating, layers, color, software, publish, wordpress, picture, Page Layout, Publish, drag and drop, drag, drop, drag n drop, layout, Shadows, Paypal, Embeds
 Requires at least: 3.0
@@ -44,7 +44,7 @@ Color Items.<BR>
 Linking. <BR>
 Create pages and blog items.<BR>
 Text align.<BR>
-Borders.<BR> 
+Border types.<BR> 
 Padding<BR>
 Text drop shadows<BR> 
 Boxes with rounded corners<BR>
@@ -52,7 +52,7 @@ Box drop shadows<BR>
 Embeds for adding html layers<BR>
 Embeds for paypal<BR>
 Embeds for youtube<BR>
-
+Border colors<BR>
 
 Page Layout Like A Desktop Publishing Software.
 
