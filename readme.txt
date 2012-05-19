@@ -36,6 +36,7 @@ Drag and drop images.<BR>
 Drag and drop divs and text.<BR>
 Drag and drop videos.<BR>
 Drag and drop embeds.<BR>
+Load WordPress Template Overlay Editing<BR>
 Text fonts. <BR>
 Draggable picture resize.<BR>
 Layer Elements.<BR>
@@ -76,6 +77,7 @@ Page Layout Like A Desktop Publishing Software.
 1. Editor
 2. Toolbars
 3. Blog Entry
+4. Template Loaded
 
 == Changelog == 
  
