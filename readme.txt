@@ -14,7 +14,11 @@ Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com 
 you will need to import links of your media which are stored temporarily.
 
 
+
+
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
+
+
 
 
 PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
@@ -22,6 +26,7 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 <BR><BR>PlugNedit Visual Editor Does Not Replace The WordPress Editor. PlugNedit Places A Button On Your Editor Page, And Gives A Second Choice Of Which Editor To Use. Tested with other popular editor addons with no conflicts.<BR><BR>
 
 
+<strong>New Feature: Load your wordpress template into the the editor. The settings for loading a template are found in the options menu. </strong>
 
 
 [youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
