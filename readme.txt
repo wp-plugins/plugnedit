@@ -15,11 +15,13 @@ you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
-<BR>
+
 
 PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
 <BR><BR>PlugNedit Visual Editor Does Not Replace The WordPress Editor. PlugNedit Places A Button On Your Editor Page, And Gives A Second Choice Of Which Editor To Use. Tested with other popular editor addons with no conflicts.<BR><BR>
+
+
 
 
 [youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
@@ -91,4 +93,4 @@ Page Layout Like A Desktop Publishing Software.
 = 1.3 = 
 
 * Javascript support for the header to support handheld's, new version control for future backwards compatibility. 
-* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / Arabic and other RTL languages. Better div alignment (more art then science) ooops more  (science then art) jesus said it was more relational then art or science. Added left hand side docked toolbars and Updated Html to comply W3C rules for HTML 5 validation. New Items, Linked Layers for drop shadows. Screen resolution support for Below 1024 Screen Width. Adjusted tables to support IE to fill div. Switched to overflow Visible on div text element for ease of use. Added text and box shadows, added padding, added Box radius. Adjusted Inner Div height to allow for drop shadows. Added 5 color pickers for easy picking of colors (text color, background color, border color, drop shadow color, box shadow), New scrolling to adjest for screen height below 500px.
+* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / Arabic and other RTL languages. Better div alignment (more art then science) ooops more  (science then art) jesus said it was more relational then art or science. Added left hand side docked toolbars and Updated Html to comply W3C rules for HTML 5 validation. New Items, Linked Layers for drop shadows. Screen resolution support for Below 1024 Screen Width. Adjusted tables to support IE to fill div. Switched to overflow Visible on div text element for ease of use. Added text and box shadows, added padding, added Box radius. Adjusted Inner Div height to allow for drop shadows. Added 5 color pickers for easy picking of colors (text color, background color, border color, drop shadow color, box shadow), New scrolling to adjest for screen height below 500px. Added inline template editing for screen resolution above 1280px.
