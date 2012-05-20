@@ -26,7 +26,7 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 <BR><BR>PlugNedit Visual Editor Does Not Replace The WordPress Editor. PlugNedit Places A Button On Your Editor Page, And Gives A Second Choice Of Which Editor To Use. Tested with other popular editor addons with no conflicts.<BR><BR>
 
 
-<strong>New Feature: Load your wordpress template into the the editor. The settings for loading a template are found in the options menu. </strong>
+<strong>New Feature: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
 
 
 [youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
