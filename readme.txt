@@ -41,7 +41,7 @@ Drag and drop images.<BR>
 Drag and drop divs and text.<BR>
 Drag and drop videos.<BR>
 Drag and drop embeds.<BR>
-Load WordPress Template Overlay Editing<BR>
+Load WordPress Template Overlay Editing.<BR>
 Text fonts. <BR>
 Draggable picture resize.<BR>
 Layer Elements.<BR>
@@ -53,14 +53,14 @@ Linking. <BR>
 Create pages and blog items.<BR>
 Text align.<BR>
 Border types.<BR> 
-Padding<BR>
-Text drop shadows<BR> 
-Boxes with rounded corners<BR>
-Box drop shadows<BR>
-Embeds for adding html layers<BR>
-Embeds for paypal<BR>
-Embeds for youtube<BR>
-Border colors<BR>
+Padding.<BR>
+Text drop shadows.<BR> 
+Boxes with rounded corners.<BR>
+Box drop shadows.<BR>
+Embeds for adding html layers.<BR>
+Embeds for paypal.<BR>
+Embeds for youtube.<BR>
+Border colors.<BR>
 
 Page Layout Like A Desktop Publishing Software.
 
