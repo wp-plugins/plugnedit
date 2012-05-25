@@ -59,6 +59,8 @@ Embeds for adding html layers.<BR>
 Embeds for paypal.<BR>
 Embeds for youtube.<BR>
 Border colors.<BR>
+Text spacing.<BR>
+Line Height.<br>
 
 Page Layout Like A Desktop Publishing Software.
 
