@@ -34,7 +34,8 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 
 
 <strong>
-Feature Settings & Controls:<BR>
+Feature Settings & Controls Of Visual Editor:<BR>
+
 Drag and drop images.<BR>
 Drag and drop divs and text.<BR>
 Drag and drop videos.<BR>
@@ -61,6 +62,7 @@ Embeds for youtube.<BR>
 Border colors.<BR>
 Text spacing.<BR>
 Line Height.<br>
+
 
 Page Layout Like A Desktop Publishing Software.
 
