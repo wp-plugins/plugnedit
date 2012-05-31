@@ -10,7 +10,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress
 == Description ==
 
 
-Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com website in order to use media filesyou will need to import links of your media which are stored temporarily.
+Note: PlugNedit Drag And Drop Visual Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 
