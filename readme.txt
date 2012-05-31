@@ -37,32 +37,53 @@ PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a t
 Feature Settings & Controls Of Visual Editor:<BR>
 
 
-Drag and drop images.<BR>
-Drag and drop divs and text.<BR>
-Drag and drop videos.<BR>
-Drag and drop embeds.<BR>
-Load WordPress template inline editing.<BR>
-Text fonts. <BR>
-Draggable picture resize.<BR>
-Transparency of pictures and divs.<BR>
-Stackable items.<BR>
-Color Items.<BR>
-Linking. <BR>
-Create pages and blog items.<BR>
-Text align.<BR>
-Border types.<BR> 
-Padding.<BR>
-Text drop shadows.<BR> 
-Boxes with rounded corners.<BR>
-Box drop shadows.<BR>
-Embeds for adding html layers.<BR>
-Embeds for paypal.<BR>
-Embeds for youtube.<BR>
-Border colors.<BR>
-Text spacing.<BR>
-Line height.<br>
-Layer elements.<BR>
-Adjestable layer levels.<BR>
+Drag and drop images.
+Drag and drop text.
+Drag and drop videos.
+Drag and drop embeds.
+All Editor Items Click And Move.
+Load WordPress template inline editing.
+Load Personal templates for inline editing.
+Text fonts. 
+Text Size.
+Text color.
+Text shadows.
+Text spacing.
+Text line spacing.
+Text align.
+Box back ground color.
+Box borders. 
+Box border colors.
+box border sizes.
+box padding.
+box rounded corners.
+box transparency.
+box drop shadows.
+box border styles.
+box border widths.
+picture resizing.
+picture transparency.
+picture underlay.
+picture overlay.
+Picture Gallery
+Linking.
+Layers adjust levels.
+layer naming.
+layer positioning.
+layers linkable.
+layer height levels
+layer visibility toggle.
+layer deleting.
+Floating palettes.
+Side palettes.
+Embeds for adding html layers.
+Embeds for paypal.
+Embeds for youtube.
+Undo step.
+Redo step.
+Auto backup.
+Inline editing.
+
 Blog editor pages load like a program file.
 
 
