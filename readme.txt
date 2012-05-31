@@ -54,26 +54,27 @@ Text align.<BR>
 Box back ground color.<BR>
 Box borders. <BR>
 Box border colors.<BR>
-box border sizes.<BR>
-box padding.<BR>
-box rounded corners.<BR>
-box transparency.<BR>
-box drop shadows.<BR>
-box border styles.<BR>
-box border widths.<BR>
-picture resizing.<BR>
-picture transparency.<BR>
-picture underlay.<BR>
-picture overlay.<BR>
+Box border sizes.<BR>
+Box padding.<BR>
+Box rounded corners.<BR>
+Box transparency.<BR>
+Box drop shadows.<BR>
+Box border styles.<BR>
+Box border widths.<BR>
+Box Resizing - Just click and pull.
+Picture resizing - Just click and pull.
+Picture transparency.<BR>
+Picture underlay.<BR>
+Picture overlay.<BR>
 Picture Gallery<BR>
 Linking.<BR>
 Layers adjust levels.<BR>
-layer naming.<BR>
-layer positioning.<BR>
-layers linkable.<BR>
-layer height levels.
-layer visibility toggle.
-layer deleting.<BR>
+Layer naming.<BR>
+Layer positioning.<BR>
+Layers linkable.<BR>
+Layer height levels.
+Layer visibility toggle.
+Layer deleting.<BR>
 Floating palettes.<BR>
 Side palettes.<BR>
 Embeds for adding html layers.<BR>
