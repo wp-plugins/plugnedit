@@ -39,50 +39,50 @@ Feature Settings & Controls Of Visual Editor:<BR>
 
 Drag and drop images.<BR>
 Drag and drop text.<BR>
-Drag and drop videos.
-Drag and drop embeds.
-All Editor Items Click And Move.
-Load WordPress template inline editing.
-Load Personal templates for inline editing.
-Text fonts. 
-Text Size.
-Text color.
-Text shadows.
-Text spacing.
-Text line spacing.
-Text align.
-Box back ground color.
-Box borders. 
-Box border colors.
-box border sizes.
-box padding.
-box rounded corners.
-box transparency.
-box drop shadows.
-box border styles.
-box border widths.
-picture resizing.
-picture transparency.
-picture underlay.
-picture overlay.
-Picture Gallery
-Linking.
-Layers adjust levels.
-layer naming.
-layer positioning.
-layers linkable.
-layer height levels
+Drag and drop videos.<BR>
+Drag and drop embeds.<BR>
+All Editor Items Click And Move.<BR>
+Load WordPress template inline editing.<BR>
+Load Personal templates for inline editing.<BR>
+Text fonts. <BR>
+Text Size.<BR>
+Text color.<BR>
+Text shadows.<BR>
+Text spacing.<BR>
+Text line spacing.<BR>
+Text align.<BR>
+Box back ground color.<BR>
+Box borders. <BR>
+Box border colors.<BR>
+box border sizes.<BR>
+box padding.<BR>
+box rounded corners.<BR>
+box transparency.<BR>
+box drop shadows.<BR>
+box border styles.<BR>
+box border widths.<BR>
+picture resizing.<BR>
+picture transparency.<BR>
+picture underlay.<BR>
+picture overlay.<BR>
+Picture Gallery<BR>
+Linking.<BR>
+Layers adjust levels.<BR>
+layer naming.<BR>
+layer positioning.<BR>
+layers linkable.<BR>
+layer height levels.
 layer visibility toggle.
-layer deleting.
-Floating palettes.
-Side palettes.
-Embeds for adding html layers.
-Embeds for paypal.
-Embeds for youtube.
-Undo step.
-Redo step.
-Auto backup.
-Inline editing.
+layer deleting.<BR>
+Floating palettes.<BR>
+Side palettes.<BR>
+Embeds for adding html layers.<BR>
+Embeds for paypal.<BR>
+Embeds for youtube.<BR>
+Undo step.<BR>
+Redo step.<BR>
+Auto backup.<BR>
+Inline editing.<BR>
 
 Blog editor pages load like a program file.
 
