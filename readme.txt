@@ -72,8 +72,8 @@ Layers adjust levels.<BR>
 Layer naming.<BR>
 Layer positioning.<BR>
 Layers linkable.<BR>
-Layer height levels.
-Layer visibility toggle.
+Layer height levels.<BR>
+Layer visibility toggle.<BR>
 Layer deleting.<BR>
 Floating palettes.<BR>
 Side palettes.<BR>
