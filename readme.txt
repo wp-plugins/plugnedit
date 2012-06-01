@@ -179,15 +179,12 @@ Added Remove Template button to options menu.
 
 == Features ==
 
+
 Suggestions of features: Email contact@plugnedit.com
 
-* New features coming soon.
 
 * Screen support for pages 1028 px (Larger Margins)
 * Screen Support for pages 380 px (Mini Margins)
-
-
-* Other Features
 
 * Some features have not been turned on for the plugin due
 to the lack of understand of most web users.
@@ -203,7 +200,7 @@ displayed this as a possible option (Give it a try if you wish).
 but we are not sure if we should offer this from the WordPress 
 Plugin Site.
 
-* if you are interested in some of these advanced features let us know contact@plugnedit.com
+* If you are interested in some of these advanced features let us know contact@plugnedit.com
 
 
 
