@@ -121,10 +121,13 @@ Plug N Edit does not change much on your site, our editor
 is located separate from you WordPress application. That means you can have other 
 editor, plugins and themes installed without conflicts. 
 
+
 3. A Second Choice Editor? 
 
 Plug N Edit is a second choice editor with many features, when you want something special, plugnedit provides many tools that are able to create unique blog entries other editors 
 do not.
+
+
 
 4. What is different about Plug N Edit? 
 
