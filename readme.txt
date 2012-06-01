@@ -112,8 +112,7 @@ Page Layout Like A Desktop Publishing Software.
 = Does PlugNedit Work With Themes? =
 
 All Themes tested so far have worked with 
-plugNedit, however some themes do not load into the background for Insite editing. 
-
+plugNedit.
 
 = Compatibility? Lucky! =
 
@@ -130,6 +129,15 @@ do not.
 = What is different about Plug N Edit? =
 
 We based our editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
+
+
+
+= Loading A Template Theme In Background? =
+ 
+We currently load template themes from the 404 not found page of wordpress, if 
+your template doesn't load correctly please request that the author of the them 
+update this page.
+
 
 
 == Changelog == 
