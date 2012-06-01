@@ -2,24 +2,22 @@
 /*
 Plugin Name: PlugNedit
 Plugin URI: Http://plugnedit.com
-Version: 1.3
+Version: 1.3.1
 Author: 2 sticks
 Description:PlugNedit <strong>Drag N Drop Visual Editor</strong> and web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 */
 
 
-function doStyleHeadPlugNedit() {
-?><script language="JavaScript" type="text/javascript">
-function PlugNeditPost(PlugneditMinWid) {
-document.write('<style> #page {min-width: '+ PlugneditMinWid +'px;}</style>')}</script><?php }
+
+
 function do_pPlugneditStyleFooter(){?>
 <script language="JavaScript" type="text/javascript">
-if(document.getElementById('ICG1ADDON')){PlugNeditPost('710')}
+if(document.getElementById('ICG1ADDON')){document.body.style.minWidth=710+'px'}
 </script>
 <?php
 }
 
-add_action('wp_head','doStyleHeadPlugNedit'); 
+
 add_action( 'wp_footer', 'do_pPlugneditStyleFooter' );
 if (is_admin() ) {
 function my_default_editor() {
