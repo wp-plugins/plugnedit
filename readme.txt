@@ -167,6 +167,11 @@ ATTN. If you Find A Bug Please Report It To contact@plugnedit.com
 New CSS style setting min-width to body to support custom WordPress Themes.
 
 
+== Upgrade Notice ==
 
+
+= 1.3.1 = 
+
+Update to support Themes, sets a style element to body on pages with a PlugNedit built page.
 
 
