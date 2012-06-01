@@ -118,8 +118,8 @@ plugNedit, however some themes do not load into the background for Insite editin
 = Compatibility? Lucky! =
 
 Plug N Edit does not change much on your site, our editor 
-is located separate from you WordPress application. That means you can have other 
-editor, plugins and themes installed without conflicts. 
+is located separate from your WordPress application. That means you can have other 
+editors, plugins and themes installed without conflicts. 
 
 = Another Editor? =
 
