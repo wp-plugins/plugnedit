@@ -177,7 +177,7 @@ ATTN. If you Find A Bug Please Report It To contact@plugnedit.com
 
 Added Remove Template button to options menu.
 
-= Features ==
+== Features ==
 
 Suggestions of features: Email contact@plugnedit.com
 
