@@ -61,8 +61,8 @@ Box transparency.<BR>
 Box drop shadows.<BR>
 Box border styles.<BR>
 Box border widths.<BR>
-Box Resizing - Just click and pull.
-Picture resizing - Just click and pull.
+Box Resizing - Just click and pull.<BR>
+Picture resizing - Just click and pull.<BR>
 Picture transparency.<BR>
 Picture underlay.<BR>
 Picture overlay.<BR>
