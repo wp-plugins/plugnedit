@@ -114,7 +114,7 @@ Page Layout Like A Desktop Publishing Software.
 All Themes tested so far have worked with 
 plugNedit.
 
-= Compatibility? Lucky! =
+= Compatibility? =
 
 Plug N Edit does not change much on your site, our editor 
 is located separate from your WordPress application. That means you can have other 
@@ -137,6 +137,13 @@ We based our editor on floating elements instead of standard static items, this 
 We currently load template themes from the 404 not found page of wordpress, if 
 your template doesn't load correctly please request that the author of the Theme
 update this page.
+
+== Upgrade Notice ==
+
+
+= 1.3.1 = 
+
+Update to support Themes, sets a style element to body on pages with a PlugNedit built blog entry.
 
 
 
@@ -164,14 +171,44 @@ ATTN. If you Find A Bug Please Report It To contact@plugnedit.com
 
 = 1.3.1 = 
 
-New CSS style setting min-width to body to support custom WordPress Themes.
+* New CSS style setting min-width to body to support custom WordPress Themes.
+
+* Lesser Not (Editor Upgrades And Fixes)
+
+Added Remove Template button to options menu.
+
+= Features ==
+
+Suggestions of features: Email contact@plugnedit.com
+
+* New features coming soon.
+
+* Screen support for pages 1028 px (Larger Margins)
+* Screen Support for pages 380 px (Mini Margins)
 
 
-== Upgrade Notice ==
+* Other Features
+
+* Some features have not been turned on for the plugin due
+to the lack of understand of most web users.
+
+* PlugNedit can do Angles and we are working on SVG Items,
+also plugnedit provides html raw code (Great For Emails). 
+Html can also be added to the Embed video button
+however it is sometimes tricky to use so we have not 
+displayed this as a possible option (Give it a try if you wish).
 
 
-= 1.3.1 = 
+* PlugNedit can also build pages out side the WordPress Themes
+but we are not sure if we should offer this from the WordPress 
+Plugin Site.
 
-Update to support Themes, sets a style element to body on pages with a PlugNedit built page.
+* if you are interested in some of these advanced features let us know contact@plugnedit.com
+
+
+
+
+
+
 
 
