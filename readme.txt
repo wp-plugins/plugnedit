@@ -135,7 +135,7 @@ We based our editor on floating elements instead of standard static items, this 
 = Loading A Template Theme In Background? =
  
 We currently load template themes from the 404 not found page of wordpress, if 
-your template doesn't load correctly please request that the author of the them 
+your template doesn't load correctly please request that the author of the Theme
 update this page.
 
 
