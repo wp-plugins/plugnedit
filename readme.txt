@@ -109,27 +109,25 @@ Page Layout Like A Desktop Publishing Software.
 
 == Frequently Asked Questions ==
 
-1. Does PlugNedit Work With Themes? 
+= Does PlugNedit Work With Themes? =
 
 All Themes tested so far have worked with 
 plugNedit, however some themes do not load into the background for Insite editing. 
 
 
-2. Compatibility? Lucky! 
+= Compatibility? Lucky! =
 
 Plug N Edit does not change much on your site, our editor 
 is located separate from you WordPress application. That means you can have other 
 editor, plugins and themes installed without conflicts. 
 
+= Another Editor? =
 
-3. A Second Choice Editor? 
-
-Plug N Edit is a second choice editor with many features, when you want something special, plugnedit provides many tools that are able to create unique blog entries other editors 
+Plug N Edit is a different choice editor with many features, when you want something special, plugnedit provides many tools that are able to create unique blog entries other editors 
 do not.
 
 
-
-4. What is different about Plug N Edit? 
+= What is different about Plug N Edit? =
 
 We based our editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
 
