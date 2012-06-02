@@ -156,8 +156,6 @@ Update to support Themes, sets a style element to body on pages with a PlugNedit
  
 = 1.1 = 
 
-ATTN. If you Find A Bug Please Report It To contact@plugnedit.com
-
 * Changed javascript to support older versions. 
 * Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Removed span tags from use in plugnedit due to wordpress changing HTMl Added Drop Shadows and more fonts. 
 
