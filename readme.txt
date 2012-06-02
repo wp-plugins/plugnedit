@@ -139,9 +139,9 @@ It is free to build blog entries. We are also producing a more advanced editor t
 
 = Loading A Template Theme In Background? =
  
-We currently load template themes from the 404 not found page of wordpress, if 
-your template doesn't load correctly please request that the author of the Theme
-update this page.
+We currently load template themes from your front page, if 
+your template doesn't load correctly please email a request that we support  
+your template and we will try to program a solution.
 
 == Upgrade Notice ==
 
