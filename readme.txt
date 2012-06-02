@@ -9,7 +9,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress
 
 == Description ==
 
-Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress editor and is safe to install with other Plugins that do. Plug N Edit Editor is Located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
+Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
@@ -196,7 +196,7 @@ to the lack of understand of most web users.
 
 * PlugNedit can do Angles and we are working on SVG items,
 also plugnedit provides html raw code (Great For Emails). 
-Html can also be added to the Embed video button
+Html can also be added to the Embed Video button
 however it is sometimes tricky to use so we have not 
 displayed this as a possible option (Give it a try if you wish).
 
