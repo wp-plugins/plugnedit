@@ -143,6 +143,7 @@ We currently load template themes from your front page, if
 your template doesn't load correctly please email a request that we support  
 your template and we will try to program a solution.
 
+
 == Upgrade Notice ==
 
 
@@ -203,7 +204,7 @@ displayed this as a possible option (Give it a try if you wish).
 but we are not sure if we should offer this from the WordPress 
 Plugin Site.
 
-* If you are interested in some of these advanced features let us know contact@plugnedit.com
+* If you are interested in some of these advanced features let us know. contact@plugnedit.com
 
 
 
