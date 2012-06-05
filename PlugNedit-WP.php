@@ -57,7 +57,7 @@ var ICGWarning=''
 
 
 if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.match('ICG1ADDON')){document.getElementById('postdivrich').innerHTML='<iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
-document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button" >PlugNedit Web Page Builder</a>'+ICGWarning;
+document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button-primary" >PlugNedit Web Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
 
