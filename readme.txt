@@ -15,7 +15,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress
 Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
 
-<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank"><STRONG>Visual Editor Demo</STRONG></a>
+<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" style='font-size:14px;font-weight:bolder'>Visual Editor Demo</a>
 
 
 
