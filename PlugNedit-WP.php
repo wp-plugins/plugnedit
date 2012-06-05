@@ -60,11 +60,14 @@ if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.ma
 document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button" >PlugNedit Web Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
+
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
-if (strContent=='' || strContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent').value=strContent; document.getElementById('NoEditupper4').style.visibility='visible';} else{
+if (strContent=='' || strContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent').value=strContent; document.getElementById('NoEditupper4').style.visibility='visible';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}} else{
 var ConfirmPlugNedit = confirm('You are about to leave the Word Press Page Editor. The contents of this page will be lost and updated with changes made with PlugNedit.')
 if (ConfirmPlugNedit){
 document.getElementById('NoEditupper4').style.visibility='visible'
+if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}
+
 }else{}}}
 function ProcessUpdatePlugNedit(){
 var NewstrContent=document.getElementById('content').value;
@@ -75,7 +78,7 @@ if (NewstrContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent2
 <BR><BR><div align="center" id="PlugNeditConfirm">
 PlugNedit needs to import links of your media files in order to use them! </div>
 <div align="center">This may take a moment to process.<BR><BR> </div>
-<input type="button" Name="Import Files" value="Import Files" class="button-primary"  onClick="ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();" > <input class="button" onClick="document.forms['PlugNeditForm'].submit();" type="Button" Name="Proceed Without Import" value="Proceed Without Import"> <input onClick="document.getElementById('NoEditupper4').style.visibility='hidden'" type="Button" name="Cancel"  value="Cancel" class="button">
+<input type="button" Name="Import Files" value="Import Files" class="button-primary"  onClick="ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();" > <input class="button" onClick="document.forms['PlugNeditForm'].submit();" type="Button" Name="Proceed Without Import" value="Proceed Without Import"> <input onClick="document.getElementById('NoEditupper4').style.visibility='hidden';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='visible'}" type="Button" name="Cancel"  value="Cancel" class="button">
 </div>
 
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">

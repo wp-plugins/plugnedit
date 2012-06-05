@@ -189,6 +189,8 @@ Update to support Themes, sets a style element to body on pages with a PlugNedit
 
 Added Remove Template button to options menu.
 
+
+
 == Features ==
 
 
