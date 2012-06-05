@@ -147,6 +147,10 @@ We currently load template themes from your front page, if
 your template doesn't load correctly please email a request that we support  
 your template and we will try to program a solution.
 
+= Importing Links To Media? =
+
+We import links to your pictures, we do not download or store your pictures,
+this allows you to use pictures when editing your blog.
 
 == Upgrade Notice ==
 
