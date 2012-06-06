@@ -193,6 +193,8 @@ Update to support Themes, sets a style element to body on pages with a PlugNedit
 * Lesser Not (Editor Upgrades And Fixes)
 
 Added Remove Template button to options menu.
+Added Google Notranslate class to editor window
+so the page can be translated and program still work.
 
 
 
