@@ -2,7 +2,7 @@
 Contributors: cactikelly
 Tags: Posts, Visual Editor, Post, Image, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, post editor, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Text on Images, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag, Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds
 Requires at least: 3.0
-Tested up to: 3.3.2
+Tested up to: 3.4
 Stable tag: 1.3.1
 
 Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
