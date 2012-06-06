@@ -17,8 +17,6 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
 <strong><em>Visual Editor Demo</em></strong></a>
-
-
 <BR>
 <BR>
 <strong>New Feature: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
