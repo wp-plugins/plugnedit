@@ -24,7 +24,7 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 <strong>New Feature: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
 
 <BR>
-[youtube http://youtu.be/gi6UF4hHMoA]
+[youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 <BR>
 
 PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
