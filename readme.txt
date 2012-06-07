@@ -194,8 +194,8 @@ Update to support Themes, sets a style element to body on pages with a PlugNedit
 
 Added Remove Template button to options menu.
 Added Google Notranslate class to editor window
-so the page can be translated and program still work.
-
+so the page can be translated and editor function.
+Added a add image by URL Button.
 
 
 == Features ==
