@@ -22,6 +22,10 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 <strong>New Feature: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
 
 <BR>
+
+<a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
+<strong><em>You Tube Video Example</em></strong></a><BR>
+
 [youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 <BR>
 
