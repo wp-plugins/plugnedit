@@ -24,7 +24,7 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 <BR>
 
 <a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
-<strong><em>You Tube Video Example</em></strong></a><BR>
+<strong><em>You Tube Video Example</em></strong></a>
 
 [youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 <BR>
