@@ -1,16 +1,18 @@
 === Drag And Drop Visual Editor !!   Plug N Edit . ===
 Contributors: cactikelly
-Tags: Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
+Tags: Publishing,Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
 Requires at least: 3.0
 Tested up to: 3.4
 Stable tag: 1.3.1
 
-Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Page Builder For WordPress.
+Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For WordPress.
 
 == Description ==
 
 
-<strong><em>Drag & Drop Images And Text Boxes, Just Click And Move.</em></strong>
+<strong><em>Drag & Drop Images And Text Boxes, Just Click And Move.</em><BR></strong>
+<em>Based on desktop publishing software instead of a HtML editor. </em>
+
 
 Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
