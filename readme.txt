@@ -125,7 +125,7 @@ Page Layout Like A Desktop Publishing Software.
 == Frequently Asked Questions ==
 
 
-= Why use Plug N Edit? =
+= Why Use Plug N Edit? =
 
 We based our web software on a Desktop publishing design
 not html. What better type of editor could there be for 
