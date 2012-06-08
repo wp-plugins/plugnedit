@@ -1,4 +1,4 @@
-=== Drag And Drop Visual Editor & Desktop Publisher. ===
+=== Drag And Drop Visual Editor & Desktop Publisher ===
 Contributors: cactikelly
 Tags: Publishing,Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
 Requires at least: 3.0
