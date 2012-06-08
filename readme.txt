@@ -127,7 +127,7 @@ Page Layout Like A Desktop Publishing Software.
 
 = Why Use Plug N Edit? =
 
-We based our web software on a Desktop publishing design
+We based our web software on a Desktop Publishing design
 not html. What better type of editor could there be for 
 WordPress.
 
