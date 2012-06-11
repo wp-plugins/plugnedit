@@ -211,7 +211,7 @@ Added Google Notranslate class to editor window
 so the page can be translated and editor function.
 Added a add image by URL Button.
 New Inline Get HTML, Page is now processed in Iframe and the Displayed.
-Added option to add a link as support.
+Added option to add a link as support for plugnedit.
 
 
 == Features ==
