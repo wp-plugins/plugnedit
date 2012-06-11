@@ -1,6 +1,6 @@
 === Drag And Drop Visual Editor & Publisher ===
 Contributors: cactikelly
-Tags: Publishing,Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
+Tags: Publishing,Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Editor, Web Page Builder, PlugiN, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, gradient, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
 Requires at least: 3.0
 Tested up to: 3.4
 Stable tag: 1.3.1
@@ -96,6 +96,7 @@ Redo step.<BR>
 Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
+Gradient Backgrounds<BR>
 
 Blog editor pages load like a program file.
 
@@ -212,6 +213,7 @@ so the page can be translated and editor function.
 Added a add image by URL Button.
 New Inline Get HTML, Page is now processed in Iframe and the Displayed.
 Added option to add a link as support for plugnedit.
+Added Gradient Backgrounds.
 
 
 == Features ==
