@@ -213,7 +213,7 @@ so the page can be translated and editor function.
 Added a add image by URL Button.
 New Inline Get HTML, Page is now processed in Iframe and the Displayed.
 Added option to add a link as support for plugnedit.
-Added Gradient Backgrounds.
+Added Gradient Backgrounds (currently Embeds only but setting up image hosting for Gradient Backgrounds).
 
 
 == Features ==
