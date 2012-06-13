@@ -102,13 +102,7 @@ Get HTML<BR>
 Gradient Backgrounds<BR>
 
 Blog editor pages load like a program file.
-
-
-
 Page Layout Like A Desktop Publishing Software.
-
-
-
 </strong>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Website</a>
@@ -155,7 +149,6 @@ Plug N Edit is a different choice editor with many features, when you want somet
 = What is different about Plug N Edit? =
 
 We based our editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
-
 
 
 = Is It Free? =
