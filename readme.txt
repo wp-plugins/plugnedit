@@ -225,6 +225,7 @@ Image Border raduis<BR>
 New image handling of resizing 
 the Height of the element.
 Added overflow visible to image box.
+Adjusted div to fit picture height.
 
 
 
