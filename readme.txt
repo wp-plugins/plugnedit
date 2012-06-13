@@ -78,6 +78,9 @@ Picture transparency.<BR>
 Picture underlay.<BR>
 Picture overlay.<BR>
 Picture Gallery<BR>
+Image Drop Shadows<BR>
+Image Borders <BR>
+Image Border raduis<BR>
 Linking.<BR>
 Layers adjust levels.<BR>
 Layer naming.<BR>
@@ -214,6 +217,14 @@ Added a add image by URL Button.
 New Inline Get HTML, Page is now processed in Iframe and the Displayed.
 Added option to add a link as support for plugnedit.
 Added Gradient Backgrounds (currently Embeds only but setting up image hosting for Gradient Backgrounds).
+
+Added:<BR>
+Image Drop Shadows<BR>
+Image Borders <BR>
+Image Border raduis<BR>
+New image handling of resizing 
+the Height of the element.
+
 
 
 == Features ==
