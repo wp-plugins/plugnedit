@@ -155,7 +155,9 @@ We based our editor on floating elements instead of standard static items, this 
 
 It is free to build blog entries. We are also producing a more advanced editor that will not be free of charge.
 
+= Auto Saves? =
 
+Auto Saves, save every 2 minutes, we take a snap shot of your page and store 120 of your last edits when turned on. For your privacy you can turn off Auto Saving if you wish. 
 
 = Loading A Template Theme In Background? =
  
