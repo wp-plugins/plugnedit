@@ -172,8 +172,8 @@ this allows you to use pictures when editing your blog.
 
 = Privacy? =
 
-Information we store, Plugnedit stores your web address when you visit, we do not collect
-names address or emails phone, etc. We store your blog address as your session to our site.
+Plugnedit stores your web address when you visit, we do not collect
+names address or emails phone, etc. We only store your blog address as your session to our site.
 
 == Upgrade Notice ==
 
