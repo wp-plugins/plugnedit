@@ -176,6 +176,12 @@ this allows you to use pictures when editing your blog.
 Plugnedit stores your web address when you visit, we do not collect
 names address or emails phone, etc. We only store your blog address as your session to our site.
 
+
+= I need help with this ? =
+
+Plugnedit provides how to videos in the main menu, if you need specific help email Contact@plugnedit.com and we will assist you in operation of the program.
+
+
 == Upgrade Notice ==
 
 
