@@ -157,7 +157,8 @@ It is free to build blog entries. We are also producing a more advanced editor t
 
 = Auto Saves? =
 
-Auto Saves, save every 2 minutes, we take a snap shot of your page and store 120 of your last edits when turned on. For your privacy you can turn off Auto Saving if you wish. 
+When Loading the editor you will be asked if you wish to auto save. We take a snap shot of your page and store 120 minutes of your last edits when turned on.
+
 
 = Loading A Template Theme In Background? =
  
