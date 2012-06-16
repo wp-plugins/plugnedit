@@ -235,6 +235,7 @@ Added overflow visible to image box.
 Adjusted div to fit picture height.
 Added Preload Image function to get proper height on image
 Load.
+Changed transperncy from outer div to inner items.
 
 
 == Features ==
