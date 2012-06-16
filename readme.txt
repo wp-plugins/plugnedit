@@ -238,6 +238,7 @@ Load.
 Changed transperncy from outer div to inner items.
 Changed Onfocus event on text area to support firefox better.
 Set layer index of toolbars to support old IE blead thru of layer move hinges.
+Set toolbar for support under 435px screen height.
 
 
 == Features ==
