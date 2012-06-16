@@ -236,6 +236,7 @@ Adjusted div to fit picture height.
 Added Preload Image function to get proper height on image
 Load.
 Changed transperncy from outer div to inner items.
+Changed Onfocus event on text area to support firefox better.
 
 
 == Features ==
