@@ -99,7 +99,7 @@ Redo step.<BR>
 Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
-Gradient Backgrounds<BR>
+Gradient backgrounds<BR>
 
 Blog editor pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
@@ -157,7 +157,7 @@ It is free to build blog entries. We are also producing a more advanced editor t
 
 = Auto Saves? =
 
-When Loading the editor you will be asked if you wish to auto save. We take a snap shot of your page and store 120 minutes of your last edits when turned on.
+When loading the editor you will be asked if you wish to auto save. We take a snap shot of your page and store 120 minutes of your last edits when turned on.
 
 
 = Loading A Template Theme In Background? =
