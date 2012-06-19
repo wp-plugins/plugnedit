@@ -2,7 +2,7 @@
 /*
 Plugin Name: PlugNedit
 Plugin URI: Http://plugnedit.com
-Version: 1.3.1
+Version: 2.0
 Author: 2 sticks
 Description:PlugNedit <strong>Drag N Drop Visual Editor</strong> and web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 */
@@ -12,7 +12,15 @@ Description:PlugNedit <strong>Drag N Drop Visual Editor</strong> and web page bu
 
 function do_pPlugneditStyleFooter(){?>
 <script language="JavaScript" type="text/javascript">
-if(document.getElementById('ICG1ADDON')){document.body.style.minWidth=710+'px'}
+try {
+var ElePNE=document.getElementById('ICG1ADDONS-Spacer')
+if(ElePNE){
+if (parseInt(ElePNE.style.width) > 500){
+document.body.style.minWidth=800+'px'
+} else{
+document.body.style.minWidth=710+'px'}
+}} catch(err){
+document.body.style.minWidth=710+'px'}
 </script>
 <?php
 }
@@ -148,12 +156,12 @@ document.getElementById('content').value=document.getElementById('plugneditretur
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="<?php echo $currentUrl; ?>">
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
-<input type="hidden" name="PlugNeditVersion" value="Version 1.3" id="PlugNeditVersion">
+<input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
 <form action="#" method="post"  name="PlugNeditFormGet">
 <input type="hidden"  name="PlugNeditContent2" id="PlugNeditContent2" value="">
 <input type="hidden"  name="GetPlugneditfiles" value="0">
-<input type="hidden" name="PlugNeditVersion" value="Version 1.3" id="PlugNeditVersion">
+<input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
 <?php if (isset($_POST['GetPlugneditfiles'])) {?>
 <script language="JavaScript"
