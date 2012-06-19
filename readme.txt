@@ -243,6 +243,9 @@ Set toolbar for support under 435px screen height.
 
 Added option and javascript for maximum margins.
 
+Lesser Note: Editor upgrade of margins for wordpress.
+500 Pixel width for 800x600 and 550 Pixels for greater screen resolutions.
+
 == Features ==
 
 
