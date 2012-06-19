@@ -185,10 +185,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 == Upgrade Notice ==
 
 
-= 1.3.1 = 
+= 2.0 =
 
-Update to support Themes, sets a style element to body on pages with a PlugNedit built blog entry.
-
+Added option and javascript for maximum margins.
 
 
 == Changelog == 
@@ -240,6 +239,9 @@ Changed Onfocus event on text area to support firefox better.
 Set layer index of toolbars to support old IE blead thru of layer move hinges.
 Set toolbar for support under 435px screen height.
 
+= 2.0 =
+
+Added option and javascript for maximum margins.
 
 == Features ==
 
