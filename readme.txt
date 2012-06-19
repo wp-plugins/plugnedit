@@ -21,7 +21,7 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 <strong><em>Visual Editor Demo</em></strong></a>
 <BR>
 <BR>
-<strong>New Feature: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
+<strong>New Features: Load your wordpress template into the the editor, The settings for loading a template are found in the options menu. </strong>
 
 <BR>
 
@@ -100,6 +100,7 @@ Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
 Gradient backgrounds<BR>
+Margin Settings.
 
 Blog editor pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
