@@ -100,7 +100,7 @@ Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
 Gradient backgrounds<BR>
-Margin Settings.
+Margin settings.
 
 Blog editor pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
