@@ -65,7 +65,7 @@ var ICGWarning=''
 
 
 if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.match('ICG1ADDON')){document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
-document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
+document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" id="PNE-editor" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
 
@@ -86,7 +86,7 @@ if (NewstrContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent2
 <BR><BR><div align="center" id="PlugNeditConfirm">
 PlugNedit needs to import links of your media files in order to use them! </div>
 <div align="center">This may take a moment to process.<BR><BR> </div>
-<input type="button" Name="Import Files" value="Import Files" class="button-primary"  onClick="ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();" > <input class="button" onClick="document.forms['PlugNeditForm'].submit();" type="Button" Name="Proceed Without Import" value="Proceed Without Import"> <input onClick="document.getElementById('NoEditupper4').style.visibility='hidden';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='visible'}" type="Button" name="Cancel"  value="Cancel" class="button">
+<input type="button" id="PNE-editor-Import" Name="Import Files" value="Import Files" class="button-primary"  onClick="ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();" > <input class="button" id="PNE-editor-NoImport" onClick="document.forms['PlugNeditForm'].submit();" type="Button" Name="Proceed Without Import" value="Proceed Without Import"> <input onClick="document.getElementById('NoEditupper4').style.visibility='hidden';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='visible'}" type="Button" name="Cancel"  value="Cancel" class="button">
 </div>
 
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">
@@ -143,7 +143,24 @@ Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src=""
 }
 document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value",2000)
 document.getElementById('content').value=document.getElementById('plugneditreturncontent').value
+
+
+
+function BrowseElements() {
+var MD = window.event;
+BEI = MD.target ? MD.target.id : MD.srcElement.id;
+}
+document.onmousedown = BrowseElements;
+y.onbeforeunload = function() {
+if(BEI != 'publish' && BEI != 'save-post' && !BEI.match('PNE-editor')){
+    return 'You have unsaved changes!';
+	}
+}
+
+
 </script>
+
+
 <?php 
 }
 
