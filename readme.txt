@@ -106,7 +106,7 @@ Blog editor pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
 </strong>
 
-<a href="http://www.Plugnedit.com/">PlugNedit Website</a>
+<a href="http://www.Plugnedit.com/">PlugNedit Visual Editor Website</a>
 
 == Installation ==
 
