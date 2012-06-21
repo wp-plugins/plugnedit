@@ -125,6 +125,10 @@ Page Layout Like A Desktop Publishing Software.
 == Frequently Asked Questions ==
 
 
+= I already have a plugin for the editor Installed, can I still use Plug N Edit? =
+
+Yes! Plug N Edit works independent of your wordpress editor and will not conflict with plugins you have installed.
+
 = Why Use Plug N Edit? =
 
 We based our web software on a Desktop Publishing design
@@ -138,9 +142,7 @@ Plug N Edit.
 
 = Compatibility? =
 
-Plug N Edit does not change much in your WordPress site, our editor 
-is located separate from your WordPress application. That means you can have other 
-editors, plugins and themes installed without conflicts. 
+Plug N Edit is very compatible with other plugins. Plug N Edit does not change much in your WordPress site, our editor is located separate from your WordPress application. That means you can have other editors, plugins and themes installed without conflicts. 
 
 = Another Editor? =
 
