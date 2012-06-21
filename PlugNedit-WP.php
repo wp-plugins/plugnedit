@@ -144,20 +144,6 @@ Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src=""
 document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value",2000)
 document.getElementById('content').value=document.getElementById('plugneditreturncontent').value
 
-
-
-function BrowseElements() {
-var MD = window.event;
-BEI = MD.target ? MD.target.id : MD.srcElement.id;
-}
-document.onmousedown = BrowseElements;
-y.onbeforeunload = function() {
-if(BEI != 'publish' && BEI != 'save-post' && !BEI.match('PNE-editor')){
-    return 'You have unsaved changes!';
-	}
-}
-
-
 </script>
 
 
