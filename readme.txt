@@ -99,7 +99,6 @@ Redo step.<BR>
 Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
-Gradient backgrounds<BR>
 Margin settings.
 
 Blog editor pages load like a program file.
