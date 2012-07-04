@@ -30,10 +30,7 @@ New Features: <BR>
 
 
 
-<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" >
-
-
-<strong><em>Full Page Editor Demo </em></strong></a>
+<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>
 
 
 <BR>
