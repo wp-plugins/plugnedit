@@ -21,12 +21,14 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your wordpress edi
 <strong><em>Visual Editor Demo</em></strong></a>
 <BR>
 <BR>
-<strong>1. New Features: Load your WordPress template into the the editor, The settings for loading a template are found in the options menu. 
+<strong>
+New Features: <BR>
+</strong>
+1. Load your WordPress template into the the editor, The settings for loading a template are found in the options menu. 
 <BR>
 2. Full drag and drop page building, Developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
 
 
-</strong>
 
 <a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" >
 
