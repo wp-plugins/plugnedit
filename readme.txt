@@ -26,7 +26,7 @@ New Features: <BR>
 </strong>
 1. Load your WordPress template into the the editor, The settings for loading a template are found in the options menu. 
 <BR>
-2. Full drag and drop page building, Developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
+2. Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
 
 
 
