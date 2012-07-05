@@ -27,12 +27,8 @@ New Features: <BR>
 1. Load your WordPress template into the the editor, The settings for loading a template are found in the options menu. 
 <BR>
 2. Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
-
-
-
+<BR>
 <a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>
-
-
 <BR>
 
 <a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
