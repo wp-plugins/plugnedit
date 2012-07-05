@@ -247,6 +247,7 @@ Changed transperncy from outer div to inner items.
 Changed Onfocus event on text area to support firefox better.
 Set layer index of toolbars to support old IE blead thru of layer move hinges.
 Set toolbar for support under 435px screen height.
+Fixed locking of the div height when auto height set text layer.
 
 = 2.0 =
 
@@ -254,6 +255,7 @@ Added option and javascript for maximum margins.
 
 Lesser Note: Editor upgrade of margins for wordpress.
 500 Pixel width for 800x600 and 550 Pixels for greater screen resolutions.
+
 
 == Features ==
 
