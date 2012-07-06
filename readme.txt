@@ -1,6 +1,6 @@
 === Drag And Drop Visual Editor & Publisher===
 Contributors: cactikelly
-Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, gradient, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formating, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
+Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, portfolios, plugnins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, gradient, Content, Cusotm, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.0
@@ -84,7 +84,7 @@ Picture overlay.<BR>
 Picture Gallery<BR>
 Image Drop Shadows<BR>
 Image Borders <BR>
-Image Border raduis<BR>
+Image Border radius<BR>
 Linking.<BR>
 Layers adjust levels.<BR>
 Layer naming.<BR>
@@ -138,10 +138,13 @@ We based our web software on a Desktop Publishing design
 not html. What better type of editor could there be for 
 WordPress.
 
+= What is different from other editor plugins? =
+
+First of all Plug N Edit is a completely different editor and is not actually a editor plugin. It is based on a drag and drop design which allows for items to be moved, sized stacked and styled with a click of the mouse.
+
 = Does Plug N Edit Work With Themes? =
 
-All Themes tested so far have worked with 
-Plug N Edit.
+All Themes tested so far have worked with Plug N Edit.
 
 = Compatibility? =
 
@@ -232,14 +235,14 @@ Added option to add a link as support for plugnedit.
 Added:<BR>
 Image Drop Shadows<BR>
 Image Borders <BR>
-Image Border raduis<BR>
+Image Border radius<BR>
 New image handling of resizing 
 the Height of the element.
 Added overflow visible to image box.
 Adjusted div to fit picture height.
 Added Preload Image function to get proper height on image
 Load.
-Changed transperncy from outer div to inner items.
+Changed transparency from outer div to inner items.
 Changed Onfocus event on text area to support firefox better.
 Set layer index of toolbars to support old IE blead thru of layer move hinges.
 Set toolbar for support under 435px screen height.
