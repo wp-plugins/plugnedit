@@ -262,9 +262,6 @@ Lesser Note: Editor upgrade of margins for wordpress.
 Suggestions of features: Email contact@plugnedit.com
 
 
-* Screen support for pages 1028 px (Larger Margins)
-* Screen Support for pages 380 px (Mini Margins)
-
 * Some features have not been turned on for the plugin due
 to the lack of understand of most web users.
 
