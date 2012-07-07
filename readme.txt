@@ -10,22 +10,21 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For Word
 == Description ==
 
 
-<strong><em>Drag & Drop Images And Text Boxes, Just Click And Move.</em><BR></strong>
-<em>Based on desktop publishing software instead of a HTML editor. </em>
+<strong><em>Drag & Drop Images And Text Boxes, Just Click And Move.</em></strong>
 
+<em>Based on desktop publishing software instead of a HTML editor. </em>
 
 Note: Plug N Edit Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
-
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
 <strong><em>Visual Editor Demo</em></strong></a>
-<BR>
-<BR>
+
 <strong>
-New Features: <BR>
+New Features:
+
 </strong>
 1. Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
-<BR>
+
 2. Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
 <BR>
 <a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>
