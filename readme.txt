@@ -14,7 +14,12 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For Word
 
 <em>Based on desktop publishing software instead of a HTML editor. </em>
 
+
+This plugin is useful for anyone that has a wordpress site, it is basically a easy to use drag and drop visual editor with advanced options.
+
+
 Note: Plug N Edit Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
+
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
 <strong><em>Visual Editor Demo</em></strong></a>
@@ -23,9 +28,9 @@ Note: Plug N Edit Drag And Drop Visual Editor does not modify your WordPress edi
 New Features:
 
 </strong>
-1. Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
+Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
 
-2. Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
+Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
 <BR>
 <a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>
 <BR>
@@ -126,6 +131,14 @@ Page Layout Like A Desktop Publishing Software.
 
 == Frequently Asked Questions ==
 
+
+= Is This Plugin Right For My Needs? =
+
+This plugin is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual editor with more options.
+
+= Is It Hard To Install And Use? =
+
+NO, it's plain and simply easy to install, nothing to configure or figure out.
 
 = I already have a plugin for the editor Installed, can I still use Plug N Edit? =
 
