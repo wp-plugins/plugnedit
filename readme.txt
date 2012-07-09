@@ -284,9 +284,11 @@ however it is sometimes tricky to use so we have not
 displayed this as a possible option (Give it a try if you wish).
 
 
-* PlugNedit can also build pages out side the WordPress Themes
-but we are not sure if we should offer this from the WordPress 
-Plugin Site.
+* PlugNedit can edit full wordpress pages that are based on a blank theme.
+This allows for full editing of blank pages. If this fits your needs you can
+email us for a blanked theme template.
+
+
 
 * If you are interested in some of these advanced features let us know. contact@plugnedit.com
 
