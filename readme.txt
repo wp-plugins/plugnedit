@@ -32,8 +32,8 @@ Load your WordPress template into the editor, The settings for loading a templat
 
 Full drag and drop page building, developers who wish to make WordPress sites fully drag and drop can contact us directly (Uses a blank WordPress Template.). 
 <BR>
-<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>
-<BR>
+<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a>  <a href="http://plugnedit.com/testwordpress/" target="_blank" >Post Result</a>
+
 
 <a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
 <strong><em>You Tube Video Example</em></strong></a>
