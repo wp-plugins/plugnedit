@@ -203,6 +203,7 @@ names address or emails phone, etc. We only store your blog address as your sess
 Plugnedit provides how to videos in the main menu, if you need specific help email Contact@plugnedit.com and we will assist you in operation of the program.
 
 
+
 == Upgrade Notice ==
 
 
@@ -266,6 +267,10 @@ Added option and javascript for maximum margins.
 
 Lesser Note: Editor upgrade of margins for wordpress.
 500 Pixel width for 800x600 and 550 Pixels for greater screen resolutions.
+Removed option for setting Div background image due to a bug with the 
+Firefox browser. sorry all! This option will not be available until they fix
+the bug in Firefox. If you have to have graidents you can contact us and we
+will let you know how to turn the feature on.
 
 
 == Features ==
