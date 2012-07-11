@@ -18,7 +18,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For Word
 This plugin is useful for anyone that has a WordPress site, it is basically a easy to use drag and drop visual editor with advanced options.
 
 
-Plug N Edit Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
+Plug & Edit Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. Plug N Edit Editor is located offsite at Plugnedit.com website in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
@@ -42,9 +42,9 @@ Full drag and drop page building, developers who wish to make WordPress sites fu
 [youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 <BR>
 
-PlugNedit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
+Plug & Edit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
-<BR><BR>PlugNedit Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page, and gives A second choice of which editor to use. We have Tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
+<BR><BR>The Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page, and gives A second choice of which editor to use. We have Tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
 
 
 
@@ -64,6 +64,7 @@ Drag and drop embeds.<BR>
 All Editor Items Click And Move.<BR>
 Load WordPress template inline editing.<BR>
 Load Personal templates for inline editing.<BR>
+Graphical user interface<BR>
 Text fonts. <BR>
 Text Size.<BR>
 Text color.<BR>
@@ -111,7 +112,7 @@ Get HTML<BR>
 Margin settings.<BR>
 Duplicate Styles.
 
-Blog editor pages load like a program file.
+Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
 </strong>
 
@@ -295,6 +296,8 @@ displayed this as a possible option (Give it a try if you wish).
 * PlugNedit can edit full wordpress pages that are based on a blank theme.
 This allows for full editing of blank pages. If this fits your needs you can
 email us for a blanked theme template.
+
+* Plugnedit Will be programed with predefined styles for easy one click formatting next.
 
 
 
