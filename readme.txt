@@ -1,6 +1,6 @@
 === Drag And Drop Visual Editor & Publisher===
 Contributors: cactikelly
-Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, portfolios, pnlugins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube, style
+Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, edit, profile, portfolios, plugins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, template, theme, wordpress, Embeds, javascript, AJAX, free, link, links, youtube, style
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.0
@@ -108,7 +108,7 @@ Redo step.<BR>
 Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
-Margin settings.
+Margin settings.<BR>
 Duplicate Styles.
 
 Blog editor pages load like a program file.
