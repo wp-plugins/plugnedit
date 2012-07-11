@@ -114,7 +114,11 @@ Duplicate Styles.
 
 Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
-</strong>
+<BR>
+
+</strong><em>
+"The earth is one of Gods many fishbowls." P&E Author.
+</em><BR>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Visual Editor Website</a>
 
@@ -138,6 +142,10 @@ Page Layout Like A Desktop Publishing Software.
 = Is This Plugin Right For My Needs? =
 
 This plugin is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual editor with more options.
+
+= What do I really need to know to make good use of the program? =
+
+The editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
 
 = Is It Hard To Install And Use? =
 
