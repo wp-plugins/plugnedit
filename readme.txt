@@ -1,6 +1,6 @@
 === Drag And Drop Visual Editor & Publisher===
 Contributors: cactikelly
-Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, portfolios, pnlugins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube
+Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, portfolios, pnlugins, blog editor, page editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, Wordpress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Embeds, javascript, AJAX, free, link, links, youtube, style
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.0
@@ -109,6 +109,7 @@ Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
 Margin settings.
+Duplicate Styles.
 
 Blog editor pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
@@ -271,8 +272,9 @@ Lesser Note: Editor upgrade of margins for wordpress.
 Removed option for setting Div background image due to a bug with the 
 Firefox browser. sorry all! This option will not be available until they fix
 the bug in Firefox. If you have to have graidents you can contact us and we
-will let you know how to turn the feature on.
+will let you know how to turn the feature on. 
 
+New Style Duplication so you can duplicate the look of different items.
 
 == Features ==
 
