@@ -256,6 +256,7 @@ Added a add image by URL Button.
 New Inline Get HTML, Page is now processed in Iframe and the Displayed.
 Added option to add a link as support for plugnedit.
 
+
 Added:<BR>
 Image Drop Shadows<BR>
 Image Borders <BR>
@@ -284,6 +285,8 @@ the bug in Firefox. If you have to have graidents you can contact us and we
 will let you know how to turn the feature on. 
 
 New Style Duplication so you can duplicate the look of different items.
+Updated layer palettes so elements highlight like side toolbar.
+Fixed link update, and added option to allow link to be mailto.
 
 == Features ==
 
