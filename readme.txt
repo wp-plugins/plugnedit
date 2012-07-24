@@ -110,7 +110,7 @@ Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
 Margin settings.<BR>
-Duplicate Styles.
+Duplicate styles.
 
 Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
