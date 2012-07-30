@@ -44,7 +44,7 @@ Full drag and drop page building, developers who wish to make WordPress sites fu
 
 Plug & Edit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
-<BR><BR>The Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page, and gives A second choice of which editor to use. We have Tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
+<BR><BR>The Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
 
 
 
