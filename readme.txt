@@ -15,7 +15,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For Word
 <em>Based on desktop publishing software instead of a HTML editor. </em>
 
 
-This plugin is useful for anyone that has a WordPress site, it is basically a easy to use drag and drop visual editor with advanced options.
+This plugin is useful for anyone that has a WordPress site, it's a simple to use drag and drop visual editor with advanced options.
 
 
 Plug & Edit Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
