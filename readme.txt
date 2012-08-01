@@ -308,6 +308,9 @@ displayed this as a possible option (Give it a try if you wish).
 This allows for full editing of blank pages. If this fits your needs you can
 email us for a blanked theme template.
 
+PlugNedit is looking for developers to build Themes that use the drag and drop editor.
+If you would like to partner and share linking credit contact us.
+
 * Plugnedit Will be programed with predefined styles for easy one click formatting next.
 
 
