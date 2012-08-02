@@ -116,9 +116,7 @@ Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
 <BR>
 
-</strong><em>
-"The earth is one of Gods many fishbowls." P&E Author.
-</em><BR>
+</strong>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Visual Editor Website</a>
 
@@ -158,7 +156,7 @@ Yes! Plug N Edit works independent of your wordpress editor and will not conflic
 = Why Use Plug N Edit? =
 
 We based our web software on a Desktop Publishing design
-not html. What better type of editor could there be for 
+not html editor. What better type of editor could there be for 
 WordPress.
 
 = What is different from other editor plugins? =
