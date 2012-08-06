@@ -303,7 +303,7 @@ however it is sometimes tricky to use so we have not
 displayed this as a possible option (Give it a try if you wish).
 
 
-* PlugNedit can edit full wordpress pages that are based on a blank theme.
+* PlugNedit can edit full WordPress pages that are based on a blank theme.
 This allows for full editing of blank pages. If this fits your needs you can
 email us for a blanked theme template.
 
