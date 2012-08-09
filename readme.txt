@@ -110,6 +110,7 @@ Auto backup.<BR>
 Inline editing.<BR>
 Get HTML<BR>
 Margin settings.<BR>
+Page background color<BR>
 Duplicate styles.
 
 
