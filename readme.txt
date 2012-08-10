@@ -288,6 +288,8 @@ New Style Duplication so you can duplicate the look of different items.
 Updated layer palettes so elements highlight like side toolbar.
 Fixed link update, and added option to allow link to be mailto.
 
+New option for setting background color.
+
 == Features ==
 
 
