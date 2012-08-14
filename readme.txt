@@ -10,7 +10,7 @@ Drag And Drop Visual Editor, WYSIWYG Web Page Editor, Desktop Publisher For Word
 == Description ==
 
 
-<strong><em>Drag & Drop Images And Text Boxes, Just Click And Move.</em></strong>
+<strong><em>Advanced Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 <em>Based on desktop publishing software instead of a HTML editor. </em>
 
