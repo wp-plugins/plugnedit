@@ -53,7 +53,7 @@ Plug & Edit Drag And Drop Visual Editor and blog page builder for WordPress is a
 
 
 <strong>
-Visual Editor Features:<BR>
+HTML Visual Editor Features:<BR>
 
 
 Drag and drop images.<BR>
