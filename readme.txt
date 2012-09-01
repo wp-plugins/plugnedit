@@ -110,7 +110,8 @@ Inline editing.<BR>
 Get HTML<BR>
 Margin settings.<BR>
 Page background color<BR>
-Duplicate styles.
+Duplicate styles.<BR>
+Adjust Margin Width<BR>
 
 
 Loads pages load like a program file.
@@ -281,7 +282,8 @@ Lesser Note: Editor upgrade of margins for wordpress.
 Removed option for setting Div background image due to a bug with the 
 Firefox browser. sorry all! This option will not be available until they fix
 the bug in Firefox. If you have to have graidents you can contact us and we
-will let you know how to turn the feature on. 
+will let you know how to turn the feature on. New Margin Width in options.
+Added the option to add Hex colors in the color picker.
 
 New Style Duplication so you can duplicate the look of different items.
 Updated layer palettes so elements highlight like side toolbar.
