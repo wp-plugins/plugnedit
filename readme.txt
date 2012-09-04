@@ -311,7 +311,7 @@ displayed this as a possible option (Give it a try if you wish).
 
 * PlugNedit can edit full WordPress pages that are based on a blank theme.
 This allows for full editing of blank pages. If this fits your needs you can
-email us for a blanked theme template.
+email us for directions.
 
 PlugNedit is looking for developers to build Themes that use the drag and drop editor.
 If you would like to partner and share linking credit contact us.
