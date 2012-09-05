@@ -318,6 +318,8 @@ If you would like to partner and share linking credit contact us.
 
 * Plugnedit Will be programed with predefined styles for easy one click formatting next.
 
+* If you have suggestions or a special need please contact us with your idea or need.
+
 * If you are interested in some of these advanced features let us know. contact@plugnedit.com
 
 
