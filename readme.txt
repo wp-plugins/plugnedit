@@ -13,7 +13,7 @@ HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPr
 <strong><em>Advanced Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
-This plugin is useful for anyone that has a WordPress site, it's a simple to use drag and drop visual editor with advanced options.
+This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress Sites.), it's a simple to use drag and drop visual editor with advanced options.
 
 
 Plug & Edit Advanced Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
@@ -119,6 +119,8 @@ Page Layout Like A Desktop Publishing Software.
 <BR>
 
 </strong>
+
+Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Visual Editor Website</a>
 
