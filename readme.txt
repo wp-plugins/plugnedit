@@ -318,7 +318,7 @@ email us for directions.
 PlugNedit is looking for developers to build Themes that use the drag and drop editor.
 If you would like to partner and share linking credit contact us.
 
-* Plugnedit Will be programed with predefined styles for easy one click formatting next. Programming for links inside content.
+* Plugnedit Will be programed with predefined styles for easy one click formatting next. Programming for links inside content. We will also be adding on the option to build full pages for special needs.
 
 * If you have suggestions or a special need please contact us with your idea or need.
 
