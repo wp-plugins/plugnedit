@@ -294,6 +294,8 @@ Fixed link update, and added option to allow link to be mailto.
 New option for setting background color, this does not change the color of your 
 page built with P&E, it is just meant to for matching the color of your website.
 
+New all galleries for all pictures to display.
+
 
 == Features ==
 
