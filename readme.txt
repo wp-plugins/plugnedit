@@ -22,18 +22,6 @@ Plug & Edit Advanced Drag And Drop Visual Editor does not modify your WordPress 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
 <strong><em>Visual Editor Demo</em></strong></a>
 
-<strong>
-New Features:</strong>
-
-Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
-
-<strong>Theme Programmers:</strong>
-
-If you would like to build a theme with the template full drag and drop and have special needs you may contact us directly.
- 
-<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a> <BR>
-
-
 
 <a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
 <strong><em>You Tube Video Example</em></strong></a>
@@ -325,6 +313,20 @@ If you would like to partner and share linking credit contact us.
 * If you have suggestions or a special need please contact us with your idea or need.
 
 * If you are interested in some of these advanced features let us know. contact@plugnedit.com
+
+
+<strong>
+New Features:</strong>
+
+Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
+
+<strong>Theme Programmers:</strong>
+
+If you would like to build a theme with the template full drag and drop and have special needs you may contact us directly.
+ 
+<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a> <BR>
+
+
 
 
 
