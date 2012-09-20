@@ -16,7 +16,7 @@ HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPr
 This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use drag and drop visual editor with advanced options.
 
 
-Plug & Edit Advanced Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
+Plug & Edit HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
@@ -29,7 +29,7 @@ Plug & Edit Advanced Drag And Drop Visual Editor does not modify your WordPress 
 [youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 <BR>
 
-Plug & Edit Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
+Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
 <BR><BR>The Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
 
