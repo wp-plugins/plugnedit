@@ -1,26 +1,26 @@
-=== Drag & Drop HTML Visual Editor PlugNEdit ===
+=== WYSIWYG Editor. Drag & Drop HTML Visual Editor. ===
 Contributors: cactikelly
 Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.0
 Tested up to: 3.4.1
 Stable tag: 2.0
 
-HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
+WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
 
 == Description ==
 
 
-<strong><em>Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
+<strong><em>WYSIWYG Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
 This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use drag and drop visual editor with advanced options.
 
 
-Plug & Edit HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
+Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
-<strong><em>Visual Editor Demo</em></strong></a>
+<strong><em>WYSIWYG Visual Editor Demo</em></strong></a>
 
 
 <a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
