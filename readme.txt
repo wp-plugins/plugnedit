@@ -10,7 +10,7 @@ WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher Fo
 == Description ==
 
 
-<strong><em>WYSIWYG Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
+<strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
 This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use drag and drop visual editor with advanced options.
