@@ -104,7 +104,7 @@ Adjust Margin Width<BR>
 
 Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
-HTML Visual Editor Based On Floating Layers.
+WYSIWYG HTML Visual Editor Based On Floating Layers.
 <BR>
 
 </strong>
@@ -136,7 +136,7 @@ This plugin is useful for anyone that has a wordpress site, it is basically just
 
 = What do I really need to know to make good use of the program? =
 
-The editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
+The WYSIWYG editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
 
 = Is It Hard To Install And Use? =
 
@@ -171,7 +171,7 @@ Plug N Edit is a different choice editor with many features, when you want somet
 
 = What is different about Plug N Edit? =
 
-We based our editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
+We based our WYSIWYG editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
 
 
 = Is It Free? =
@@ -293,7 +293,7 @@ New Link To Front Page.
 Suggestions of features: Email contact@plugnedit.com
 
 
-* Some features have not been turned on for the plugin due
+* Some WYSIWYG features have not been turned on for the plugin due
 to the lack of understand of most web users.
 
 * PlugNedit can do Angles and we are working on SVG items,
