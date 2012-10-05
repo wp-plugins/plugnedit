@@ -105,7 +105,7 @@ Adjust Margin Width<BR>
 Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software.
 WYSIWYG HTML Visual Editor Based On Floating Layers.
-PlugNedit is publish a full page editor that will edit pages outside of Your WordPress Template.
+PlugNedit WYSIWYG Editor is publish a full page editor that will edit pages outside of Your WordPress Template for those who need a blank page.
 <BR>
 
 </strong>
