@@ -13,7 +13,7 @@ WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher Fo
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
-This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use drag and drop visual editor with advanced options.
+This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual editor with advanced options.
 
 
 Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
