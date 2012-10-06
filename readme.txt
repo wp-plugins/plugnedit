@@ -1,9 +1,9 @@
-=== WYSIWYG Editor. Drag & Drop HTML Visual Editor. ===
+=== WYSIWYG Editor. Drag N Drop HTML Visual Editor And Web Page Builder. ===
 Contributors: cactikelly
 Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
-Requires at least: 3.0
+Requires at least: 3.4
 Tested up to: 3.4.1
-Stable tag: 2.0
+Stable tag: 3.0
 
 WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
 
@@ -13,7 +13,7 @@ WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher Fo
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
-This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual editor with advanced options.
+This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual editor with advanced options. Brand new section for building web pages outside your wordpress template.
 
 
 Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
@@ -210,9 +210,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 == Upgrade Notice ==
 
 
-= 2.0 =
+= 3.0 =
 
-Added option and javascript for maximum margins.
+Allows for full pages to be built outside your wordpress template.
 
 
 == Changelog == 
@@ -287,6 +287,9 @@ page built with P&E, it is just meant to for matching the color of your website.
 New all galleries for all pictures to display.
 New Link To Front Page.
 
+= 3.0 =
+
+New editor section for building pages outside your wordpress template.
 
 == Features ==
 
