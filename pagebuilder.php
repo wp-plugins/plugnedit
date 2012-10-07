@@ -113,7 +113,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <h2>Plug N Edit</h2>
 <h3 style="color:red">Read First:</h2>
 <h3>For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. </h3>
-<h3>This section of PlugNedit is for creating blank pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.</h3>
+<h3>This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.</h3>
 <h4>PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us. </h4>
 <h4>This section is a new V1.0, the page background colors and styles options 
   are unavailable, we will have updates coming soon, HTML files are saved in your wordpress root in folder PNEHTML. </h4>
