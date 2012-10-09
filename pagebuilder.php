@@ -5,7 +5,7 @@ add_menu_page('Plug N Edit Page Builder', 'PNE Page Builder', 5, __FILE__, 'PnEP
 
 function PnEPageBuilder() {
 if(isset($_POST['PNEFileName'])) {
-$PNEcontent = '<!DOCTYPE html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
+$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 if (file_exists($PNEFile)){
