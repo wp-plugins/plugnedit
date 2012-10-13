@@ -4,8 +4,12 @@ add_menu_page('Plug N Edit Page Builder', 'PNE Page Builder', 5, __FILE__, 'PnEP
 }
 
 function PnEPageBuilder() {
+
+if( isset( $_POST['PlugneditBGColor']) &&  strlen( $_POST['PlugneditBGColor'])){$pbgcolor=$_POST['PlugneditBGColor'];} else {$pbgcolor="#ffffff";}
+
 if(isset($_POST['PNEFileName'])) {
-$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
+
+$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body style="background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 if (file_exists($PNEFile)){
@@ -17,6 +21,22 @@ fwrite($handle, $PNEcontent);
 }
 ?>
 <script language="JavaScript" type="text/javascript">
+
+function colorToHex(color) {
+    if (color.substr(0, 1) === '#') {
+        return color;
+    }
+    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
+    
+    var red = parseInt(digits[2]);
+    var green = parseInt(digits[3]);
+    var blue = parseInt(digits[4]);
+    
+    var rgb = blue | (green << 8) | (red << 16);
+    return digits[1] + '#' + rgb.toString(16);
+};
+
+
 SetLoadPNE=1;
 SetLoadPNE=1;
 
@@ -53,18 +73,24 @@ var metas = innerDoc.getElementsByTagName('meta');
         for (var x=0,y=metas.length; x<y; x++) {
             if (metas[x].name.toLowerCase() == "description") {
                 description += metas[x].content;
-            }
+            } 
         }
     }
 	document.getElementById('PNEKeyWords').value=keywords;
-	document.getElementById('PNEDescription').value=description;
+	document.getElementById('PNEDescription').value=description; 
+<?php if(!isset( $_POST['PlugneditBGColor']) &&  !strlen($_POST['PlugneditBGColor'])){ ?>
+document.getElementById('PlugneditBGColor').value=colorToHex(innerDoc.body.style.backgroundColor)
+<?php  } ?>
+
 if (SetLoadPNE2!=0){	
 document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 }
 } else {
+document.getElementById('PNEditorBgColor').value=colorToHex(innerDoc.body.style.backgroundColor)
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
+
 document.forms["PNEPageBuilder"].submit();
 }
 } catch(err){}
@@ -115,8 +141,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <h3>For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. </h3>
 <h3>This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.</h3>
 <h4>PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us. </h4>
-<h4>This section is a new V1.0, the page background colors and styles options 
-  are unavailable, we will have updates coming soon, HTML files are saved in your wordpress root in folder PNEHTML. </h4>
+<h4>HTML files are saved in your wordpress root in folder PNEHTML. </h4>
 <h4>Adding HTML or editing file by hand may make it non-editable in Plug N edit. 
   Because we load links to media pages may take a moment to load. </h4>
 <li><a href="http://plugNEdit.com" target="_blank"><h3>Plug & Edit Home Page</h3></a></li>
@@ -130,7 +155,7 @@ echo '<TR><td style="font-size:16px">';
 echo str_ireplace('.htm','',str_ireplace($dirnamereplace,' ',$value));
 echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B">';
 echo '<a class="button" href="';
-echo $value; 
+echo $value.'?k='.rand(10000,10000000); 
 echo '" target="_blank">Preview Page</a>';
 echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B"><input type="text" value="';
 echo esc_attr(get_option('home'));
@@ -167,7 +192,9 @@ return false;
 <input type="hidden" name="marginwidth" value="1200">
 <input type="hidden" name="PluginType" value="StandAlone">
 <input type="hidden" name="DisplayLogo" value="0">
+<input type="hidden" id="PNEditorBgColor" name="PNEditorBgColor" value="">
 <input type="hidden" name="PNEPluginSection" value="WP_PageBuilder">
+
 <input name="marginheight" id="marginheight" type="hidden" value="20000">
 <textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
 <?php 
@@ -226,10 +253,10 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 <span style="font-size:16px;font-weight:bold;color:#21759B">Keywords:</span><span style="font-size:12px;font-weight:bold"> (Example: Rockets, Acme, Best Rockets ).</span> <BR>
 <input type="text" Id="PNEKeyWords" name="PNEKeyWords" value="" maxlength="300" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR><BR>
 <input type="hidden" name="PNEUpdate" value="1">
+<input type="hidden" id="PlugneditBGColor" name="PlugneditBGColor" value="<?php echo $pbgcolor; ?>" >
 <span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted">
-
 
 <textarea  cols="1" rows="1" style="visibility:hidden;display:none"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 </form></div>
