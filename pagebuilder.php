@@ -23,9 +23,11 @@ fwrite($handle, $PNEcontent);
 <script language="JavaScript" type="text/javascript">
 
 function colorToHex(color) {
+ 
     if (color.substr(0, 1) === '#') {
         return color;
     }
+	try {
     var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
     
     var red = parseInt(digits[2]);
@@ -34,6 +36,7 @@ function colorToHex(color) {
     
     var rgb = blue | (green << 8) | (red << 16);
     return digits[1] + '#' + rgb.toString(16);
+	} catch(err){}
 };
 
 
@@ -50,7 +53,7 @@ SetLoadPNE2=PNEType2;
 
 function frameloaded()
 {
-try {
+//try {
 var iframe = document.getElementById("PNELoadpage");
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 var PlugNeditContentframe=innerDoc.getElementById('PNEPageBuilderContent').innerHTML;
@@ -93,7 +96,7 @@ document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 
 document.forms["PNEPageBuilder"].submit();
 }
-} catch(err){}
+//} catch(err){}
 }
 
 
