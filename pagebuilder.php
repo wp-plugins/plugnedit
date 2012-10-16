@@ -147,7 +147,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <h4>HTML files are saved in your wordpress root in folder PNEHTML. </h4>
 <h4>Adding HTML or editing file by hand may make it non-editable in Plug N edit. 
   Because we load links to media pages may take a moment to load. </h4>
-<li><a href="http://plugNEdit.com" target="_blank"><h3>Plug & Edit Home Page</h3></a></li>
+<a href="http://plugNEdit.com" target="_blank"><h3>Plug & Edit Home Page</h3></a>
 <table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 $arrayp = explode(';', $plugneditHTMLfiles); 
