@@ -129,7 +129,7 @@ if(alertp!='') {alert(alertp);return false;};
 
 <?php
 $dirname = '../PNEHTML';
-if (!file_exists($dirname)) mkdir($dirname);
+if (!file_exists($dirname)) wp_mkdir_p($dirname);
 $dir = "../PNEHTML/*";
 $dirnamereplace = '../PNEHTML/';
 foreach(array_slice(glob($dir),0,20) as $file)  
