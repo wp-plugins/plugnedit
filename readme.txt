@@ -294,7 +294,7 @@ New editor section for building pages outside your wordpress template.
 
 Added back ground color to New editor section for building pages outside your wordpress template.
 
-= 3.2 =
+= 3.3 =
 
 Changed mkdir to wordpress wp_mkdir.
 
