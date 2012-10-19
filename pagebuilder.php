@@ -53,7 +53,7 @@ SetLoadPNE2=PNEType2;
 
 function frameloaded()
 {
-//try {
+try {
 var iframe = document.getElementById("PNELoadpage");
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 var PlugNeditContentframe=innerDoc.getElementById('PNEPageBuilderContent').innerHTML;
@@ -96,7 +96,7 @@ document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 
 document.forms["PNEPageBuilder"].submit();
 }
-//} catch(err){}
+} catch(err){}
 }
 
 
