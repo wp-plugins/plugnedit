@@ -7,9 +7,11 @@ function PnEPageBuilder() {
 
 if( isset( $_POST['PlugneditBGColor']) &&  strlen( $_POST['PlugneditBGColor'])){$pbgcolor=$_POST['PlugneditBGColor'];} else {$pbgcolor="#ffffff";}
 
+if( isset( $_POST['PlugneditEditorMargin']) &&  strlen( $_POST['PlugneditEditorMargin'])){$pnemarginwidth=$_POST['PlugneditEditorMargin'];} else {$pnemarginwidth="755";}
+
 if(isset($_POST['PNEFileName'])) {
 
-$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body style="background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
+$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body style="min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 if (file_exists($PNEFile)){
@@ -41,7 +43,8 @@ function colorToHex(color) {
 
 
 SetLoadPNE=1;
-SetLoadPNE=1;
+
+
 
 function Loadpne(src,filename,PNEtype, PNEType2){
 document.getElementById('PNELoadpage').src =src;
@@ -49,8 +52,10 @@ document.getElementById('PNEFileName').value=filename;
 document.getElementById('PlugNeditFileName').value=src;
 SetLoadPNE=PNEtype;
 SetLoadPNE2=PNEType2;
+PNEFirstEdit=1
 }
 
+PNEFirstEdit=0
 function frameloaded()
 {
 try {
@@ -85,6 +90,13 @@ var metas = innerDoc.getElementsByTagName('meta');
 document.getElementById('PlugneditBGColor').value=colorToHex(innerDoc.body.style.backgroundColor)
 <?php  } ?>
 
+if (PNEFirstEdit!=0){
+if (!isNaN(parseInt(innerDoc.body.style.minWidth))){
+document.getElementById('marginwidth').value=parseInt(innerDoc.body.style.minWidth)
+}
+}
+
+
 if (SetLoadPNE2!=0){	
 document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
@@ -93,7 +105,9 @@ document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 document.getElementById('PNEditorBgColor').value=colorToHex(innerDoc.body.style.backgroundColor)
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
-
+if (!isNaN(parseInt(innerDoc.body.style.minWidth))){
+document.getElementById('marginwidth').value=parseInt(innerDoc.body.style.minWidth)
+}
 document.forms["PNEPageBuilder"].submit();
 }
 } catch(err){}
@@ -192,7 +206,7 @@ return false;
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
-<input type="hidden" name="marginwidth" value="1200">
+<input type="hidden" id="marginwidth" name="marginwidth" value="755">
 <input type="hidden" name="PluginType" value="StandAlone">
 <input type="hidden" name="DisplayLogo" value="0">
 <input type="hidden" id="PNEditorBgColor" name="PNEditorBgColor" value="">
@@ -257,6 +271,8 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 <input type="text" Id="PNEKeyWords" name="PNEKeyWords" value="" maxlength="300" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR><BR>
 <input type="hidden" name="PNEUpdate" value="1">
 <input type="hidden" id="PlugneditBGColor" name="PlugneditBGColor" value="<?php echo $pbgcolor; ?>" >
+<input type="hidden" id="PlugneditEditorMargin" name="PlugneditEditorMargin" value="<?php echo $pnemarginwidth; ?>" >
+
 <span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted">
