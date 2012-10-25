@@ -47,7 +47,7 @@ SetLoadPNE=1;
 
 
 function Loadpne(src,filename,PNEtype, PNEType2){
-document.getElementById('PNELoadpage').src =src;
+document.getElementById('PNELoadpage').src =src+'?a='+Math.floor((Math.random()*100000)+1);
 document.getElementById('PNEFileName').value=filename;
 document.getElementById('PlugNeditFileName').value=src;
 SetLoadPNE=PNEtype;
