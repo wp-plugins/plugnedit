@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.0
 Tested up to: 3.4.2
-Stable tag: 3.5
+Stable tag: 3.6
 
 WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
 
@@ -210,9 +210,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 == Upgrade Notice ==
 
 
-= 3.5 =
+= 3.6 =
 
-Added min-width to body, allows for margins to be set to different widths.
+Added overflow hidden to iframe in page builder and set z-index to the back.
 
 == Changelog == 
  
@@ -307,6 +307,11 @@ Added minor javascript catch for blank iframe.
 Added min-width to body, allows for margins to be set to different widths.
 
 Editor: Added Rules And Guides.
+
+
+= 3.6 =
+
+Added overflow hidden to iframe in page builder and set z-index to back.
 
 == Features ==
 

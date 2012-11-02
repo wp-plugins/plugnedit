@@ -161,7 +161,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <h4>HTML files are saved in your wordpress root in folder PNEHTML. </h4>
 <h4>Adding HTML or editing file by hand may make it non-editable in Plug N edit. 
   Because we load links to media pages may take a moment to load. </h4>
-<a href="http://plugNEdit.com" target="_blank"><h3>Plug & Edit Home Page</h3></a>
+<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a>
 <table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 $arrayp = explode(';', $plugneditHTMLfiles); 
@@ -257,7 +257,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 <BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.forms['PNEPageBuilder'].submit()" >  
 
 
-<iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:400px;visibility:hidden;width:300px;height:300px;z-index:10000000">
+<iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
 </iframe>
 <div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:400px;z-index:10000;border-color:blue;border-width:2px;border:solid">
 <BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets):</span> <BR>
