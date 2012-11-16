@@ -14,6 +14,7 @@ if(isset($_POST['PNEFileName'])) {
 $PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
+
 if (file_exists($PNEFile)){
 unlink($PNEFile);}
 if ($_POST['PNEDelete']!=1){
@@ -63,6 +64,7 @@ var iframe = document.getElementById("PNELoadpage");
 var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
 var PlugNeditContentframe=innerDoc.getElementById('PNEPageBuilderContent').innerHTML;
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
+if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;}
 if (SetLoadPNE == 1){
 document.getElementById('PNEMETA').style.visibility='visible';
 document.getElementById('PNETitle').value=innerDoc.title;
@@ -155,13 +157,19 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <div class="wrap">
 <h2>Plug N Edit</h2>
 <h3 style="color:red">Read First:</h2>
-<h3>For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. </h3>
-<h3>This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.</h3>
-<h4>PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us. </h4>
-<h4>HTML files are saved in your wordpress root in folder PNEHTML. </h4>
-<h4>Adding HTML or editing file by hand may make it non-editable in Plug N edit. 
-  Because we load links to media pages may take a moment to load. </h4>
-<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a>
+<span style="color:#21759B;font-size12px"><BR>
+Do not use PlugNedit for any type of sensitive or personal information (General 
+Public Pages Only). <BR>
+</span>
+<span style="color:gray;font-size12px">
+For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. <BR>
+This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.<BR>
+PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us. <BR>
+HTML files are saved in your wordpress root in folder PNEHTML. Plugnedit writes 
+a bypass file for Internet Explorer, temp file is written to PNEHTML/PNETempContent.txt 
+<BR>
+Adding HTML or editing file by hand may make it non-editable in Plug N edit. Because we load links to media pages may take a moment to load. </span><BR><BR>
+<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" target="_blank" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 $arrayp = explode(';', $plugneditHTMLfiles); 
@@ -204,6 +212,9 @@ return false;
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
+<!--[if IE]>
+<input type="hidden" id="ByPassFiltering" name="ByPassFiltering"  value="">
+<![endif] -->
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
 <input type="hidden" id="marginwidth" name="marginwidth" value="755">
@@ -213,7 +224,9 @@ return false;
 <input type="hidden" name="PNEPluginSection" value="WP_PageBuilder">
 
 <input name="marginheight" id="marginheight" type="hidden" value="20000">
+
 <textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
+
 <?php 
 
 if (esc_attr(get_option('upload_path'))==''){
@@ -254,7 +267,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 ?>
 </textarea>
 </form>
-<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.forms['PNEPageBuilder'].submit()" >  
+<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.forms['PNEPageBuilder'].submit()" >  
 
 
 <iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
