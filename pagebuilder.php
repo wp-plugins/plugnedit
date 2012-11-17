@@ -169,7 +169,7 @@ HTML files are saved in your wordpress root in folder PNEHTML. Plugnedit writes
 a bypass file for Internet Explorer, temp file is written to PNEHTML/PNETempContent.txt 
 <BR>
 Adding HTML or editing file by hand may make it non-editable in Plug N edit. Because we load links to media pages may take a moment to load. </span><BR><BR>
-<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" target="_blank" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
+<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 $arrayp = explode(';', $plugneditHTMLfiles); 
