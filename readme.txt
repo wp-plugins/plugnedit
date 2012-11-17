@@ -19,7 +19,7 @@ This plugin is useful for anyone that has a WordPress site or stand alone plugin
 Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
 
 
-<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1" target="_blank" >
+<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
 <strong><em>WYSIWYG Visual Editor Demo</em></strong></a>
 
 
