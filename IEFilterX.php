@@ -6,14 +6,19 @@
 <?php if (is_admin() ) { ?>
 
 
+
 <form name="PNEPageBuilder" method="post" action="<?php echo $_POST['PnePostingPage'] ?>">
 
 
 <?php
 if( isset( $_POST['FilterBypass']) &&  strlen( $_POST['FilterBypass'])){
 $PNEFILETEMP="../PNEHTML/PNETempContent.txt";
+
 ?>
-<textarea id="plugneditcontent" cols="10" rows="10" style="visibility:hidden;display:none" name="plugneditcontent"><?php readfile($PNEFILETEMP) ?></textarea>
+
+<textarea id="plugneditcontent" cols="10" rows="10" style="visibility:hidden;display:none" name="plugneditcontent"><?php echo file_get_contents($PNEFILETEMP) ?></textarea>
+
+
 <?php
 
 unlink($PNEFILETEMP);
@@ -43,12 +48,18 @@ if( isset( $_POST['PlugNeditFileName']) &&  strlen( $_POST['PlugNeditFileName'])
 <input type="hidden" id="pnefilename" name="PlugNeditFileName" value="<?php echo $_POST['PlugNeditFileName'] ?>">
 <?php }  ?>
 
+
+Due To Internet Explorers Filters You Will Need To Manual Submit This Content To Verify It.<BR>
+<BR>
+<input type="Submit" name="Submit Content" value="Submit">
 </form>
 
-
+<?php
+if( isset( $_POST['FilterBypass']) &&  strlen( $_POST['FilterBypass'])){ ?>
 <script language="JavaScript">
 document.forms['PNEPageBuilder'].submit()
 </script>
+<?php } ?>
 </body>
 </html>
 <?php } 
