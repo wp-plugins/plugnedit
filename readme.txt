@@ -23,10 +23,10 @@ Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPr
 <strong><em>WYSIWYG Visual Editor Demo</em></strong></a>
 
 
-<a href="http://www.youtube.com/watch?v=gi6UF4hHMoA" target="_blank" >
-<strong><em>You Tube Video Example</em></strong></a>
 
-[youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
+
+[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
+
 <BR>
 
 Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
@@ -35,8 +35,8 @@ Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress
 
 
 
-[youtube http://www.youtube.com/watch?v=Ms90fIN6Tgs]
 
+[youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
 
 
 
