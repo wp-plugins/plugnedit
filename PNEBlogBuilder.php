@@ -7,12 +7,19 @@ function do_pPlugneditStyleFooter(){?>
 try {
 var ElePNE=document.getElementById('ICG1ADDONS-Spacer')
 if(ElePNE){
+var tempStyleminwidth=parseInt(document.body.style.minWidth)
+if (isNaN(tempStyleminwidth) || tempStyleminwidth < 800 || tempStyleminwidth =='' ){
 if (parseInt(ElePNE.style.width) > 500){
 document.body.style.minWidth=800+'px'
 } else{
 document.body.style.minWidth=710+'px'}
-}} catch(err){
-document.body.style.minWidth=710+'px'}
+}
+}
+} catch(err){
+}
+
+
+
 </script>
 <?php
 }
