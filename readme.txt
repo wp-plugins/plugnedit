@@ -20,7 +20,7 @@ Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPr
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
-<strong><em>WYSIWYG Visual Editor Demo</em></strong></a>
+<strong><em>Visual Editor Demo</em></strong></a>
 
 
 
