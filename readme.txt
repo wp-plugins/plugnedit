@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.4.2
-Stable tag: 4.1.2
+Stable tag: 4.1.3
 
 WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
 
@@ -210,81 +210,37 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 == Upgrade Notice ==
 
 
-= 4.1.2 =
+= 4.1.3 =
 
-Import page links update
+Upgrade import page links update. New cancel button on page builder.
 
 == Changelog == 
  
 = 1.1 = 
 
 * Changed javascript to support older versions. 
-* Lesser NOTE: Plugnedit WYSIWYG Visual Editor Post Upgrades! Removed span tags from use in plugnedit due to wordpress changing HTMl Added Drop Shadows and more fonts. 
+
 
 = 1.2 = 
 
 * Added PlugNEdit To Pages Editor. 
 * Javascript disable for the WYSIWYG visual editor when using PlugNedit, keeps wordpress from changing html. 
-* Lesser NOTE: Plugnedit Visual Editor Post Upgrades! Added Italic and Bold support, also added auto backups of work performed. Better div alignment (more art then science). 
+
 
 = 1.3 = 
 
 * Javascript support for the header to support handheld's, new version control for future backwards compatibility. 
 
-* Lesser NOTE (WYSIWYG Editor Upgrades And Fixes): Plugnedit Visual Editor Post Upgrades! Added LTR / RTL at the table level to support English / Arabic and other RTL languages. Better div alignment (more art then science) ooops more  (science then art). Added left hand side docked toolbars and Updated Html to comply W3C rules for HTML 5 validation. New Items, Linked Layers for drop shadows. Screen resolution support for Below 1024 Screen Width. Adjusted tables to support IE to fill div. Switched to overflow Visible on div text element for ease of use. Added text and box shadows, added padding, added Box radius. Adjusted Inner Div height to allow for drop shadows. Added 5 color pickers for easy picking of colors (text color, background color, border color, drop shadow color, box shadow), New scrolling to adjest for screen height below 500px. Added inline template editing for screen resolution above 1280px. Updated for Inline template editing resolutions below 1280px. Fixed browser resize problems. Fixed IE6 Bug of page resize not displaying the margins correctly. Fixed text select problem with firefox. Added line height and letter spacing options.fixed another Ie6 Bug for browser load at 800x600 screen res (hoping this is the last display bug? If anyone finds one email me). Updated picture resize to support themes that set auto widths in css. w3c compliant check complete. Updated. Auto updates are now a option when loading page. Fixed off center autobackups, Fixed auto backup delete problem. Added template support to standalone plugin. Fixed 20px offsite ie6, fixed IE 8 and below bug of move handles under margin layer.
 
 
 = 1.3.1 = 
 
 * New CSS style setting min-width to body to support custom WordPress Themes.
 
-* Lesser Not (Editor Upgrades And Fixes)
-
-Added Remove Template button to options menu.
-Added Google Notranslate class to editor window
-so the page can be translated and editor function.
-Added a add image by URL Button.
-New Inline Get HTML, Page is now processed in Iframe and the Displayed.
-Added option to add a link as support for plugnedit.
-
-
-Added:<BR>
-Image Drop Shadows<BR>
-Image Borders <BR>
-Image Border radius<BR>
-New image handling of resizing 
-the Height of the element.
-Added overflow visible to image box.
-Adjusted div to fit picture height.
-Added Preload Image function to get proper height on image
-Load.
-Changed transparency from outer div to inner items.
-Changed Onfocus event on text area to support firefox better.
-Set layer index of toolbars to support old IE blead thru of layer move hinges.
-Set toolbar for support under 435px screen height.
-Fixed locking of the div height when auto height set text layer.
 
 = 2.0 =
 
 Added option and javascript for maximum margins.
-
-Lesser Note: Editor upgrade of margins for wordpress.
-500 Pixel width for 800x600 and 550 Pixels for greater screen resolutions.
-Removed option for setting Div background image due to a bug with the 
-Firefox browser. sorry all! This option will not be available until they fix
-the bug in Firefox. If you have to have graidents you can contact us and we
-will let you know how to turn the feature on. New Margin Width in options.
-Added the option to add Hex colors in the color picker.
-
-New Style Duplication so you can duplicate the look of different items.
-Updated layer palettes so elements highlight like side toolbar.
-Fixed link update, and added option to allow link to be mailto.
-
-New option for setting background color, this does not change the color of your 
-page built with P&E, it is just meant to for matching the color of your website.
-
-New all galleries for all pictures to display.
-New Link To Front Page.
 
 = 3.0 =
 
@@ -329,6 +285,11 @@ Update javascript for min-width.
 = 4.1.2 =
 
 Import page links update
+
+
+= 4.1.3 =
+
+Upgrade import page links update. New cancel button on page builder.
 
 == Features ==
 

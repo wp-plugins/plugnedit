@@ -225,7 +225,7 @@ return false;
 <?php
 $pages = get_pages(); 
 foreach ( $pages as $page ) {
-$pneoutlinks=urlencode(get_page_link( $page->ID )).':';
+$pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
     $args = array( 	'numberposts' => 100,
     'orderby' => 'post_date',
@@ -314,7 +314,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 
 <span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
-<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted">
+<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">
 
 <textarea  cols="1" rows="1" style="visibility:hidden;display:none"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 </form></div>

@@ -165,7 +165,7 @@ document.getElementById('content').value=document.getElementById('plugneditretur
 
 $pages = get_pages(); 
 foreach ( $pages as $page ) {
-$pneoutlinks=urlencode(get_page_link( $page->ID )).':';
+$pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
     $args = array( 	'numberposts' => 100,
     'orderby' => 'post_date',
