@@ -154,6 +154,12 @@ if (substr($file,-4) == ".htm"){
 $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
  }
  ?>
+ 
+ 
+
+
+
+
 <div class="wrap">
 <h2>Plug N Edit</h2>
 <h3 style="color:red">Read First:</h2>
@@ -212,9 +218,29 @@ return false;
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
+
 <!--[if IE]>
 <input type="hidden" id="ByPassFiltering" name="ByPassFiltering"  value="">
 <![endif] -->
+<?php
+$pages = get_pages(); 
+foreach ( $pages as $page ) {
+$pneoutlinks=urlencode(get_page_link( $page->ID )).':';
+$pneoutlinks=$pneoutlinks . ($page->post_title).';';}
+    $args = array( 	'numberposts' => 100,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_type' => 'post',
+    'post_status' => 'publish', );
+
+	$recent_posts = wp_get_recent_posts($args);
+	foreach( $recent_posts as $recent ){ 
+  $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
+    } ?>
+	
+	
+<input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
+
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
 <input type="hidden" id="marginwidth" name="marginwidth" value="755">

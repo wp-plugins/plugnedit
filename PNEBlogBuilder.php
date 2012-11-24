@@ -160,6 +160,26 @@ document.getElementById('content').value=document.getElementById('plugneditretur
 <!--[if IE]>
 <input type="hidden" id="ByPassFiltering" name="ByPassFiltering"  value="<?php echo $currentUrl; ?>">
 <![endif] -->
+<?php
+
+
+$pages = get_pages(); 
+foreach ( $pages as $page ) {
+$pneoutlinks=urlencode(get_page_link( $page->ID )).':';
+$pneoutlinks=$pneoutlinks . ($page->post_title).';';}
+    $args = array( 	'numberposts' => 100,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'post_type' => 'post',
+    'post_status' => 'publish', );
+
+	$recent_posts = wp_get_recent_posts($args);
+	foreach( $recent_posts as $recent ){ 
+  $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
+    }?>
+	
+	
+<input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
 
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
