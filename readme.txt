@@ -36,7 +36,7 @@ Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress
 
 
 
-[youtube http://www.youtube.com/watch?v=gi6UF4hHMoA]
+[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
 
 
 
