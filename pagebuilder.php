@@ -148,13 +148,15 @@ $dirname = '../PNEHTML';
 if (!file_exists($dirname)) wp_mkdir_p($dirname);
 $dir = "../PNEHTML/*";
 $dirnamereplace = '../PNEHTML/';
-foreach(array_slice(glob($dir),0,20) as $file)  
+$PNEHTMLGlob=glob($dir);
+
+if (is_array($PNEHTMLGlob)){
+foreach(array_slice($PNEHTMLGlob,0,20) as $file)  
 { $file=strtolower($file);
 if (substr($file,-4) == ".htm"){
 $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
- }
- ?>
- 
+}}
+?>
  
 
 
