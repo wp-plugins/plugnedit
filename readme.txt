@@ -25,7 +25,7 @@ Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPr
 
 
 
-[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
+[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&vq=large]
 
 <BR>
 
@@ -36,7 +36,7 @@ Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress
 
 
 
-[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
+[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&vq=large]
 
 
 
