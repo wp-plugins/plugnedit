@@ -35,11 +35,6 @@ Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress
 
 
 
-
-[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&vq=large]
-
-
-
 <strong>
 WYSIWYG HTML Visual Editor Features:<BR>
 
