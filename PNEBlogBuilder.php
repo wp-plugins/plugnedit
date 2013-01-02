@@ -100,6 +100,7 @@ $StringAttPNE=esc_attr(get_option('upload_path'));
 $stringRplaceplugnedit="../$StringAttPNE/"; 
 $dir ="../$StringAttPNE/*";  
 }
+error_reporting(0);
 foreach(array_slice(glob($dir),0,1000) as $file)  
 { $file=strtolower($file);
 if (substr($file,-4) == ".gif" || substr($file,-4) == ".jpg" || substr($file,-4)  == ".png" ){
