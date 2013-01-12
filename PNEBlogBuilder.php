@@ -52,18 +52,31 @@ $currentUrl = $protocol . '://' . $host . $script . '?' . $params;
 ?>
 <script language="JavaScript">
 var NewPlugNeditContent=0
+PNEpreserveupdate=true
 <?php if (isset($_POST['PlugNeditHTML'])){?>
 document.getElementById('content').value='<?php echo $_POST['PlugNeditHTML'] ?>';
 <?php }?>
-var strContent=document.getElementById('content').value
+strContent=document.getElementById('content').value
 <?php if (isset($_POST['plugneditcontent'])){?>
 var NewPlugNeditContent=1
 <?php }?>
 SubStringContentPlugnedit=''
 var ICGWarning=''
+function PreservePNEcontent(){
+if (PNEpreserveupdate==true && strContent!=document.getElementById('content').value){
+document.getElementById('content').value=strContent
+} 
+}
 
+if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.match('ICG1ADDON')){
+document.getElementById('wp-content-wrap').style.visibility='hidden'
+if (!document.getElementById('post').getAttribute('onsubmit')){document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent()') } else {
+try{
+ document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent();'+document.getElementById('post').getAttribute('onsubmit')) 
+ } catch(err){}
+}
 
-if (strContent.match('ICG1ADDON') ||  NewPlugNeditContent==1 ){if (strContent.match('ICG1ADDON')){document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
+document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
 document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" id="PNE-editor" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
@@ -139,11 +152,17 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 var Iframeview=''
 if (!document.getElementById("PlugNeditView"))
 {
-Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe>'
+Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'
+}
+document.getElementById('wp-content-wrap').style.visibility='hidden'
+if (!document.getElementById('post').getAttribute('onsubmit')){document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent()') } else {
+try{
+ document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent();'+document.getElementById('post').getAttribute('onsubmit')) 
+ } catch(err){}
 }
 document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value",2000)
 document.getElementById('content').value=document.getElementById('plugneditreturncontent').value
-
+strContent=document.getElementById('plugneditreturncontent').value
 </script>
 
 
