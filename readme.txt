@@ -1,17 +1,20 @@
-=== Drag And Drop HTML Visual Editor And Web Page Builder. ===
+=== Drag And Drop HTML Visual Editor With CKEditor And Web Page Builder. ===
 Contributors: cactikelly
 Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.5
 Stable tag: 4.1.7
 
-WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor, Desktop Publisher For WordPress.
+WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor with CKEditor, Desktop Publisher For WordPress.
 
 == Description ==
 
 
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
+Includes the new inline contenet editable CKEditor. 
+
+PlugNedit provides all the tools of a HTML editor with the twist that items are easily placed on the page and moved around and stacked on top of each other.
 
 This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual editor with advanced options. Brand new section for building web pages outside your wordpress template.
 
