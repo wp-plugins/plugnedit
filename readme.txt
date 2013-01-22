@@ -123,11 +123,11 @@ Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 
 == Screenshots ==
-
-1. Editor
-2. Toolbars
-3. Blog Entry
-4. Template Loaded
+1. Editor W/ InLine HTML Edtior Loaded
+2. Editor
+3. Toolbars
+4. Blog Entry
+5. Template Loaded
 
 == Frequently Asked Questions ==
 
