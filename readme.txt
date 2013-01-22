@@ -1,25 +1,25 @@
 === Drag And Drop HTML Visual Editor With CKEditor And Web Page Builder! WYSIWYG. ===
 Contributors: cactikelly
-Tags: Editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
+Tags: Editor,html editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.5
 Stable tag: 4.1.7
 
-WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
+WYSIWYG visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
 
 == Description ==
 
 
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
-Includes the new inline contenet editable CKEditor. 
+Includes the new inline contenet editable HTML editor, CKEditor. 
 
 PlugNedit provides all the tools of a HTML editor with the twist that items are easily placed on the page and moved around and stacked on top of each other.
 
-This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual editor with advanced options. Brand new section for building web pages outside your wordpress template.
+This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site (Read bottom for non WordPress sites.), it's a simple to use WYSIWYG drag and drop visual HTML editor with advanced options. Brand new section for building HTML web pages outside your wordpress template.
 
 
-Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
+Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
@@ -32,16 +32,16 @@ Plug & Edit WYSIWYG HTML Drag And Drop Visual Editor does not modify your WordPr
 
 <BR>
 
-Plug & Edit HTML Drag And Drop Visual Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
+Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
-<BR><BR>The Visual Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
+<BR><BR>The Visual HTML Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
 
 
 
 <strong>
 WYSIWYG HTML Visual Editor Features:<BR>
 
-
+INline HTML Editor CKEditor<BR>
 Drag and drop images.<BR>
 Drag and drop text.<BR>
 Drag and drop videos.<BR>
@@ -98,6 +98,9 @@ Margin settings.<BR>
 Page background color<BR>
 Duplicate styles.<BR>
 Adjust Margin Width<BR>
+Content Editable<BR>
+HTML Source<BR>
+
 
 
 Loads pages load like a program file.
@@ -128,14 +131,19 @@ Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 == Frequently Asked Questions ==
 
+= What is the difference from other editors =
+
+Current HTML Editors build pages without organization, PlugNEdit organizes your data into objects that can be moved and placed as desired.
+Plug N Edit works more link a windows program then a HTML Editor. 
+
 
 = Is This Plugin Right For My Needs? =
 
-This plugin is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual editor with more options.
+This plugin is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual HTML editor with more options.
 
 = What do I really need to know to make good use of the program? =
 
-The WYSIWYG editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
+The WYSIWYG HTML editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
 
 = Is It Hard To Install And Use? =
 
@@ -148,12 +156,12 @@ Yes! Plug N Edit works independent of your wordpress editor and will not conflic
 = Why Use Plug N Edit? =
 
 We based our web software on a Desktop Publishing design
-not html editor. What better type of editor could there be for 
+not a simple html editor. What better type of editor could there be for 
 WordPress.
 
 = What is different from other editor plugins? =
 
-First of all Plug N Edit is a completely different editor and is not actually a editor plugin. It is based on a drag and drop design which allows for items to be moved, sized stacked and styled with a click of the mouse.
+First of all Plug N Edit is a completely different HTML editor and is not actually a editor plugin. It is based on a drag and drop design which allows for items to be moved, sized stacked and styled with a click of the mouse.
 
 = Does Plug N Edit Work With Themes? =
 
@@ -170,7 +178,7 @@ Plug N Edit is a different choice editor with many features, when you want somet
 
 = What is different about Plug N Edit? =
 
-We based our WYSIWYG editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
+We based our WYSIWYG HTML editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
 
 
 = Is It Free? =
