@@ -5,7 +5,7 @@ Requires at least: 3.2
 Tested up to: 3.5
 Stable tag: 4.1.7
 
-WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor with CKEditor, Desktop Publisher For WordPress.
+WYSIWYG HTML Visual Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
 
 == Description ==
 
