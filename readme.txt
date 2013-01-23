@@ -1,6 +1,6 @@
 === Drag And Drop HTML Visual Editor With CKEditor And Web Page Builder! WYSIWYG. ===
 Contributors: cactikelly
-Tags: Editor,html editor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
+Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.5
 Stable tag: 4.1.7
@@ -34,7 +34,7 @@ Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPr
 
 Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
-<BR><BR>The Visual HTML Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE editor addons with no conflicts.<BR><BR>
+<BR><BR>The Visual HTML Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE HTML editor addons with no conflicts.<BR><BR>
 
 
 
@@ -100,13 +100,14 @@ Duplicate styles.<BR>
 Adjust Margin Width<BR>
 Content Editable<BR>
 HTML Source<BR>
-
+Mini HTML Editor<BR>
+Full HTML Editor<BR>
 
 
 Loads pages load like a program file.
-Page Layout Like A Desktop Publishing Software.
-WYSIWYG HTML Visual Editor Based On Floating Layers.
-PlugNedit WYSIWYG Editor is publish a full page editor that will edit pages outside of Your WordPress Template for those who need a blank page.
+Page Layout Like A Desktop Publishing Software, Inline CKEditor HTML editor provided for greater formatting.
+WYSIWYG HTML Visual Editor is Based On Floating Layers.
+PlugNedit WYSIWYG HTML Editor is publish a full page editor that will edit pages outside of Your WordPress Template for those who need a blank page.
 <BR>
 
 </strong>
@@ -227,7 +228,7 @@ Upgrade the flow and stop auto formatting by WordPress editor.
 
 = 1.2 = 
 
-* Added PlugNEdit To Pages Editor. 
+* Added PlugNEdit HTML Editor To Pages Editor. 
 * Javascript disable for the WYSIWYG visual editor when using PlugNedit, keeps wordpress from changing html. 
 
 
@@ -293,7 +294,7 @@ Import page links update
 
 = 4.1.3 =
 
-Upgrade import page links update. New cancel button on page builder.
+Upgrade import page links update. New cancel button on HTML page builder.
 
 = 4.1.6 =
 
@@ -302,7 +303,8 @@ Image gallery import upgrade / fix
 
 = 4.1.7 =
 
-Upgrade the flow and stop auto formatting by WordPress editor.
+Upgrade the flow and stop auto formatting by WordPress HTML editor.
+PlugNedit HTML Editor upgraded to Inline HTML Editor.
 
 == Features ==
 
@@ -315,7 +317,7 @@ to the lack of understand of most web users.
 
 * PlugNedit can do Angles and we are working on SVG items,
 also plugnedit provides html raw code (Great For Emails). 
-Html can also be added to the Embed Video button
+Html Editor can also be added to the Embed Video button
 however it is sometimes tricky to use so we have not 
 displayed this as a possible option (Give it a try if you wish).
 
@@ -337,7 +339,7 @@ If you would like to partner and share linking credit contact us.
 <strong>
 New Features:</strong>
 
-Load your WordPress template into the editor, The settings for loading a template are found in the options menu. 
+Load your WordPress template into the HTML editor, The settings for loading a template are found in the options menu. 
 
 <strong>Theme Programmers:</strong>
 
