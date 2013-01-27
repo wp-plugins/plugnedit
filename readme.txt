@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.5
-Stable tag: 4.1.7
+Stable tag: 4.1.8
 
 WYSIWYG visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
 
@@ -216,8 +216,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 
 == Upgrade Notice ==
 
-= 4.1.7 =
-Upgrade the flow and stop auto formatting by WordPress editor.
+= 4.1.8 =
+
+Support Case for unix and lunix systems in url.
 
 == Changelog == 
  
@@ -306,10 +307,13 @@ Image gallery import upgrade / fix
 Upgrade the flow and stop auto formatting by WordPress HTML editor.
 PlugNedit HTML Editor upgraded to Inline HTML Editor.
 
+
+= 4.1.8 =
+
+Support Case for unix lunix systems in url.
+
 == Features ==
 
-
-Suggestions of features: Email contact@plugnedit.com
 
 
 * Some WYSIWYG features have not been turned on for the plugin due

@@ -152,7 +152,7 @@ $PNEHTMLGlob=glob($dir);
 
 if (is_array($PNEHTMLGlob)){
 foreach(array_slice($PNEHTMLGlob,0,20) as $file)  
-{ $file=strtolower($file);
+{ 
 if (substr($file,-4) == ".htm"){
 $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 }}
