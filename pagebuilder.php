@@ -163,20 +163,26 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 
 
 <div class="wrap">
-<h2>Plug N Edit</h2>
-<h3 style="color:red">Read First:</h2>
-<span style="color:#21759B;font-size12px"><BR>
+<h2 style="color:Green;font-size:24px;font-weight:bolder;font-style:italic;font-family:Tahoma">&nbsp;&nbsp;&nbsp;Plug N Edit</h2>
+<div style="width:750px;text-align:justify">
+<BR>
+<table style="width:750px;padding:4px;border:none"><tr><td>
+<img src="../wp-content/plugins/plugnedit/powermansmall.jpg">
+</td><td><span style="color:#21759B;font-size:12px">
 Do not use PlugNedit for any type of sensitive or personal information (General 
 Public Pages Only). <BR>
 </span>
-<span style="color:gray;font-size12px">
-For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. <BR>
-This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.<BR>
-PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us. <BR>
+
+<span style="color:gray;font-size:12px">
+For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
+This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.
+PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us.
 HTML files are saved in your wordpress root in folder PNEHTML. Plugnedit writes 
 a bypass file for Internet Explorer, temp file is written to PNEHTML/PNETempContent.txt 
-<BR>
-Adding HTML or editing file by hand may make it non-editable in Plug N edit. Because we load links to media pages may take a moment to load. </span><BR><BR>
+<BR><BR>
+Adding HTML or editing file by hand may make it non-editable in Plug N Edit. Because we load links to media pages may take a moment to load. </span><BR><BR>
+</td></tr></table>
+</div>
 <a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
