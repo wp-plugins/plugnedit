@@ -82,10 +82,10 @@ function SMPE(){
 var strContent=document.getElementById('content').value
 
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
-if (strContent=='' || strContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent').value=strContent; document.getElementById('NoEditupper4').style.visibility='visible';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}} else{
+if (strContent=='' || strContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent').value=strContent;ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}} else{
 var ConfirmPlugNedit = confirm('You are about to leave the Word Press Page Editor. The contents of this page will be lost and updated with changes made with PlugNedit.')
 if (ConfirmPlugNedit){
-document.getElementById('NoEditupper4').style.visibility='visible'
+ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit()
 if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}
 
 }else{}}}

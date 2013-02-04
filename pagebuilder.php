@@ -175,7 +175,7 @@ Public Pages Only). <BR>
 
 <span style="color:gray;font-size:12px">
 For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
-This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use this section you will need to import links to your media.
+This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use PlugNedit you will need to import links to your media.
 PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us.
 HTML files are saved in your wordpress root in folder PNEHTML. Plugnedit writes 
 a bypass file for Internet Explorer, temp file is written to PNEHTML/PNETempContent.txt 
