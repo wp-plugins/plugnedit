@@ -205,7 +205,8 @@ this allows you to use pictures when editing your blog.
 = Privacy? =
 
 Plugnedit stores your web address when you visit, we do not collect
-names address or emails phone, etc. We only store your blog address as your session to our site.
+names, address, emails, phone, etc. We only store your blog address as your session to our site and temp file for links & page load.
+The page load file is for Video and Flash, some browser will not allow these items to be imported and must be loaded locally.
 
 
 = I need help with this ? =
