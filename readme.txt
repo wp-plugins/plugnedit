@@ -1,6 +1,6 @@
 === Drag And Drop HTML Visual Editor With CKEditor And Web Page Builder! WYSIWYG. ===
 Contributors: cactikelly
-Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder, Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
+Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style
 Requires at least: 3.2
 Tested up to: 3.5
 Stable tag: 4.2.0
@@ -12,7 +12,9 @@ WYSIWYG Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Deskto
 
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
-Includes the new inline contenet editable HTML editor, CKEditor. 
+
+
+Includes the new inline contenet editable HTML editor, CKEditor, and over 600 google fonts. 
 
 PlugNedit provides all the tools of a HTML editor with the twist that items are easily placed on the page and moved around and stacked on top of each other.
 
@@ -42,6 +44,7 @@ Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress
 WYSIWYG HTML Visual Editor Features:<BR>
 
 INline HTML Editor CKEditor<BR>
+600+ Google fonts. 
 Drag and drop images.<BR>
 Drag and drop text.<BR>
 Drag and drop videos.<BR>
