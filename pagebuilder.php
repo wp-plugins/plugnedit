@@ -23,7 +23,43 @@ fwrite($handle, $PNEcontent);
 }
 }
 ?>
+
+
+<script>
+YBSDPNE=false
+</script>
+<!--[if IE]>
+<script>
+YBSDPNE=true
+</script>
+<![endif]-->
 <script language="JavaScript" type="text/javascript">
+
+function PNEBSD()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+   document.getElementById('PlugNeditContent').value=xmlhttp.responseText;
+document.forms["PNEPageBuilder"].submit()
+    }
+  }
+xmlhttp.open("POST","../wp-content/plugins/plugnedit/tobase64.php",true);
+xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+str="str="+encodeURIComponent(document.getElementById('PlugNeditContent').value)
+xmlhttp.send(str);
+
+}
 
 function colorToHex(color) {
  
@@ -110,7 +146,13 @@ document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 if (!isNaN(parseInt(innerDoc.body.style.minWidth))){
 document.getElementById('marginwidth').value=parseInt(innerDoc.body.style.minWidth)
 }
+
+if (YBSDPNE==false){
 document.forms["PNEPageBuilder"].submit();
+
+ } else {
+PNEBSD()
+}
 }
 } catch(err){}
 }
@@ -228,7 +270,7 @@ return false;
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 
 <!--[if IE]>
-<input type="hidden" id="ByPassFiltering" name="ByPassFiltering"  value="">
+<input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <![endif] -->
 <?php
 $pages = get_pages(); 
@@ -250,6 +292,7 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 <input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
 
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
+
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
 <input type="hidden" id="marginwidth" name="marginwidth" value="755">
 <input type="hidden" name="PluginType" value="StandAlone">
@@ -323,8 +366,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 <span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">
-
-<textarea  cols="1" rows="1" style="visibility:hidden;display:none"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
+<textarea  cols="1" rows="1" style="visibility:hidden;display:none"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 </form></div>
  
 <?php

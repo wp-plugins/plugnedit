@@ -146,7 +146,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 
 ?>
 </textarea><?php if (isset($_POST["plugneditcontent"])) { ?>
-<textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php echo stripslashes($_POST["plugneditcontent"]) ?></textarea>
+<textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 
 <script language="JavaScript">
 var Iframeview=''
@@ -170,7 +170,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 }
 
 ?>
-<textarea id="PlugNeditContent" cols="1" rows="1" style="visibility:hidden;display:none" name="PlugNeditContent" ><?php if(isset($_POST['PlugNeditContent2'])) {echo  stripslashes($_POST['PlugNeditContent2']);}?></textarea>
+<textarea id="PlugNeditContent" cols="1" rows="1" style="visibility:hidden;display:none" name="PlugNeditContent" ><?php if(isset($_POST['PlugNeditContent2'])) { if(isset($_POST['PlugNeditBinarycontent'])) {$_POST['PlugNeditContent2']=base64_encode(stripslashes($_POST['PlugNeditContent2']));} else {$_POST['PlugNeditContent2']=stripslashes($_POST['PlugNeditContent2']);}; echo $_POST['PlugNeditContent2'];}?></textarea>
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" value="" id="SaveTheWhales" name="SaveTheWhales">
 <input type="hidden" id="PlugNeditContent"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
@@ -178,7 +178,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="<?php echo $currentUrl; ?>">
 <!--[if IE]>
-<input type="hidden" id="ByPassFiltering" name="ByPassFiltering"  value="<?php echo $currentUrl; ?>">
+<input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <![endif] -->
 <?php
 
@@ -205,6 +205,9 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
 <form action="#" method="post"  name="PlugNeditFormGet">
+<!--[if IE]>
+<input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
+<![endif] -->
 <input type="hidden"  name="PlugNeditContent2" id="PlugNeditContent2" value="">
 <input type="hidden"  name="GetPlugneditfiles" value="0">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
