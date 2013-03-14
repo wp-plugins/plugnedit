@@ -1,4 +1,4 @@
-<?php if (is_admin() ) {
+<?php
 function PNEADDPAGE() {
 add_menu_page('Plug N Edit Page Builder', 'PNE Page Builder', 5, __FILE__, 'PnEPageBuilder');
 }
@@ -186,6 +186,11 @@ if(alertp!='') {alert(alertp);return false;};
 </script>
 
 <?php
+$PNEStart=0;
+if (isset($_GET["PNENEXT"])){
+$PNEStart=$PNEStart+$_GET["PNENEXT"];
+}
+$PNEEnd=$PNEStart+20;
 $dirname = '../PNEHTML';
 if (!file_exists($dirname)) wp_mkdir_p($dirname);
 $dir = "../PNEHTML/*";
@@ -193,7 +198,8 @@ $dirnamereplace = '../PNEHTML/';
 $PNEHTMLGlob=glob($dir);
 
 if (is_array($PNEHTMLGlob)){
-foreach(array_slice($PNEHTMLGlob,0,20) as $file)  
+
+foreach(array_slice($PNEHTMLGlob,$PNEStart,$PNEEnd) as $file)  
 { 
 if (substr($file,-4) == ".htm"){
 $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
@@ -205,24 +211,27 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 
 
 <div class="wrap">
-<h2 style="color:Green;font-size:24px;font-weight:bolder;font-style:italic;font-family:Tahoma">&nbsp;&nbsp;&nbsp;Plug N Edit</h2>
+
 <div style="width:750px;text-align:justify">
+<?php if (is_admin){ 
+echo '<h1 style="color:red;font-size:12px;font-weight:bolder;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules.  </h2>';
+} ?>
 <BR>
 <table style="width:750px;padding:4px;border:none"><tr><td>
 <img src="../wp-content/plugins/plugnedit/powermansmall.jpg">
-</td><td><span style="color:#21759B;font-size:12px">
+</td><td>
+<h2 style="color:Green;font-size:24px;font-weight:bolder;font-style:italic;font-family:Tahoma">&nbsp;&nbsp;&nbsp;Plug N Edit</h2>
+<span style="color:#21759B;font-size:12px">
 Do not use PlugNedit for any type of sensitive or personal information (General 
-Public Pages Only). <BR>
+Public Pages Only). <BR> 
 </span>
 
 <span style="color:gray;font-size:12px">
 For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
 This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use PlugNedit you will need to import links to your media.
-PlugNedit is free for blog entries and page built within the wordpress template. This section is limited to 20 pages, if you need more pages please contact us.
-HTML files are saved in your wordpress root in folder PNEHTML. Plugnedit writes 
-a bypass file for Internet Explorer, temp file is written to PNEHTML/PNETempContent.txt 
+HTML files are saved in your wordpress root in folder PNEHTML. 
 <BR><BR>
-Adding HTML or editing file by hand may make it non-editable in Plug N Edit. Because we load links to media pages may take a moment to load. </span><BR><BR>
+Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
 </td></tr></table>
 </div>
 <a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
@@ -247,7 +256,17 @@ echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B">';
 echo '<input type="submit" name="PNEPUBLISH"  id="publish" class="button-primary" value=" Edit Page In Plug N Edit " onclick="Loadpne(\''; echo $value;  echo '\',\''; echo str_ireplace('.htm','',str_ireplace($dirnamereplace,'',$value)); echo '\',0)">';
 echo '</td></tr><tr><td colspan=5><hr size="1px" width="700px"></tr> ';
 }}
-echo '</table></div>';
+echo '</table></div><BR>';
+if($PNEStart > 19){
+$PNEStart=$PNEStart-20;
+echo '&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:#21759B" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEStart; echo ' ">Previous</a>';
+};
+
+if($PNEEnd < count($PNEHTMLGlob)){
+echo '&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:#21759B" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEEnd; echo ' ">Next</a>';
+};
+
+
 ?>
 <script language="JavaScript" type="text/javascript">
 function checkField(fieldname)
@@ -268,6 +287,7 @@ return false;
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
+
 
 <!--[if IE]>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
@@ -312,6 +332,7 @@ $dir = "../wp-content/uploads/*";
 $StringAttPNE=esc_attr(get_option('upload_path'));
 $stringRplaceplugnedit="../$StringAttPNE/"; 
 $dir ="../$StringAttPNE/*";  
+
 }
 
 foreach(array_slice((array)glob($dir),0,1000) as $file)  
@@ -394,4 +415,4 @@ echo "Loadpne('"; echo str_replace(' ', '_',$_POST['PlugNeditFileName']); echo "
 add_action('admin_menu', 'PNEADDPAGE');
  
 
-} ?>
+ ?>

@@ -1,7 +1,4 @@
 <?php
-
-
-
 function do_pPlugneditStyleFooter(){?>
 <script language="JavaScript" type="text/javascript">
 try {
@@ -18,15 +15,13 @@ document.body.style.minWidth=710+'px'}
 } catch(err){
 }
 
-
-
 </script>
 <?php
 }
 
 
 add_action( 'wp_footer', 'do_pPlugneditStyleFooter' );
-if (is_admin() ) {
+
 function my_default_editor() {
 $r = 'html'; // html or tinymce
 return $r;}
@@ -38,11 +33,18 @@ return $content;
 }
 if (isset($_POST['plugneditcontent'])){ add_filter( 'wp_default_editor', 'my_default_editor' );}
 add_filter( 'the_editor_content', 'my_the_content_filter' );
+
 add_action('edit_form_advanced','do_aPlugnedit');
+
 add_action('edit_page_form','do_aPlugnedit'); 
+
 function do_aPlugnedit() {
-add_action( 'admin_footer', 'do_pPlugnedit' );}
+if ( current_user_can('unfiltered_html')  ) {
+add_action( 'admin_footer', 'do_pPlugnedit' );
+}
+}
 function do_pPlugnedit(){
+
 $protocol = strpos(strtolower($_SERVER['SERVER_PROTOCOL']),'https') 
                 === FALSE ? 'http' : 'https';
 $host     = $_SERVER['HTTP_HOST'];
@@ -76,7 +78,7 @@ try{
  } catch(err){}
 }
 
-document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:12px;color:red">This page should be edited in the PlugNedit Editor Only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
+document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:13px;color:red;font-weight:bold">This page should be edited in the PlugNedit Editor only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
 document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" id="PNE-editor" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
@@ -104,6 +106,7 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">
 <form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm"><textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
 <?php 
+if ( current_user_can('upload_files') ) {
 if(isset($_POST['GetPlugneditfiles'])) {
 if (esc_attr(get_option('upload_path'))==''){
 $stringRplaceplugnedit="../wp-content/uploads";
@@ -142,7 +145,7 @@ $plugneditfiles = "$plugneditfiles;$file4";
 echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 }}}}}}  
 
-}
+}}
 
 ?>
 </textarea><?php if (isset($_POST["plugneditcontent"])) { ?>
@@ -200,7 +203,6 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 	
 	
 <input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
-
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
@@ -218,4 +220,4 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 document.getElementById('UpdatePFiles').value='1';
 document.forms['PlugNeditForm'].submit();
 </script><?php }
-}}?>
+}?>
