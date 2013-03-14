@@ -213,9 +213,8 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <div class="wrap">
 
 <div style="width:750px;text-align:justify">
-<?php if (is_admin){ 
-echo '<h1 style="color:red;font-size:12px;font-weight:bolder;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules.  </h2>';
-} ?>
+<h1 style="color:red;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
+
 <BR>
 <table style="width:750px;padding:4px;border:none"><tr><td>
 <img src="../wp-content/plugins/plugnedit/powermansmall.jpg">
