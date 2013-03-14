@@ -140,6 +140,10 @@ Non WordPress Sites can visit our webpage for plugin directions.<BR>
 Current HTML Editors build pages without organization, PlugNEdit organizes your data into objects that can be moved and placed as desired.
 Plug N Edit works more link a windows program then a HTML Editor. 
 
+= Can members use the editor =
+
+Editor and Administrator roles may use the editor to build pages
+
 = What is CKEditor and how does it work with plugnedit =
 
 CKEditor is a HTML editor much like the WordPress visual editor, however it work with plugnedit to extend the formatting options in the Drag & Drop
