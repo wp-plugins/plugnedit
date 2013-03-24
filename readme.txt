@@ -30,7 +30,7 @@ Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPr
 
 
 
-[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&vq=large]
+[youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
 
 <BR>
 
