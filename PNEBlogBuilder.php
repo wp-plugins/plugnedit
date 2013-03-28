@@ -19,6 +19,16 @@ document.body.style.minWidth=710+'px'}
 <?php
 }
 
+remove_filter ('the_content',  'wpautop');
+function PNEcheckpost($content) {
+if (preg_match('/ICG1ADDON/', $content)) {
+return $content;
+}
+return wpautop($content);
+}
+
+add_filter( 'the_content', 'PNEcheckpost' );
+
 
 add_action( 'wp_footer', 'do_pPlugneditStyleFooter' );
 
