@@ -95,16 +95,49 @@ var strContent=document.getElementById('content').value
 
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
 if (strContent=='' || strContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent').value=strContent;ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}} else{
-var ConfirmPlugNedit = confirm('You are about to leave the Word Press Page Editor. The contents of this page will be lost and updated with changes made with PlugNedit.')
-if (ConfirmPlugNedit){
-ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit()
-if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='hidden'}
+document.getElementById('NoEditupper5').style.visibility='visible'
+}}
 
-}else{}}}
-function ProcessUpdatePlugNedit(){
-var NewstrContent=document.getElementById('content').value;
+function ProcessImportpage(){
+if (strContent !=''){
+document.getElementById('PlugNeditContent').value='<div style="text-align:center;position:relative" id="ICG1ADDON" data-plugneditversion="2" data-precision="Relative" data-hguides="" data-vguides=""><div id="ICG1ADDONS-Spacer" style="position: static; height: 0px; width: 550px; background-color: transparent;"></div><div id="UpperMovableDrawing" style="position: absolute; width: 0px; top: 0px; z-index: 10; left: 50%; overflow: visible;"><div id="p1002Movable-drawingmoveDivShadow" data-pnelnatrbt="PNEPlugNedit WP-IMPORT" data-layertype="Movable-drawingmoveDiv" data-layeropacity="1" data-pnelayernumber="1002" data-layerfilter="100" data-type="MVBDRW" style="opacity: 1; margin: 0px; font-size: 12px; border: 3px solid red; position: absolute; background-color: transparent; top: 38px; left: -282px; width: 550px; height: 179px; z-index: 1002; overflow: visible; line-height: normal; padding: 3px; border-spacing: 0px;"><div id="p1002ICGdrawingDiv-NoEdit" data-pnelayernumber="1002" style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 16px; background-color: rgb(255, 255, 255); border: 1px none rgb(0, 0, 0); padding: 6px; border-spacing: 6px; width: 532px; height: 151px; text-align: left; position: static; margin: 0px auto; overflow: hidden; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0);" data-editortype="HTML" contenteditable="true">'+strContent+'</div></div></div></div>'};ProcessUpdatePlugNedit('Import');document.forms['PlugNeditFormGet'].submit();
+}
+
+function ProcessUpdatePlugNedit(Import){
+if (Import!="Import") {
+
+var NewstrContent = document.getElementById('content').value;
+} else {
+document.getElementById('PlugNeditContent2').value=document.getElementById('PlugNeditContent').value
+return;
+}
 if (NewstrContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent2').value=document.getElementById('content').value;}}
 </script>
+
+<div id="NoEditupper5" align="center" style="padding:8px;font-size:14px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:100px; left:200px; width:600px; height:500px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
+
+<BR><BR><div align="left" id="PlugNeditConfirm2" style="color:black;font-size:14px;font-weight:bold">
+PlugNedit uses a 3 Dimensional page layout that the WordPress standard editor cannot edit. Converting old blog entries to this format provides little improvement because the page will still be in 2D format. <BR><BR>
+<table align="center"><TR><TD align="center" width="280px">
+PlugNedit Format:<BR>
+Height, Width, Depth, Transparency.<BR>
+<img src="../wp-content/plugins/plugnedit/translayer.jpg"></TD><TD align="center" width="280px">
+Standard WordPress Editor:<BR>
+Height, Width.<BR>
+<img src="../wp-content/plugins/plugnedit/nontrans.jpg"></TD></TR></table>
+</div>
+<div align="left">.<BR><BR>
+If you choose to convert the page you will have the option to set greater inline 
+formatting and add new 3D Items. However text formatting will be lost, you will also have to set the width and height 
+of your blog entry also complex HTML pages should not be imported. If you are new to PlugNedit you may want to try a new blog entry before editing a imported page.<BR>
+    You can use Page Revisions in WordPress to Rollback your blog entry if you 
+    find the new format not beneficial.<a href="http://en.support.wordpress.com/pages/page-revisions/" style="font-size:12px" target="_blank">Page 
+    Revisions</a> <BR>
+ </div><BR><BR>
+<input type="button" id="PNE-page-import" Name="Import Page" value="Import Page" class="button-primary"  onClick="ProcessImportpage();" > &nbsp;&nbsp;<input onClick="document.getElementById('NoEditupper5').style.visibility='hidden'" type="Button" name="Cancel"  value="Cancel" class="button">
+</div>
+
+
 <div id="NoEditupper4" align="center" style="font-size:14px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:200px; left:300px; width:400px; height:200px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
 
 <BR><BR><div align="center" id="PlugNeditConfirm">
