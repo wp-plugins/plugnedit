@@ -128,8 +128,8 @@ Height, Width.<BR>
 </div>
 <div align="left">.<BR><BR>
 If you choose to convert the page you will have the option to set greater inline 
-formatting and add new 3D Items. However text formatting will be lost, you will also have to set the width and height 
-of your blog entry also complex HTML pages should not be imported. If you are new to PlugNedit you may want to try a new blog entry before editing a imported page.<BR>
+formatting and add new 3D items, however text formatting will be lost, you will also have to set the width and height 
+of your blog entry. Complex HTML pages should not be imported. If you are new to PlugNedit you may want to try a new blog entry before editing a imported page.<BR>
     You can use Page Revisions in WordPress to Rollback your blog entry if you 
     find the new format not beneficial.<a href="http://en.support.wordpress.com/pages/page-revisions/" style="font-size:12px" target="_blank">Page 
     Revisions</a> <BR>
