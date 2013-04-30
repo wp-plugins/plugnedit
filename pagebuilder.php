@@ -217,7 +217,12 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 
 <BR>
 <table style="width:750px;padding:4px;border:none"><tr><td>
-<img src="../wp-content/plugins/plugnedit/powermansmall.jpg">
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="CMKNAW64GX9WU">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="paypal" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
 </td><td>
 <h2 style="color:Green;font-size:24px;font-weight:bolder;font-style:italic;font-family:Tahoma">&nbsp;&nbsp;&nbsp;Plug N Edit</h2>
 <span style="color:#21759B;font-size:12px">
