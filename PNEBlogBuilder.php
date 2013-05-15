@@ -114,22 +114,22 @@ return;
 if (NewstrContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent2').value=document.getElementById('content').value;}}
 </script>
 
-<div id="NoEditupper5" align="center" style="padding:8px;font-size:14px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:100px; left:200px; width:600px; height:550px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
+<div id="NoEditupper5" align="center" style="padding:8px;font-size:13px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:100px; left:200px; width:600px; height:550px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
 
-<BR><BR><div align="left" id="PlugNeditConfirm2" style="color:black;font-size:14px;font-weight:bold">
-PlugNedit uses a 3 Dimensional page layout that the WordPress standard editor cannot edit. Converting old blog entries to this format provides little improvement because the page will still be in 2D format. <BR><BR>
-<table align="center"><TR><TD align="center" width="280px">
+<BR><BR><div align="justify" id="PlugNeditConfirm2" style="color:black;font-size:13px">
+PlugNedit uses a 3 Dimensional page layout that the WordPress standard editor cannot edit. Converting old blog entries to this format provides little improvement because the page will still be in 2D format. <BR><BR><BR>
+<table align="center"><TR><TD align="center" width="280px" style="font-weight:bold">
 PlugNedit Format:<BR>
 Height, Width, Depth, Transparency.<BR>
-<img src="../wp-content/plugins/plugnedit/translayer.jpg"></TD><TD align="center" width="280px">
+<img src="../wp-content/plugins/plugnedit/translayer.jpg"></TD><TD align="center" width="280px" style="font-weight:bold">
 Standard WordPress Editor:<BR>
 Height, Width.<BR>
 <img src="../wp-content/plugins/plugnedit/nontrans.jpg"></TD></TR></table>
 </div>
-<div align="left">.<BR><BR>
+<div align="justify">.<BR><BR>
 If you choose to convert the page you will have the option to set greater inline 
 formatting and add new 3D items, however text formatting will be lost, you will also have to set the width and height 
-of your blog entry. Complex HTML pages should not be imported. If you are new to PlugNedit you may want to try a new blog entry before editing a imported page.<BR>
+of your blog entry. Complex HTML pages should not be imported. If you are new to PlugNedit you may want to try a new blog entry before editing a imported page.<BR><BR>
     You can use Page Revisions in WordPress to Rollback your blog entry if you 
     find the new format not beneficial.<a href="http://en.support.wordpress.com/pages/page-revisions/" style="font-size:12px" target="_blank">Page 
     Revisions</a> <BR>
