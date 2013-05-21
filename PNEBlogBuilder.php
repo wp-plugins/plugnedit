@@ -161,28 +161,28 @@ $dir ="../$StringAttPNE/*";
 }
 
 foreach(array_slice((array)glob($dir),0,5000) as $file)  
-{ $file=strtolower($file);
+{ $file=$file;
 if (substr($file,-4) == ".gif" || substr($file,-4) == ".jpg" || substr($file,-4)  == ".png" ){
 echo  str_replace($stringRplaceplugnedit,';',$file);
 $plugneditfiles = "$plugneditfiles;$file";}
 if(file_exists($file) && is_dir($file)){
 $dir2 = "$file";   
 foreach(array_slice((array)glob($dir2),0,5000) as $file2)  
-{ $file=strtolower($file2);
+{ $file=$file2;
 if (substr($file2,-4) == ".gif" || substr($file2,-4) == ".jpg" || substr($file2,-4)  == ".png" ){
  $plugneditfiles = "$plugneditfiles;$file2";
 echo  str_replace($stringRplaceplugnedit,';',$file2);}}  
 if(file_exists($file2) && is_dir($file2)){
 $dir3 = "$file2/*";  
 foreach(array_slice((array)glob($dir3),0,5000) as $file3)  
-{ $file=strtolower($file3);
+{ $file=$file3;
 if (substr($file3,-4) == ".gif" || substr($file3,-4) == ".jpg" || substr($file3,-4)  == ".png" ){
  $plugneditfiles = "$plugneditfiles;$file3";
  echo  str_replace($stringRplaceplugnedit,';',$file3);
  } if(file_exists($file3) && is_dir($file3)){
 $dir4 = "$file3/*";  }  
 foreach(array_slice((array)glob($dir4),0,5000) as $file4)  
-{  $file=strtolower($file4);
+{  $file=$file4;
 if (substr($file4,-4) == ".gif" || substr($file4,-4) == ".jpg" || substr($file4,-4)  == ".png" ){
 $plugneditfiles = "$plugneditfiles;$file4";
 echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
