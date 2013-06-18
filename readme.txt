@@ -108,7 +108,7 @@ Full HTML Editor<BR>
 
 
 Loads pages load like a program file.
-Page Layout Like A Desktop Publishing Software, Inline CKEditor HTML editor provided for greater formatting.
+Page Layout Like A Desktop Publishing Software, includes Inline CKEditor HTML editor provided for greater formatting.
 WYSIWYG HTML Visual Editor is Based On Floating Layers.
 PlugNedit WYSIWYG HTML Editor is publish a full page editor that will edit pages outside of Your WordPress Template for those who need a blank page.
 <BR>
@@ -128,8 +128,8 @@ Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 == Screenshots ==
 1. Editor W/ InLine HTML Edtior Loaded
-2. Editor
-3. Toolbars
+2. HTML Editor
+3. WYSIWYG Toolbars
 4. Blog Entry
 5. Template Loaded
 
