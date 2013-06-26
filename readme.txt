@@ -105,6 +105,7 @@ Content Editable<BR>
 HTML Source<BR>
 Mini HTML Editor<BR>
 Full HTML Editor<BR>
+Custom menu options<BR>
 
 
 Loads pages load like a program file.
