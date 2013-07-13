@@ -12,6 +12,9 @@ WYSIWYG Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Deskto
 
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
+Layers based page created with plugnedit from a user.
+<a href="http://www.wealthsolutionsx.com/">Example Page.</a>
+
 Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth. Standard online HTML editors are only based on 2D page editing with height and width available.
 
 Includes the new inline contenet editable HTML editor, CKEditor, and over 600 google fonts. 
