@@ -374,7 +374,7 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 
 <iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
 </iframe>
-<div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:400px;z-index:10000;border-color:blue;border-width:2px;border:solid">
+<div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:600px;z-index:10000;border-color:blue;border-width:2px;border:solid">
 <BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets):</span> <BR>
 <form name="PNEUPDATE" method="post" action="#"  onsubmit="return validateThisForm()">
 <input type="text" id="PNEFileName" name="PNEFileName" value="" onblur="checkField(this)" maxlength="16" size="16" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
@@ -390,8 +390,11 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 
 <span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
-<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">
-<textarea  cols="1" rows="1" style="visibility:hidden;display:none"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
+<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="document.getElementById('plugneditcontent').style.display='';document.getElementById('plugneditcontent').style.visibility='visible'" name="HTMLSource" id="HTMLSource" value="    HTML Source    " class="button button-highlighted">
+
+<textarea   style="visibility:hidden;display:none;width:580px;height:300px"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
+
+
 </form></div>
  
 <?php
