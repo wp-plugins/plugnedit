@@ -257,6 +257,9 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 <input type="hidden"  name="GetPlugneditfiles" value="0">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
+<script language="JavaScript">
+document.getElementById('PlugNeditReturnUrl').value=document.URL;
+</script>
 <?php if (isset($_POST['GetPlugneditfiles'])) {?>
 <script language="JavaScript"
 >
