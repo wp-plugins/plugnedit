@@ -10,10 +10,22 @@ WYSIWYG 3D Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Des
 == Description ==
 
 
+
+
+
+
+
+
+<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
+<strong><em>Visual Editor Demo</em></strong></a>
+
+                                                                                                                                                        
+                                                                                                                                                      
+                                                                                                                                                       
+
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 Layers based page created with plugnedit from a user.
-<a href="http://www.wealthsolutionsx.com/">Example Page.</a>
 
 Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth. Standard online HTML editors are only based on 2D page editing with height and width available.
 
@@ -27,8 +39,6 @@ This plugin is useful for anyone that has a WordPress site or stand alone plugin
 Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily.
 
 
-<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
-<strong><em>Visual Editor Demo</em></strong></a>
 
 
 
