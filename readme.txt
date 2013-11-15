@@ -16,15 +16,15 @@ WYSIWYG 3D Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Des
 
 
 
-<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
-<strong><em>Visual Editor Demo</em></strong></a>
-
 
 
 
 <strong><em>WYSIWYG (What You See Is What You Get.) Advanced HTML Visual Editor, Just Drag & Drop Your Images And Text Boxes, Click And Move.</em></strong>
 
 
+
+<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0" >
+<strong><em>Visual Editor Demo</em></strong></a>
 
 
 
