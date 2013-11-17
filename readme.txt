@@ -1,6 +1,6 @@
 === 3D Drag And Drop HTML Visual Editor Web Page Builder! WYSIWYG With CKEditor ===
 Contributors: cactikelly
-Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D
+Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient
 Requires at least: 3.5
 Tested up to: 3.7
 Stable tag: 4.2.9
@@ -60,6 +60,7 @@ WYSIWYG HTML Visual Editor Features:<BR>
 INline HTML Editor CKEditor<BR>
 600+ Google fonts. 
 Drag and drop images.<BR>
+Gradient Backgrounds.<BR>
 Drag and drop text.<BR>
 Drag and drop videos.<BR>
 Drag and drop embeds.<BR>
