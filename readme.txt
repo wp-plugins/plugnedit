@@ -121,7 +121,7 @@ HTML Source<BR>
 Mini HTML Editor<BR>
 Full HTML Editor<BR>
 Custom menu options<BR>
-
+Upload To Free Image Host<BR>
 
 Loads pages load like a program file.
 Page Layout Like A Desktop Publishing Software, includes Inline CKEditor HTML editor provided for greater formatting.
