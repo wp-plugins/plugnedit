@@ -1,6 +1,6 @@
 <?php
 function PNEADDPAGE() {
-add_menu_page('Plug N Edit Page Builder', 'PNE Page Builder', 'unfiltered_html' , __FILE__, 'PnEPageBuilder');
+add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __FILE__, 'PnEPageBuilder', plugins_url( 'plugnedit/pneicon.ico' ));
 }
 
 function PnEPageBuilder() {
