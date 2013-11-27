@@ -192,7 +192,9 @@ $PNEStart=$PNEStart+$_GET["PNENEXT"];
 }
 $PNEEnd=$PNEStart+20;
 $dirname = '../PNEHTML';
-if (!file_exists($dirname)) wp_mkdir_p($dirname);
+if (!file_exists($dirname)){ wp_mkdir_p($dirname);
+copy('../wp-content/plugins/plugnedit/demo_page.htm', '../PNEHTML/demo_page.htm');
+};
 $dir = "../PNEHTML/*";
 $dirnamereplace = '../PNEHTML/';
 $PNEHTMLGlob=glob($dir);
@@ -205,20 +207,15 @@ if (substr($file,-4) == ".htm"){
 $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 }}
 ?>
- 
-
-
-
-
-<div class="wrap">
-
+<div>
 <div style="width:750px;text-align:justify">
-<h1 style="color:red;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
+<h1 style="color:gray;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
 
 <BR>
 <table style="width:750px;padding:4px;border:none"><tr><td>
 
-<h2 style="color:Green;font-size:24px;font-weight:bolder;font-style:italic;font-family:Tahoma">&nbsp;&nbsp;&nbsp;Plug N Edit</h2>
+
+<img src="../wp-content/plugins/plugnedit/pnehead.png"><br>
 <span style="color:#21759B;font-size:12px">
 Do not use PlugNedit for any type of sensitive or personal information (General 
 Public Pages Only). <BR> 
@@ -228,40 +225,39 @@ Public Pages Only). <BR>
 For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
 This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use PlugNedit you will need to import links to your media.
 HTML files are saved in your wordpress root in folder PNEHTML. 
-<BR><BR>
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
 </td></tr></table>
 </div>
-<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
-<table style="border:solid;border-width:1px;border-color:black;padding:2px;width:800px;font-size:16px;font-weight:bold;color:#21759B"><tr style="background-color:#777;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
+&nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
+<table style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 18px; background-color: rgb(35, 86, 125); border: 1px solid rgb(0, 0, 0); padding: 3px; border-spacing: 6px; width: 750px;  text-align: left; margin: 3px; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgb(255, 255, 255) 7px 7px 5px; background-image: linear-gradient(rgb(29, 77, 94), rgb(116, 152, 173));"><tr style="border:black 2px solid;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 $arrayp = explode(';', $plugneditHTMLfiles); 
 foreach($arrayp as $value) 
 {
 if ($value != ''){
-echo '<TR><td style="font-size:16px">';
-echo str_ireplace('.htm','',str_ireplace($dirnamereplace,' ',$value));
-echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B">';
+echo '<TR><td style="font-size:16px;color:white;font-weight:bolder;text-shadow: -1px -1px #333, 1px 1px #333">';
+echo str_ireplace('_',' ',str_ireplace('.htm','',str_ireplace($dirnamereplace,' ',$value)));
+echo '</td><td style="font-size:10px;font-weight:bold;color:white">';
 echo '<a class="button" href="';
 echo $value.'?k='.rand(10000,10000000); 
 echo '" target="_blank">Preview Page</a>';
-echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B"><input type="text" value="';
+echo '</td><td style="font-size:10px;font-weight:bold;color:white"><input type="text" value="';
 echo esc_attr(get_option('home'));
 echo str_ireplace('..','',$value);
-echo '"></td><td style="font-size:10px;font-weight:bold;color:#21759B">';
+echo '"></td><td style="font-size:10px;font-weight:bold;color:white">';
 echo '<a class="button" onclick="Loadpne(\''; echo $value;  echo '\',\''; echo str_ireplace('.htm','',str_ireplace($dirnamereplace,'',$value)); echo '\',1)">Manage Page</a>';
-echo '</td><td style="font-size:10px;font-weight:bold;color:#21759B">';
+echo '</td><td style="font-size:10px;font-weight:bold;color:white">';
 echo '<input type="submit" name="PNEPUBLISH"  id="publish" class="button-primary" value=" Edit Page In Plug N Edit " onclick="Loadpne(\''; echo $value;  echo '\',\''; echo str_ireplace('.htm','',str_ireplace($dirnamereplace,'',$value)); echo '\',0)">';
 echo '</td></tr><tr><td colspan=5><hr size="1px" width="700px"></tr> ';
 }}
 echo '</table></div><BR>';
 if($PNEStart > 19){
 $PNEStart=$PNEStart-20;
-echo '&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:#21759B" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEStart; echo ' ">Previous</a>';
+echo '&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:white" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEStart; echo ' ">Previous</a>';
 };
 
 if($PNEEnd < count($PNEHTMLGlob)){
-echo '&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:#21759B" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEEnd; echo ' ">Next</a>';
+echo '&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:white" href="admin.php?page=plugnedit/pagebuilder.php&PNENEXT='; echo $PNEEnd; echo ' ">Next</a>';
 };
 
 
@@ -269,6 +265,8 @@ echo '&nbsp;&nbsp;&nbsp;&nbsp;<a style="font-size:16px;font-weight:bold;color:#2
 <script language="JavaScript" type="text/javascript">
 function checkField(fieldname)
 {
+fieldname.value=fieldname.value.replace(/_/g," ")
+
 if (/[^0-9a-zA-Z\s]/gi.test(fieldname.value))
 {
 alert ("Only alphanumeric characters and spaces are valid in this field");
@@ -276,6 +274,7 @@ fieldname.value = "";
 fieldname.focus();
 return false;
 }
+
 }
 
 
@@ -363,14 +362,14 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 ?>
 </textarea>
 </form>
-<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.forms['PNEPageBuilder'].submit()" >  
+<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.getElementById('PNEUPDATEID1').reset();document.forms['PNEPageBuilder'].submit()" >  
 
 
 <iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
 </iframe>
 <div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:600px;z-index:10000;border-color:blue;border-width:2px;border:solid">
 <BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets):</span> <BR>
-<form name="PNEUPDATE" method="post" action="#"  onsubmit="return validateThisForm()">
+<form name="PNEUPDATE" id="PNEUPDATEID1" method="post" action="#"  onsubmit="return validateThisForm()">
 <input type="text" id="PNEFileName" name="PNEFileName" value="" onblur="checkField(this)" maxlength="16" size="16" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <input type="hidden" id="PNEDelete" name="PNEDelete" value="0">
 <span style="font-size:16px;font-weight:bold;color:#21759B">Title Of Page.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets Work Best.):</span> <BR>
