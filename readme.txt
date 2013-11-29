@@ -3,7 +3,7 @@ Contributors: cactikelly
 Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages
 Requires at least: 3.5
 Tested up to: 3.7
-Stable tag: 4.3.0
+Stable tag: 4.3.1
 
 WYSIWYG 3D Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
 
@@ -238,9 +238,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 
 == Upgrade Notice ==
 
-= 4.3.0 =
+= 4.3.1 =
 
-Update javascript background color procedure and page naming. Updated styles and colors and logo, added a demo page.
+Added Favicon Support.
 
 == Changelog == 
  
@@ -376,6 +376,10 @@ Update from user level to role. code update.
 = 4.3.0 = 
 
 Update javascript background color procedure and page naming. Updated styles and colors and logo, added a demo page.
+
+= 4.3.1 = 
+
+New Favicon Support.
 
 == Features ==
 

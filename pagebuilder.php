@@ -8,10 +8,17 @@ function PnEPageBuilder() {
 if( isset( $_POST['PlugneditBGColor']) &&  strlen( $_POST['PlugneditBGColor'])){$pbgcolor=$_POST['PlugneditBGColor'];} else {$pbgcolor="#ffffff";}
 
 if( isset( $_POST['PlugneditEditorMargin']) &&  strlen( $_POST['PlugneditEditorMargin'])){$pnemarginwidth=$_POST['PlugneditEditorMargin'];} else {$pnemarginwidth="755";}
+if( isset( $_POST['PNEFavi']) &&  strlen( $_POST['PNEFavi'])){
 
+$PNEFavicon='<link rel="icon" type="image/'.substr(strrchr($_POST['PNEFavi'],'.'),1).'" href="'.$_POST['PNEFavi'].'"/>';
+} else {
+
+$PNEFavicon='';
+
+}
 if(isset($_POST['PNEFileName'])) {
 
-$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'"></head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
+$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 
@@ -104,26 +111,39 @@ if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassF
 if (SetLoadPNE == 1){
 document.getElementById('PNEMETA').style.visibility='visible';
 document.getElementById('PNETitle').value=innerDoc.title;
+//var head=innerDoc.getElementsByTagName("head")[0].innerHTML
 var keywords='';
 var description='';
+var favicon='';
 var metas = innerDoc.getElementsByTagName('meta');
+var favi= innerDoc.getElementsByTagName('link');
     if (metas) {
         for (var x=0,y=metas.length; x<y; x++) {
             if (metas[x].name.toLowerCase() == "keywords") {
                 keywords += metas[x].content;
             }
+			
+			   if (metas[x].name.toLowerCase() == "description") {
+                description += metas[x].content;
+            } 
+	
+			
         }
     }
 	
-	  if (metas) {
-        for (var x=0,y=metas.length; x<y; x++) {
-            if (metas[x].name.toLowerCase() == "description") {
-                description += metas[x].content;
-            } 
+	    if (favi) {
+        for (var x=0,y=favi.length; x<y; x++) {
+            if (favi[x].rel.toLowerCase() == "icon") {
+               favicon += favi[x].href;
+            }
+			
         }
     }
+
 	document.getElementById('PNEKeyWords').value=keywords;
 	document.getElementById('PNEDescription').value=description; 
+		document.getElementById('PNEFavi').value=favicon; 
+		//	document.getElementById('PNEHeader').value=head; 
 <?php if(!isset( $_POST['PlugneditBGColor']) &&  !strlen($_POST['PlugneditBGColor'])){ ?>
 document.getElementById('PlugneditBGColor').value=colorToHex(innerDoc.body.style.backgroundColor)
 <?php  } ?>
@@ -362,30 +382,35 @@ echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
 ?>
 </textarea>
 </form>
-<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.getElementById('PNEUPDATEID1').reset();document.forms['PNEPageBuilder'].submit()" >  
+<BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.getElementById('PNEUPDATEID1').reset();document.getElementById('PlugNeditFileName').value='';document.forms['PNEPageBuilder'].submit()" >  
 
 
 <iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
 </iframe>
 <div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:600px;z-index:10000;border-color:blue;border-width:2px;border:solid">
-<BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets):</span> <BR>
+<BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name:</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets)</span> <BR>
 <form name="PNEUPDATE" id="PNEUPDATEID1" method="post" action="#"  onsubmit="return validateThisForm()">
 <input type="text" id="PNEFileName" name="PNEFileName" value="" onblur="checkField(this)" maxlength="16" size="16" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <input type="hidden" id="PNEDelete" name="PNEDelete" value="0">
-<span style="font-size:16px;font-weight:bold;color:#21759B">Title Of Page.</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets Work Best.):</span> <BR>
+<span style="font-size:16px;font-weight:bold;color:#21759B">Title Of Page:</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets Work Best)</span> <BR>
 <input type="text" id="PNETitle" name="PNETitle" value="" maxlength="200" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 <BR>
-<span style="font-size:16px;font-weight:bold;color:#21759B">Keywords:</span><span style="font-size:12px;font-weight:bold"> (Example: Rockets, Acme, Best Rockets ).</span> <BR>
+<span style="font-size:16px;font-weight:bold;color:#21759B">Keywords:</span><span style="font-size:12px;font-weight:bold"> (Example: Rockets, Acme, Best Rockets )</span> <BR>
 <input type="text" Id="PNEKeyWords" name="PNEKeyWords" value="" maxlength="300" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR><BR>
 <input type="hidden" name="PNEUpdate" value="1">
 <input type="hidden" id="PlugneditBGColor" name="PlugneditBGColor" value="<?php echo $pbgcolor; ?>" >
 <input type="hidden" id="PlugneditEditorMargin" name="PlugneditEditorMargin" value="<?php echo $pnemarginwidth; ?>" >
 
-<span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. ):</span><BR> 
+<span style="font-size:16px;font-weight:bold;color:#21759B">Description:</span><span style="font-size:12px;font-weight:bold"> (Example: This page is about the superior workmanship of Acme Rockets. )</span><BR> 
 <input type="text" name="PNEDescription" id="PNEDescription" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
-<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden';document.getElementById('plugneditcontent').style.display='none'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="document.getElementById('plugneditcontent').style.display='';document.getElementById('plugneditcontent').style.visibility='visible'" name="HTMLSource" id="HTMLSource" value="    HTML Source    " class="button button-highlighted">
+    <span style="font-size:16px;font-weight:bold;color:#21759B">Favicon:</span><span style="font-size:12px;font-weight:bold"> 
+    Favorite Icon. (Example: http://mysite/myicon.ico)</span><span style="font-size:12px;font-weight:bold;color:red"> 
+    Not Required:</span><br>
+<input type="text" name="PNEFavi" id="PNEFavi" value="" maxlength="10000" size="60" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
 
-<textarea   style="visibility:hidden;display:none;width:580px;height:300px"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
+<input type="submit" name="publish" id="publish" class="button-primary" value="    Publish    " > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   <input type="Button" onClick="javascript:document.getElementById('PNEDelete').value=1;document.forms['PNEUPDATE'].submit();" name="PNEDeletebutton" id="PNEDeletebutton" value="    Delete Page    " class="button button-highlighted"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="javascript:document.getElementById('PNEMETA').style.visibility='hidden';document.getElementById('plugneditcontent').style.display='none'" name="PNECancel" id="PNECancel" value="    Cancel    " class="button button-highlighted">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="Button" onClick="document.getElementById('plugneditcontent').style.display='';document.getElementById('plugneditcontent').style.visibility='visible'" name="HTMLSource" id="HTMLSource" value="    HTML Source    " class="button button-highlighted">
+<br>
+<textarea   style="visibility:hidden;display:none;width:580px;height:230px"  id="plugneditcontent" name="plugneditcontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 
 
 </form></div>
