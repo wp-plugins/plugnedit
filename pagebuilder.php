@@ -68,22 +68,18 @@ xmlhttp.send(str);
 
 }
 
-function colorToHex(color) {
+
  
-    if (color.substr(0, 1) === '#') {
-        return color;
-    }
-	try {
-    var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(color);
-    
-    var red = parseInt(digits[2]);
-    var green = parseInt(digits[3]);
-    var blue = parseInt(digits[4]);
-    
-    var rgb = blue | (green << 8) | (red << 16);
-    return digits[1] + '#' + rgb.toString(16);
-	} catch(err){}
-};
+function colorToHex(SortC) {
+    if (SortC.match('rgb')) {
+        var digits = /(.*?)rgb\((\d+), (\d+), (\d+)\)/.exec(SortC);
+        var red = toHex(parseInt(digits[2]));
+        var green = toHex(parseInt(digits[3]));
+        var blue = toHex(parseInt(digits[4]));
+        return red + green + blue
+    } else return SortC.replace('#', '');
+}
+
 
 
 SetLoadPNE=1;
@@ -139,13 +135,16 @@ var favi= innerDoc.getElementsByTagName('link');
 			
         }
     }
+	
 
 	document.getElementById('PNEKeyWords').value=keywords;
 	document.getElementById('PNEDescription').value=description; 
 		document.getElementById('PNEFavi').value=favicon; 
+		
+		
 		//	document.getElementById('PNEHeader').value=head; 
 <?php if(!isset( $_POST['PlugneditBGColor']) &&  !strlen($_POST['PlugneditBGColor'])){ ?>
-document.getElementById('PlugneditBGColor').value=colorToHex(innerDoc.body.style.backgroundColor)
+document.getElementById('PlugneditBGColor').value='#'+colorToHex(innerDoc.body.style.backgroundColor)
 <?php  } ?>
 
 if (PNEFirstEdit!=0){
@@ -160,7 +159,7 @@ document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 }
 } else {
-document.getElementById('PNEditorBgColor').value=colorToHex(innerDoc.body.style.backgroundColor)
+document.getElementById('PNEditorBgColor').value='#'+colorToHex(innerDoc.body.style.backgroundColor)
 document.getElementById('plugneditcontent').value=PlugNeditContentframe;
 document.getElementById('PlugNeditContent').value=PlugNeditContentframe;
 if (!isNaN(parseInt(innerDoc.body.style.minWidth))){
