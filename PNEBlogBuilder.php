@@ -114,7 +114,7 @@ return;
 if (NewstrContent.match('ICG1ADDON')){document.getElementById('PlugNeditContent2').value=document.getElementById('content').value;}}
 </script>
 
-<div id="NoEditupper5" align="center" style="padding:8px;font-size:13px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:100px; left:200px; width:600px; height:550px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
+<div id="NoEditupper5" align="center" style="padding:8px;font-size:13px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:100px; left:200px; width:600px; height:600px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
 
 <BR><BR><div align="justify" id="PlugNeditConfirm2" style="color:black;font-size:13px">
 PlugNedit uses a 3 Dimensional page layout that the WordPress standard editor cannot edit. Converting old blog entries to this format provides little improvement because the page will still be in 2D format. <BR><BR><BR>
