@@ -21,9 +21,9 @@ WYSIWYG 3D Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Des
 
 
 
-Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth. Standard online HTML editors are only based on 2D page editing with height and width available.
+Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
-Includes the new inline contenet editable HTML editor, CKEditor, and over 600 google fonts. 
+PlugNedit includes the new inline contenet editable HTML editor, CKEditor, and over 600 google fonts to choose from. 
 
 PlugNedit provides all the tools of a HTML editor with the twist that items are easily placed on the page and moved around and stacked on top of each other.
 
@@ -34,16 +34,13 @@ Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPr
 
 
 
-
-
-
 [youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
 
 <BR>
 
 Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
-<BR><BR>The Visual HTML Editor does not replace the WordPress editor. PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE HTML editor addons with no conflicts.<BR><BR>
+<BR><BR>The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use. We have tested with other popular TinyMCE HTML editor addons with no conflicts.<BR><BR>
 
 
 
