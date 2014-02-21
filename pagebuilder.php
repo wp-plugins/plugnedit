@@ -240,10 +240,47 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <h1 style="color:gray;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
 
 <BR>
-<table style="width:750px;padding:4px;border:none"><tr><td>
 
 
-<img src="../wp-content/plugins/plugnedit/pnehead.png"><br>
+<div style="color:#21759B;font-size:12px;font-weight:bolder;padding:20px;background-color:white;width:800px">
+
+<img src="../wp-content/plugins/plugnedit/pnehead.png"><br><br>
+<span style="font-size:20px;color:black;font-weight:bolder">
+Plug N Edit builds 3 types of pages.
+</span>
+
+<br><br><br>
+<span style="font-size:16px;color:black">
+1.  Normal Posts & Pages.</span><br>
+Normal blog post and page inside your WordPress template.
+<br>
+For normal pages go to "Add New Post" or "Add New Page" in wordpress admin menu and click the PNE Page Builder button.<br>
+<br>
+
+
+<span style="font-size:16px;color:black">
+2. Themeless Pages.
+
+</span><br>
+Creates pages inside your WordPress site on a blank page (Short Codes And Plugins Work On Page).
+<br>
+For themeless pages go to "Add New Post" or "Add New Page" in wordpress admin menu and click the PNE Page Builder button.<br>
+In the editor click the options menu and check the checkbox labeled "Themeless Page" .
+ <br><br>
+ <span style="font-size:16px;color:black">
+3. Independent Pages.
+</span>
+
+<br>
+Creates single pages outside your WordPress Site (No Plugins).
+To create independent pages outside of your WordPress environment, use the page builder below. Click "Create New Page" to start.
+</span><br>
+<br>
+
+ 
+ 
+</div>
+<br>
 <span style="color:#21759B;font-size:12px">
 Do not use PlugNedit for any type of sensitive or personal information (General 
 Public Pages Only). <BR> 
@@ -251,10 +288,10 @@ Public Pages Only). <BR>
 
 <span style="color:gray;font-size:12px">
 For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
-This section of PlugNedit is for creating pages outside of your Wordpress Template. In order to use PlugNedit you will need to import links to your media.
+This section of PlugNedit is for creating pages outside of your Wordpress environment. In order to use PlugNedit you will need to import links to your media.
 HTML files are saved in your wordpress root in folder PNEHTML. 
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
-</td></tr></table>
+
 </div>
 &nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 18px; background-color: rgb(35, 86, 125); border: 1px solid rgb(0, 0, 0); padding: 3px; border-spacing: 6px; width: 750px;  text-align: left; margin: 3px; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgb(255, 255, 255) 7px 7px 5px; background-image: linear-gradient(rgb(29, 77, 94), rgb(116, 152, 173));"><tr style="border:black 2px solid;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
