@@ -19,7 +19,7 @@ $PNEFavicon='';
 if(isset($_POST['PNEFileName'])) {
 
 $PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
-$PNEFile="../PNEHTML/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
+$PNEFile="../pnehtml/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 
 if (file_exists($PNEFile)){
@@ -219,12 +219,12 @@ if (isset($_GET["PNENEXT"])){
 $PNEStart=$PNEStart+$_GET["PNENEXT"];
 }
 $PNEEnd=$PNEStart+20;
-$dirname = '../PNEHTML';
+$dirname = '../pnehtml';
 if (!file_exists($dirname)){ wp_mkdir_p($dirname);
-copy('../wp-content/plugins/plugnedit/demo_page.htm', '../PNEHTML/demo_page.htm');
+copy('../wp-content/plugins/plugnedit/demo_page.htm', '../pnehtml/demo_page.htm');
 };
-$dir = "../PNEHTML/*";
-$dirnamereplace = '../PNEHTML/';
+$dir = "../pnehtml/*";
+$dirnamereplace = '../pnehtml/';
 $PNEHTMLGlob=glob($dir);
 
 if (is_array($PNEHTMLGlob)){
@@ -289,7 +289,7 @@ Public Pages Only). <BR>
 <span style="color:gray;font-size:12px">
 For blog entries and pages built within your WordPress template, use the button labeled "PlugNedit Page Builder" In the Post or Pages menu. 
 This section of PlugNedit is for creating pages outside of your Wordpress environment. In order to use PlugNedit you will need to import links to your media.
-HTML files are saved in your wordpress root in folder PNEHTML. 
+HTML files are saved in your wordpress root in folder pnehtml. 
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
 
 </div>
