@@ -4,14 +4,14 @@ add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __
 }
 
 if (  is_admin() ) {
-if(!file_exists('../wp-content/plugins/plugnedit/pneconfig.txt')){
+if(!file_exists(plugin_dir_path( __FILE__ ).'pneconfig.txt')){
 $pnefilefolder = 'pnehtml';
 
 include 'pneconfig.php';
 } 
 
 
-$pnecfile=fopen("../wp-content/plugins/plugnedit/pneconfig.txt","r");
+$pnecfile=fopen(plugin_dir_path( __FILE__ )."pneconfig.txt","r");
 $pnefilefolder=fgets($pnecfile,64);
 fclose($pnecfile);
 
@@ -243,7 +243,7 @@ $PNEEnd=$PNEStart+20;
 global $pnefilefolder;
 $dirname = "../".$pnefilefolder;
 if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');
-copy('../wp-content/plugins/plugnedit/demo_page.htm', '../pnehtml/demo_page.htm');
+copy(plugin_dir_path( __FILE__ ).'demo_page.htm', '../pnehtml/demo_page.htm');
 };
 $dir = "../".$pnefilefolder."/*";
 $dirnamereplace = "../".$pnefilefolder."/";
