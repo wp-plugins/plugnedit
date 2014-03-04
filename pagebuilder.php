@@ -3,8 +3,29 @@ function PNEADDPAGE() {
 add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __FILE__, 'PnEPageBuilder', plugins_url( 'plugnedit/pneicon.ico' ));
 }
 
-function PnEPageBuilder() {
+if (  is_admin() ) {
+if(!file_exists('../wp-content/plugins/plugnedit/pneconfig.txt')){
+$pnefilefolder = 'pnehtml';
 
+include 'pneconfig.php';
+} 
+
+
+$pnecfile=fopen("../wp-content/plugins/plugnedit/pneconfig.txt","r");
+$pnefilefolder=fgets($pnecfile,64);
+fclose($pnecfile);
+
+
+
+if (strpbrk($pnefilefolder, "\\/?%*:.|\"<>\ ") === FALSE && strlen($pnefilefolder) > 0  ) {
+} else {
+echo 'Config file is not valid, please email contact@plugnedit.com for directions.';
+exit();
+}
+
+
+function PnEPageBuilder() {
+global $pnefilefolder;
 if( isset( $_POST['PlugneditBGColor']) &&  strlen( $_POST['PlugneditBGColor'])){$pbgcolor=$_POST['PlugneditBGColor'];} else {$pbgcolor="#ffffff";}
 
 if( isset( $_POST['PlugneditEditorMargin']) &&  strlen( $_POST['PlugneditEditorMargin'])){$pnemarginwidth=$_POST['PlugneditEditorMargin'];} else {$pnemarginwidth="755";}
@@ -19,7 +40,7 @@ $PNEFavicon='';
 if(isset($_POST['PNEFileName'])) {
 
 $PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
-$PNEFile="../pnehtml/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
+$PNEFile="../".$pnefilefolder."/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 
 
 if (file_exists($PNEFile)){
@@ -150,7 +171,7 @@ var favi= innerDoc.getElementsByTagName('link');
 		
 		
 		//	document.getElementById('PNEHeader').value=head; 
-<?php if(!isset( $_POST['PlugneditBGColor']) &&  !strlen($_POST['PlugneditBGColor'])){ ?>
+<?php if(!isset($_POST) && !isset( $_POST['PlugneditBGColor']) &&  !strlen($_POST['PlugneditBGColor'])){ ?>
 document.getElementById('PlugneditBGColor').value='#'+colorToHex(innerDoc.body.style.backgroundColor)
 <?php  } ?>
 
@@ -219,16 +240,17 @@ if (isset($_GET["PNENEXT"])){
 $PNEStart=$PNEStart+$_GET["PNENEXT"];
 }
 $PNEEnd=$PNEStart+20;
-$dirname = '../pnehtml';
-if (!file_exists($dirname)){ wp_mkdir_p($dirname);
+global $pnefilefolder;
+$dirname = "../".$pnefilefolder;
+if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');
 copy('../wp-content/plugins/plugnedit/demo_page.htm', '../pnehtml/demo_page.htm');
 };
-$dir = "../pnehtml/*";
-$dirnamereplace = '../pnehtml/';
+$dir = "../".$pnefilefolder."/*";
+$dirnamereplace = "../".$pnefilefolder."/";
 $PNEHTMLGlob=glob($dir);
 
 if (is_array($PNEHTMLGlob)){
-
+$plugneditHTMLfiles='';
 foreach(array_slice($PNEHTMLGlob,$PNEStart,$PNEEnd) as $file)  
 { 
 if (substr($file,-4) == ".htm"){
@@ -356,7 +378,9 @@ return false;
 <![endif] -->
 <?php
 $pages = get_pages(); 
+$pneoutlinks='';
 foreach ( $pages as $page ) {
+
 $pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
     $args = array( 	'numberposts' => 100,
@@ -396,6 +420,8 @@ $stringRplaceplugnedit="../$StringAttPNE/";
 $dir ="../$StringAttPNE/*";  
 
 }
+
+$plugneditfiles='';
 
 foreach(array_slice((array)glob($dir),0,5000) as $file)  
 { $file=$file;
@@ -481,7 +507,7 @@ echo "Loadpne('"; echo str_replace(' ', '_',$_POST['PlugNeditFileName']); echo "
 }
 
 
-}
+}}
 add_action('admin_menu', 'PNEADDPAGE');
  
 

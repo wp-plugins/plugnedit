@@ -231,6 +231,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 
 $pages = get_pages(); 
 foreach ( $pages as $page ) {
+$pneoutlinks='';
 $pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
     $args = array( 	'numberposts' => 100,
