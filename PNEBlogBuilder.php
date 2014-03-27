@@ -36,6 +36,46 @@ function my_default_editor() {
 $r = 'html'; // html or tinymce
 return $r;}
 
+
+
+	function PNEgetblogmedia(){
+    $args = array(
+                        'post_type' => 'attachment',
+                        'numberposts' => -1,
+                        'post_status' => null,
+                        'post_parent' => null,
+						'post_mime_type' => 'image',
+                        );
+
+                    $attachments = get_posts( $args );
+					$pnemfile='';
+                    if ( $attachments ) {
+                        foreach ( $attachments as $attachment ) {
+					    $meta = wp_get_attachment_metadata( $attachment->ID );
+						$imgatt=wp_get_attachment_image_src( $attachment->ID,'full' );
+						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['file'].'|'.$meta['width'].'|'.$meta['height'].';';
+                        if ( isset($meta['sizes']['thumbnail'])){
+						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) ;
+						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['sizes']['thumbnail']['file'].'|'.$meta['sizes']['thumbnail']['width'].'|'.$meta['sizes']['thumbnail']['height'];						
+						};
+						$pnemfile = $pnemfile . ';'; 
+						if ( isset($meta['sizes']['medium'])){
+						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'medium' ) ;
+						$pnemfile = $pnemfile  . $imgatt[0] .'|'. $meta['sizes']['medium']['file'].'|'.$meta['sizes']['medium']['width'].'|'.$meta['sizes']['medium']['height'];		
+						};
+						$pnemfile = $pnemfile . ';';
+						if ( isset($meta['sizes']['large'])){
+						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'large' );
+						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['sizes']['large']['file'].'|'.$meta['sizes']['large']['width'].'|'.$meta['sizes']['large']['height'];		
+										
+				         }
+					  $pnemfile = $pnemfile . ',';
+   }
+						
+  return $pnemfile ;
+ }
+}
+
 function my_the_content_filter($content) {
  if (preg_match('/ICG1ADDON/', $content)) {
 add_filter( 'wp_default_editor', 'my_default_editor' ); }
@@ -147,51 +187,9 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 </div>
 
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">
-<form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm"><textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
-<?php 
-if ( current_user_can('upload_files') ) {
-if(isset($_POST['GetPlugneditfiles'])) {
-if (esc_attr(get_option('upload_path'))==''){
-$stringRplaceplugnedit="../wp-content/uploads";
-$dir = "../wp-content/uploads/*";  
-}else{
-$StringAttPNE=esc_attr(get_option('upload_path'));
-$stringRplaceplugnedit="../$StringAttPNE/"; 
-$dir ="../$StringAttPNE/*";  
-}
-
-foreach(array_slice((array)glob($dir),0,5000) as $file)  
-{ $file=$file;
-if (strtolower(substr($file,-4)) == ".gif" || strtolower(substr($file,-4)) == ".jpg" || strtolower(substr($file,-4))  == ".png" ){
-echo  str_replace($stringRplaceplugnedit,';',$file);
-$plugneditfiles = "$plugneditfiles;$file";}
-if(file_exists($file) && is_dir($file)){
-$dir2 = "$file";   
-foreach(array_slice((array)glob($dir2),0,5000) as $file2)  
-{ $file=$file2;
-if (strtolower(substr($file2,-4)) == ".gif" ||strtolower(substr($file2,-4)) == ".jpg" || strtolower(substr($file2,-4))  == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file2";
-echo  str_replace($stringRplaceplugnedit,';',$file2);}}  
-if(file_exists($file2) && is_dir($file2)){
-$dir3 = "$file2/*";  
-foreach(array_slice((array)glob($dir3),0,5000) as $file3)  
-{ $file=$file3;
-if (strtolower(substr($file3,-4)) == ".gif" || strtolower(substr($file3,-4)) == ".jpg" || strtolower(substr($file3,-4))  == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file3";
- echo  str_replace($stringRplaceplugnedit,';',$file3);
- } if(file_exists($file3) && is_dir($file3)){
-$dir4 = "$file3/*";  }  
-foreach(array_slice((array)glob($dir4),0,5000) as $file4)  
-{  $file=$file4;
-if (strtolower(substr($file4,-4)) == ".gif" || strtolower(substr($file4,-4)) == ".jpg" || strtolower(substr($file4,-4))  == ".png" ){
-$plugneditfiles = "$plugneditfiles;$file4";
-echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
-}}}}}}  
-
-}}
-
-?>
-</textarea><?php if (isset($_POST["plugneditcontent"])) { ?>
+<form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm">
+<input type="hidden" name="PNEWpMEd" value="1">
+<textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none"><?php if (current_user_can('upload_files') ) {if(isset($_POST['GetPlugneditfiles'])) {echo PNEgetblogmedia();}}?></textarea><?php if (isset($_POST["plugneditcontent"])) { ?>
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 
 <script language="JavaScript">
@@ -243,8 +241,9 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 	$recent_posts = wp_get_recent_posts($args);
 	foreach( $recent_posts as $recent ){ 
   $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
-    }?>
-	
+    }
+
+?>
 	
 <input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
