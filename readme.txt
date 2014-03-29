@@ -3,7 +3,7 @@ Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless
 Requires at least: 3.5
 Tested up to: 3.8.1
-Stable tag: 4.4.1
+Stable tag: 4.4.2
 
 WYSIWYG 3D Visual HTML Editor & Drag And Drop Web Page Editor With CKEditor, Desktop Publisher For WordPress.
 
@@ -238,9 +238,9 @@ Plugnedit provides how to videos in the main menu, if you need specific help ema
 
 == Upgrade Notice ==
 
-= 4.4.1 =
+= 4.4.2 =
 
-New Image Gallery.
+Roll Back
 
 == Changelog == 
  
@@ -406,11 +406,6 @@ Fix case sensitive URL
 Case sensitive update.
 
 = 4.3.9 =
-
-Bug fix in themeless page.
-
-
-= 4.4.0 =
 
 Bug fix in themeless page.
 

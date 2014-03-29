@@ -50,44 +50,6 @@ $handle = fopen($PNEFile, 'w') or die('Cannot open file:  '.$PNEFileName);
 fwrite($handle, $PNEcontent);
 }
 }
-
-	function PNEgetmed(){
-    $args = array(
-                        'post_type' => 'attachment',
-                        'numberposts' => -1,
-                        'post_status' => null,
-                        'post_parent' => null,
-						'post_mime_type' => 'image',
-                        );
-
-                    $attachments = get_posts( $args );
-					$pnemfile='';
-                    if ( $attachments ) {
-                        foreach ( $attachments as $attachment ) {
-					    $meta = wp_get_attachment_metadata( $attachment->ID );
-						$imgatt=wp_get_attachment_image_src( $attachment->ID,'full' );
-						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['file'].'|'.$meta['width'].'|'.$meta['height'].';';
-                        if ( isset($meta['sizes']['thumbnail'])){
-						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'thumbnail' ) ;
-						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['sizes']['thumbnail']['file'].'|'.$meta['sizes']['thumbnail']['width'].'|'.$meta['sizes']['thumbnail']['height'];						
-						};
-						$pnemfile = $pnemfile . ';'; 
-						if ( isset($meta['sizes']['medium'])){
-						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'medium' ) ;
-						$pnemfile = $pnemfile  . $imgatt[0] .'|'. $meta['sizes']['medium']['file'].'|'.$meta['sizes']['medium']['width'].'|'.$meta['sizes']['medium']['height'];		
-						};
-						$pnemfile = $pnemfile . ';';
-						if ( isset($meta['sizes']['large'])){
-						$imgatt=wp_get_attachment_image_src( $attachment->ID, 'large' );
-						$pnemfile = $pnemfile . $imgatt[0] .'|'. $meta['sizes']['large']['file'].'|'.$meta['sizes']['large']['width'].'|'.$meta['sizes']['large']['height'];		
-										
-				         }
-					  $pnemfile = $pnemfile . ',';
-   }
-						
-  return $pnemfile ;
- }
-}
 ?>
 
 
@@ -405,7 +367,6 @@ return false;
 
 </script>
 <form name="PNEPageBuilder" method="post" action="http://plugnedit.com/wordpress.cfm">
-<input type="hidden" name="PNEWpMEd" value="1">
 <textarea id="PlugNeditContent" cols="1" rows="1" style="visibility:hidden;display:none" name="PlugNeditContent"></textarea>
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
@@ -447,7 +408,50 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 
 <input name="marginheight" id="marginheight" type="hidden" value="20000">
 
-<textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none"><?php echo PNEgetmed();?></textarea>
+<textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
+
+<?php 
+if (esc_attr(get_option('upload_path'))==''){
+$stringRplaceplugnedit="../wp-content/uploads";
+$dir = "../wp-content/uploads/*";  
+}else{
+$StringAttPNE=esc_attr(get_option('upload_path'));
+$stringRplaceplugnedit="../$StringAttPNE/"; 
+$dir ="../$StringAttPNE/*";  
+
+}
+
+$plugneditfiles='';
+
+foreach(array_slice((array)glob($dir),0,5000) as $file)  
+{ $file=$file;
+if (strtolower(substr($file,-4)) == ".gif" || strtolower(substr($file,-4)) == ".jpg" || strtolower(substr($file,-4))  == ".png" ){
+echo  str_replace($stringRplaceplugnedit,';',$file);
+$plugneditfiles = "$plugneditfiles;$file";}
+if(file_exists($file) && is_dir($file)){
+$dir2 = "$file";   
+foreach(array_slice((array)glob($dir2),0,5000) as $file2)  
+{ $file=$file2;
+if (strtolower(substr($file2,-4)) == ".gif" || strtolower(substr($file2,-4))  == ".jpg" || strtolower(substr($file2,-4))  == ".png" ){
+ $plugneditfiles = "$plugneditfiles;$file2";
+echo  str_replace($stringRplaceplugnedit,';',$file2);}}  
+if(file_exists($file2) && is_dir($file2)){
+$dir3 = "$file2/*";  
+foreach(array_slice((array)glob($dir3),0,5000) as $file3)  
+{ $file=$file3;
+if (strtolower(substr($file3,-4))  == ".gif" || strtolower(substr($file3,-4)) == ".jpg" || strtolower(substr($file3,-4)) == ".png" ){
+ $plugneditfiles = "$plugneditfiles;$file3";
+ echo  str_replace($stringRplaceplugnedit,';',$file3);
+ } if(file_exists($file3) && is_dir($file3)){
+$dir4 = "$file3/*";  }  
+foreach(array_slice((array)glob($dir4),0,5000) as $file4)  
+{  $file=$file4;
+if (strtolower(substr($file4,-4)) == ".gif" || strtolower(substr($file4,-4)) == ".jpg" || strtolower(substr($file4,-4))  == ".png" ){
+$plugneditfiles = "$plugneditfiles;$file4";
+echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
+}}}}}}  
+?>
+</textarea>
 </form>
 <BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.getElementById('PNEUPDATEID1').reset();document.getElementById('PlugNeditFileName').value='';document.forms['PNEPageBuilder'].submit()" >  
 
