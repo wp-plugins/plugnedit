@@ -50,6 +50,15 @@ $handle = fopen($PNEFile, 'w') or die('Cannot open file:  '.$PNEFileName);
 fwrite($handle, $PNEcontent);
 }
 }
+
+if(isset($_POST['plugnedit_width'])) {
+update_option('plugnedit_width',$_POST['plugnedit_width']);
+}
+
+
+
+
+
 ?>
 
 
@@ -297,9 +306,20 @@ In the editor click the options menu and check the checkbox labeled "Themeless P
 Creates single pages outside your WordPress Site (No Plugins).
 To create independent pages outside of your WordPress environment, use the page builder below. Click "Create New Page" to start.
 </span><br>
-<br>
 
- 
+<br>
+<script>
+function checkpneoption(z){
+if(/\D/.test(z) || z==''){alert('Width option must be numeric');return false;} else {
+if (z > 2000 || z < 300){var r = confirm("Typically widths should be between 800 - 1600   Please confirm you want this setting.");
+if (r == true){return true; } else {return false;}
+} else{return true;}
+}
+}
+</script>
+Width Setting For PlugNedit Pages: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value)" action="#" method="post"><input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
+<input type="submit" name="Update" value="Update">
+ </form>
  
 </div>
 <br>
@@ -313,6 +333,8 @@ For blog entries and pages built within your WordPress template, use the button 
 This section of PlugNedit is for creating pages outside of your Wordpress environment. In order to use PlugNedit you will need to import links to your media.
 HTML files are saved in your wordpress root in folder pnehtml. 
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
+
+
 
 </div>
 &nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>

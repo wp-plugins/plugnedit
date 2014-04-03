@@ -1,27 +1,20 @@
 <?php
-function do_pPlugneditStyleFooter(){?>
-<script language="JavaScript" type="text/javascript">
-try {
-var ElePNE=document.getElementById('ICG1ADDONS-Spacer')
-if(ElePNE){
-var tempStyleminwidth=parseInt(document.body.style.minWidth)
-if (isNaN(tempStyleminwidth) || tempStyleminwidth < 800 || tempStyleminwidth =='' ){
-if (parseInt(ElePNE.style.width) > 500){
-document.body.style.minWidth=800+'px'
-} else{
-document.body.style.minWidth=710+'px'}
-}
-}
-} catch(err){
-}
 
-</script>
-<?php
+
+
+add_option('plugnedit_width','1200');
+function Plugnedit_css()
+{
+if ( is_singular() ) {
+$pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
+echo $pnewidthoutput;
+}
 }
 
 remove_filter ('the_content',  'wpautop');
 function PNEcheckpost($content) {
 if (preg_match('/ICG1ADDON/', $content)) {
+add_action('wp_head','Plugnedit_css');
 return $content;
 }
 return wpautop($content);
@@ -30,7 +23,7 @@ return wpautop($content);
 add_filter( 'the_content', 'PNEcheckpost' );
 
 
-add_action( 'wp_footer', 'do_pPlugneditStyleFooter' );
+
 
 function my_default_editor() {
 $r = 'html'; // html or tinymce
