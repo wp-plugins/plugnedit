@@ -1,9 +1,8 @@
 <?php 
 if ( is_admin() ) {
-$Pdirname = '../pnehtml';
-if (!file_exists($Pdirname)){ wp_mkdir_p($Pdirname);
-copy(plugin_dir_path( __FILE__ ).'demo_page.htm', '../pnehtml/demo_page.htm');
-};
+
+   if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');};
+
    
    $pnefolderc='pnehtml';
    if (file_exists('../PNEHTML'))
@@ -35,16 +34,8 @@ copy(plugin_dir_path( __FILE__ ).'demo_page.htm', '../pnehtml/demo_page.htm');
   
    }
    
-  
-   
-   
-
-
-   if (! file_exists(plugin_dir_path( __FILE__ ).'pneconfig.txt')){
-$handle = fopen(plugin_dir_path( __FILE__ ).'pneconfig.txt', 'w') or die('Cannot open file PNE Config');
-fwrite($handle, $pnefolderc);
-fclose($handle);
-}
+ add_option('pnefolder', $pnefolderc ); 
+ 
 }
 
 ?>

@@ -4,16 +4,15 @@ add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __
 }
 
 if (  is_admin() ) {
-if(!file_exists(plugin_dir_path( __FILE__ ).'pneconfig.txt')){
-$pnefilefolder = 'pnehtml';
 
+
+if( !get_option('pnefolder') ) {
 include 'pneconfig.php';
-} 
+$pnefilefolder = get_option('pnefolder');
+} else {
+$pnefilefolder = get_option('pnefolder');
+}
 
-
-$pnecfile=fopen(plugin_dir_path( __FILE__ )."pneconfig.txt","r");
-$pnefilefolder=fgets($pnecfile,64);
-fclose($pnecfile);
 
 
 
@@ -251,9 +250,7 @@ $PNEStart=$PNEStart+$_GET["PNENEXT"];
 $PNEEnd=$PNEStart+20;
 global $pnefilefolder;
 $dirname = "../".$pnefilefolder;
-if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');
-copy(plugin_dir_path( __FILE__ ).'demo_page.htm', '../pnehtml/demo_page.htm');
-};
+if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');};
 $dir = "../".$pnefilefolder."/*";
 $dirnamereplace = "../".$pnefilefolder."/";
 $PNEHTMLGlob=glob($dir);
@@ -446,6 +443,7 @@ $dir ="../$StringAttPNE/*";
 $plugneditfiles='';
 
 foreach(array_slice((array)glob($dir),0,5000) as $file)  
+
 { $file=$file;
 if (strtolower(substr($file,-4)) == ".gif" || strtolower(substr($file,-4)) == ".jpg" || strtolower(substr($file,-4))  == ".png" ){
 echo  str_replace($stringRplaceplugnedit,';',$file);
