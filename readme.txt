@@ -25,9 +25,7 @@ Read the pros and cons of each layout and decide which format you wish to use fr
 
 
 
-<strong><em>
-
-What is plugNedit? </em></strong>
+<strong>What is plugNedit? </strong>
 
 PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has features of a word processor and desktop publisher.
 Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options available. Standard online HTML editors are only based on 2D page editing design with height and width available. 
@@ -38,18 +36,14 @@ Plug & Edit HTML Editor is based on a 3D page building design with height, width
 
 
 
-<strong><em>
-
-Whats New? </em></strong>
+<strong>Whats New?</strong>
 
 600+ google fonts to choose from. 
 PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
 Build themeless pages inside the wordpress environment.
 
 
-<strong><em>
-
-About Plugnedit. </em></strong>
+<strong>About Plugnedit. </strong>
 
 PlugNedit provides all the tools of a HTML editor with a twist, the items are easily placed on the page, moved around and stacked on top of each other. The visual editor plugin is useful for anyone that has a WordPress site or stand alone plugin for any site, it's a simple to use WYSIWYG drag and drop visual HTML editor with advanced options.The visual editor contains a new section for building HTML web pages outside your wordpress template ( Landing Page ). Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily. Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
