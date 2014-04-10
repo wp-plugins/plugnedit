@@ -18,7 +18,7 @@ Both have their benefits however if you use the wordpress editor in a responsive
 Plugnedit allows you to create both fixed and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design program more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
-You can read the pros and cons of each layout and decide which format you use from page to page.
+Read the pros and cons of each layout and decide which format you wish to use from page to page.
 
 <a href="http://www.webvox.eu/responsive-design-adaptive-layout/" target="_blank" >Responsive, Adaptive & Fixed design </a>
 
