@@ -152,30 +152,30 @@ Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 == Frequently Asked Questions ==
 
-= What is the difference from other editors =
+= What is the difference between PlugNedit from other HTML editors? =
 
-Current HTML Editors build pages without organization, PlugNEdit organizes your data into objects that can be moved and placed as desired.
-Plug N Edit works more link a windows program then a HTML Editor. 
+Current HTML visual editors build pages without organization, PlugNEdit organizes your data into objects that can be moved and placed as desired.
+Plug N Edit works more link a desktop publisher or word processor program then a HTML Editor. 
 
-= Can members use the editor =
+= Can members use the visual editor? =
 
-Editor and Administrator roles may use the editor to build pages
+Editor and Administrator roles may use the editor to build web pages.
 
-= What is CKEditor and how does it work with plugnedit =
+= What is CKEditor and how does it work with plugnedit? =
 
-CKEditor is a HTML editor much like the WordPress visual editor, however it work with plugnedit to extend the formatting options in the Drag & Drop
-Editor.
+CKEditor is a HTML editor much like the WordPress visual editor, however it work with plugnedit to extend the formatting options in the Drag & Drop format.
 
+= Do I need plugnedit? =
 
-= Is This Plugin Right For My Needs? =
+PlugNedit is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual HTML editor with more options.
+PlugNedit extends the formats you can use in designing your web pages, with Fixed page and Adaptive design concepts. Fixed page design allows you to create better Graphic layouts then a Responsive design can.
 
-This plugin is useful for anyone that has a wordpress site, it is basically just a easy to use drag and drop visual HTML editor with more options.
-
-= What do I really need to know to make good use of the program? =
+= What do I need to know to use of the program? =
 
 The WYSIWYG HTML editor is based on movable objects (Layers), Therefore you should give each object a Name that is easy to remember this will help you make use of all the options of the editor.
+The editor uses depth, width and height options so remember you can overlay objects and set transparencies of items.
 
-= Is It Hard To Install And Use? =
+= is it hard to install and Use? =
 
 NO, it's plain and simply easy to install, nothing to configure or figure out.
 
@@ -183,64 +183,31 @@ NO, it's plain and simply easy to install, nothing to configure or figure out.
 
 Yes! Plug N Edit works independent of your wordpress editor and will not conflict with plugins you have installed.
 
-= Why Use Plug N Edit? =
 
-We based our web software on a Desktop Publishing design
-not a simple html editor. What better type of editor could there be for 
-WordPress.
-
-= What is different from other editor plugins? =
-
-First of all Plug N Edit is a completely different HTML editor and is not actually a editor plugin. It is based on a drag and drop design which allows for items to be moved, sized stacked and styled with a click of the mouse.
-
-= Does Plug N Edit Work With Themes? =
+= Will PlugNedit work with my theme? =
 
 All Themes tested so far have worked with Plug N Edit.
 
 = Compatibility? =
 
-Plug N Edit is very compatible with other plugins. Plug N Edit does not change much in your WordPress site, our editor is located separate from your WordPress application. That means you can have other editors, plugins and themes installed without conflicts. 
-
-= Another Editor? =
-
-Plug N Edit is a different choice editor with many features, when you want something special, plugnedit provides many tools that are able to create unique blog entries.
-
-
-= What is different about Plug N Edit? =
-
-We based our WYSIWYG HTML editor on floating elements instead of standard static items, this allows for items to be drag and dropped, moved, resized and stacked. 
-
+Plug N Edit is very compatible with other plugins, our editor is located separate from your WordPress application so you can have other editors, plugins and themes installed without conflicts. 
 
 = Is It Free? =
 
-It is free to build blog entries. We are also producing a more advanced editor that will not be free of charge.
+It is free to build blog entries, we are also producing a more advanced editor that will not be free of charge.
 
 = Auto Saves? =
 
-When loading the editor you will be asked if you wish to auto save. We take a snap shot of your page and store 120 minutes of your last edits when turned on.
+When loading the editor you will be asked if you wish to auto save, PlugNedit take a snap shot of your page and store 120 minutes of your last edits when turned on.
 
-
-= Loading A Template Theme In Background? =
- 
-We currently load template themes from your front page, if 
-your template doesn't load correctly please email a request that we support  
-your template and we will try to program a solution.
 
 = Importing Links To Media? =
 
-We import links to your pictures, we do not download or store your pictures,
-this allows you to use pictures when editing your blog.
+We import links to your pictures, we do not download or store your pictures.
 
 = Privacy? =
 
-Plugnedit stores your web address when you visit, we do not collect
-names, address, emails, phone, etc. We only store your blog address as your session to our site and temp file for links & page load.
-The page load file is for Video and Flash, some browser will not allow these items to be imported and must be loaded locally.
-
-
-= I need help with this ? =
-
-Plugnedit provides how to videos in the main menu, if you need specific help email Contact@plugnedit.com and we will assist you in operation of the program.
+Plugnedit stores your web address when you visit, we do not collect names, address, emails, phone, etc. We only store your blog address as your session to our site and temp file for links & page load. 
 
 
 
