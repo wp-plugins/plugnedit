@@ -328,9 +328,7 @@ Config bug fix.
 
 == Features ==
 
-
-
-INline HTML Editor CKEditor<BR>
+Inline HTML Editor CKEditor<BR>
 600+ Google fonts. <br>
 Drag and drop images.<BR>
 Gradient Backgrounds.<BR>
