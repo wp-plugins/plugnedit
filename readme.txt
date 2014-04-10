@@ -1,11 +1,11 @@
-=== WYSIWYG HTML Editor 3D Drag And Drop Visual Editor & Web Page Builder!  ===
+=== WYSIWYG HTML Editor 3D Drag & Drop Visual Editor with Web Page Builder!  ===
 Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless
 Requires at least: 3.5
 Tested up to: 3.8.1
 Stable tag: 4.4.6
 
-WYSIWYG HTML Editor Drag And Drop 3D Visual Editor &  Web Page builder With CKEditor.
+WYSIWYG HTML Editor, Drag And Drop 3D Visual Editor with Web Page builder.
 
 == Description ==
 
@@ -14,8 +14,8 @@ WYSIWYG HTML Editor Drag And Drop 3D Visual Editor &  Web Page builder With CKEd
 Responsive Design, Adaptive Design, Fluid or Fixed Layout?
 </em></strong>
 
-All have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed, fluid and Adaptive layouts.
-Plugnedit allows you to create fixed, fluid and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
+All have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed, Fluid and Adaptive layouts.
+Plugnedit allows you to create fixed, Fluid and Adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
 <strong>What is plugNedit? </strong>
@@ -46,8 +46,7 @@ Read the pros and cons of each layout and decide which format you wish to use fr
 
 <a href="http://coding.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/" target="_blank" >Responsive, Adaptive & Fixed design </a>
 
-<BR>The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use.<BR><BR>
-
+The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use.<BR><BR>
 
 Page Layout is Like Desktop Publishing Software, includes Inline CKEditor HTML editor provided for greater formatting.
 
