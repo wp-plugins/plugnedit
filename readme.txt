@@ -57,73 +57,6 @@ Read the pros and cons of each layout and decide which format you wish to use fr
 WYSIWYG HTML Visual Editor Features:<BR>
 </strong>
 
-INline HTML Editor CKEditor<BR>
-600+ Google fonts. 
-Drag and drop images.<BR>
-Gradient Backgrounds.<BR>
-Drag and drop text.<BR>
-Drag and drop videos.<BR>
-Drag and drop embeds.<BR>
-All Editor Items Click And Move.<BR>
-Load WordPress template inline editing.<BR>
-Load Personal templates for inline editing.<BR>
-Graphical user interface<BR>
-Text fonts. <BR>
-Text Size.<BR>
-Text color.<BR>
-Text shadows.<BR>
-Text spacing.<BR>
-Text line spacing.<BR>
-Text align.<BR>
-Box back ground color.<BR>
-Box borders. <BR>
-Box border colors.<BR>
-Box border sizes.<BR>
-Box padding.<BR>
-Box rounded corners.<BR>
-Box transparency.<BR>
-Box drop shadows.<BR>
-Box border styles.<BR>
-Box border widths.<BR>
-Box Resizing - Just click and pull.<BR>
-Picture resizing - Just click and pull.<BR>
-Picture transparency.<BR>
-Picture underlay.<BR>
-Picture overlay.<BR>
-Picture Gallery<BR>
-Image Drop Shadows<BR>
-Image Borders <BR>
-Image Border radius<BR>
-Linking.<BR>
-Layers adjust levels.<BR>
-Layer naming.<BR>
-Layer positioning.<BR>
-Layers linkable.<BR>
-Layer height levels.<BR>
-Layer visibility toggle.<BR>
-Layer deleting.<BR>
-Floating palettes.<BR>
-Side palettes.<BR>
-Embeds for adding html layers.<BR>
-Embeds for paypal.<BR>
-Embeds for youtube.<BR>
-Undo step.<BR>
-Redo step.<BR>
-Auto backup.<BR>
-Inline editing.<BR>
-Get HTML<BR>
-Margin settings.<BR>
-Page background color<BR>
-Duplicate styles.<BR>
-Adjust Margin Width<BR>
-Content Editable<BR>
-HTML Source<BR>
-Mini HTML Editor<BR>
-Full HTML Editor<BR>
-Custom menu options<BR>
-Upload To Free Image Host<BR>
-Multi-Select Layers<BR>
-New Gallery features<br>
 
 Page Layout is Like Desktop Publishing Software, includes Inline CKEditor HTML editor provided for greater formatting.
 
@@ -177,7 +110,7 @@ The editor uses depth, width and height options so remember you can overlay obje
 
 = is it hard to install and Use? =
 
-NO, it's plain and simply easy to install, nothing to configure or figure out.
+No, it's plain and simply easy to install, nothing to configure or figure out.
 
 = I already have a plugin for the editor Installed, can I still use Plug N Edit? =
 
@@ -397,42 +330,73 @@ Config bug fix.
 
 
 
-* Some WYSIWYG features have not been turned on for the plugin due
-to the lack of understand of most web users.
-
-* PlugNedit can do Angles and we are working on SVG items,
-also plugnedit provides html raw code (Great For Emails). 
-Html Editor can also be added to the Embed Video button
-however it is sometimes tricky to use so we have not 
-displayed this as a possible option (Give it a try if you wish).
-
-
-* PlugNedit can edit full WordPress pages that are based on a blank theme.
-This allows for full editing of blank pages. If this fits your needs you can
-email us for directions.
-
-PlugNedit is looking for developers to build Themes that use the drag and drop editor.
-If you would like to partner and share linking credit contact us.
-
-* Plugnedit Will be programed with predefined styles for easy one click formatting next. Programming for links inside content. We will also be adding on the option to build full pages for special needs.
-
-* If you have suggestions or a special need please contact us with your idea or need.
-
-* If you are interested in some of these advanced features let us know. contact@plugnedit.com
-
-
-<strong>
-New Features:</strong>
-
-Load your WordPress template into the HTML editor, The settings for loading a template are found in the options menu. 
-
-<strong>Theme Programmers:</strong>
-
-If you would like to build a theme with the template full drag and drop and have special needs you may contact us directly.
- 
-<a href="http://plugnedit.com/wordpress.cfm?FirstTimeEdit=1&page=na&loadpage=true&load=1&fullpageedit=1&ddtp=0&marginwidth=0" target="_blank" ><strong><em>Full Page Editor Demo </em></strong></a> <BR>
-
-
+INline HTML Editor CKEditor<BR>
+600+ Google fonts. <br>
+Drag and drop images.<BR>
+Gradient Backgrounds.<BR>
+Drag and drop text.<BR>
+Drag and drop videos.<BR>
+Drag and drop embeds.<BR>
+All Editor Items Click And Move.<BR>
+Load WordPress template inline editing.<BR>
+Load Personal templates for inline editing.<BR>
+Graphical user interface<BR>
+Text fonts. <BR>
+Text Size.<BR>
+Text color.<BR>
+Text shadows.<BR>
+Text spacing.<BR>
+Text line spacing.<BR>
+Text align.<BR>
+Box back ground color.<BR>
+Box borders. <BR>
+Box border colors.<BR>
+Box border sizes.<BR>
+Box padding.<BR>
+Box rounded corners.<BR>
+Box transparency.<BR>
+Box drop shadows.<BR>
+Box border styles.<BR>
+Box border widths.<BR>
+Box Resizing - Just click and pull.<BR>
+Picture resizing - Just click and pull.<BR>
+Picture transparency.<BR>
+Picture underlay.<BR>
+Picture overlay.<BR>
+Picture Gallery<BR>
+Image Drop Shadows<BR>
+Image Borders <BR>
+Image Border radius<BR>
+Linking.<BR>
+Layers adjust levels.<BR>
+Layer naming.<BR>
+Layer positioning.<BR>
+Layers linkable.<BR>
+Layer height levels.<BR>
+Layer visibility toggle.<BR>
+Layer deleting.<BR>
+Floating palettes.<BR>
+Side palettes.<BR>
+Embeds for adding html layers.<BR>
+Embeds for paypal.<BR>
+Embeds for youtube.<BR>
+Undo step.<BR>
+Redo step.<BR>
+Auto backup.<BR>
+Inline editing.<BR>
+Get HTML<BR>
+Margin settings.<BR>
+Page background color<BR>
+Duplicate styles.<BR>
+Adjust Margin Width<BR>
+Content Editable<BR>
+HTML Source<BR>
+Mini HTML Editor<BR>
+Full HTML Editor<BR>
+Custom menu options<BR>
+Upload To Free Image Host<BR>
+Multi-Select Layers<BR>
+New Gallery features<br>
 
 
 
