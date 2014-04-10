@@ -38,9 +38,7 @@ Plug & Edit HTML Editor is based on a 3D page building design with height, width
 
 <strong>Whats New?</strong>
 
-600+ google fonts to choose from. 
-PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
-Build themeless pages inside the wordpress environment.
+600+ google fonts to choose from.<br>PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.<br>Build themeless pages inside the wordpress environment.
 
 
 <strong>About Plugnedit. </strong>
