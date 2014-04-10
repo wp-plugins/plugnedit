@@ -18,13 +18,6 @@ Both have their benefits, however if you use the wordpress editor in a responsiv
 Plugnedit allows you to create both fixed and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
-Read the pros and cons of each layout and decide which format you wish to use from page to page.
-
-<a href="http://www.webvox.eu/responsive-design-adaptive-layout/" target="_blank" >Responsive, Adaptive & Fixed design </a>
-
-
-
-
 <strong>What is plugNedit? </strong>
 
 PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has features of a word processor and desktop publisher.
@@ -50,6 +43,10 @@ PlugNedit provides all the tools of a HTML editor with a twist, the items are ea
 [youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
 
 <BR>
+
+Read the pros and cons of each layout and decide which format you wish to use from page to page.
+
+<a href="http://www.webvox.eu/responsive-design-adaptive-layout/" target="_blank" >Responsive, Adaptive & Fixed design </a>
 
 
 <BR><BR>The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use.<BR><BR>
