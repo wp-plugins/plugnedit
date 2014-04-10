@@ -49,7 +49,7 @@ Build themeless pages inside the wordpress environment.
 
 <strong><em>
 
-About Plugnedit </em></strong>
+About Plugnedit. </em></strong>
 
 PlugNedit provides all the tools of a HTML editor with the twist that items are easily placed on the page and moved around and stacked on top of each other in a visual editor format. This plugin is useful for anyone that has a WordPress site or stand alone plugin for any site, it's a simple to use WYSIWYG drag and drop visual HTML editor with advanced options. Brand new section for building HTML web pages outside your wordpress template ( Landing Page ). Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily. Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
@@ -66,6 +66,7 @@ PlugNedit provides all the tools of a HTML editor with the twist that items are 
 
 <strong>
 WYSIWYG HTML Visual Editor Features:<BR>
+</strong>
 
 INline HTML Editor CKEditor<BR>
 600+ Google fonts. 
@@ -140,7 +141,7 @@ Page Layout is Like Desktop Publishing Software, includes Inline CKEditor HTML e
 
 <BR>
 
-</strong>
+
 
 Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
