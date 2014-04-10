@@ -11,11 +11,11 @@ WYSIWYG HTML Editor Drag And Drop 3D Visual Editor &  Web Page builder With CKEd
 
 <strong>
 <em>
-Responsive Design, Adaptive Design or Fixed Layout?
+Responsive Design, Adaptive Design, Fluid or Fixed Layout?
 </em></strong>
 
-Both have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed & Adaptive layouts .
-Plugnedit allows you to create both fixed and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
+Both have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed, fluid and Adaptive layouts.
+Plugnedit allows you to create fixed, fluid and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
 <strong>What is plugNedit? </strong>
@@ -42,30 +42,15 @@ PlugNedit provides all the tools of a HTML editor with a twist, the items are ea
 
 [youtube http://www.youtube.com/watch?v=LlzYTlmgX1c&hd=1]
 
-<BR>
-
 Read the pros and cons of each layout and decide which format you wish to use from page to page.
 
-<a href="http://www.webvox.eu/responsive-design-adaptive-layout/" target="_blank" >Responsive, Adaptive & Fixed design </a>
+<a href="http://coding.smashingmagazine.com/2009/06/02/fixed-vs-fluid-vs-elastic-layout-whats-the-right-one-for-you/" target="_blank" >Responsive, Adaptive & Fixed design </a>
 
-
-<BR><BR>The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use.<BR><BR>
-
-
-
-<strong>
-WYSIWYG HTML Visual Editor Features:<BR>
-</strong>
+<BR>The Visual HTML Editor does not replace the WordPress editor, PlugNedit places a button on your editor page and gives a second choice of which editor to use.<BR><BR>
 
 
 Page Layout is Like Desktop Publishing Software, includes Inline CKEditor HTML editor provided for greater formatting.
 
-
-<BR>
-
-
-
-Non WordPress Sites can visit our webpage for plugin directions.<BR>
 
 <a href="http://www.Plugnedit.com/">PlugNedit Visual Editor Website</a>
 
