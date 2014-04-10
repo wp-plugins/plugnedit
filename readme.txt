@@ -14,8 +14,8 @@ WYSIWYG HTML Editor Drag And Drop 3D Visual Editor &  Web Page builder With CKEd
 Responsive Design or Fixed Layout?
 </em>
 
-Both have their benefits however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed layouts.
-Plugnedit allows you to create both fixed and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design program more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
+Both have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed layouts.
+Plugnedit allows you to create both fixed and adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
 Read the pros and cons of each layout and decide which format you wish to use from page to page.
