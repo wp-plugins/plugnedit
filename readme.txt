@@ -9,6 +9,12 @@ WYSIWYG HTML Editor, Drag And Drop 3D Visual Editor with Web Page builder.
 
 == Description ==
 
+
+<strong>What is PlugNedit? </strong>
+
+PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has features of a word processor and desktop publisher.
+Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options available. Standard online HTML editors are only based on 2D page editing design with height and width available. 
+
 <strong>
 <em>
 Responsive Design, Adaptive Design, Fluid or Fixed Layout?
@@ -18,15 +24,8 @@ All have their benefits, however if you use the wordpress editor in a responsive
 Plugnedit allows you to create fixed, Fluid and Adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
-<strong>What is plugNedit? </strong>
-
-PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has features of a word processor and desktop publisher.
-Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options available. Standard online HTML editors are only based on 2D page editing design with height and width available. 
-
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0&overmarginwidth=800" >
 <strong><em>Visual Editor Demo</em></strong></a>
-
-
 
 
 <strong>Whats New?</strong>
