@@ -24,7 +24,7 @@ All have their benefits, however if you use the wordpress editor in a responsive
 Plugnedit allows you to create fixed, Fluid and Adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
 
 
-<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0&overmarginwidth=800" >
+<a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0&overmarginwidth=800&LoadInlineEditor=1" >
 <strong><em>Visual Editor Demo</em></strong></a>
 
 
