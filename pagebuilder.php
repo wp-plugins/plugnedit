@@ -4,8 +4,7 @@ add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __
 }
 
 if (  is_admin() ) {
-
-
+function PnEPageBuilder() {
 if( !get_option('pnefolder') ) {
 include 'pneconfig.php';
 $pnefilefolder = get_option('pnefolder');
@@ -13,35 +12,23 @@ $pnefilefolder = get_option('pnefolder');
 $pnefilefolder = get_option('pnefolder');
 }
 
-
-
-
 if (strpbrk($pnefilefolder, "\\/?%*:.|\"<>\ ") === FALSE && strlen($pnefilefolder) > 0  ) {
 } else {
 echo 'Config file is not valid, please email contact@plugnedit.com for directions.';
 exit();
 }
-
-
-function PnEPageBuilder() {
+include_once 'pnemed.php';
 global $pnefilefolder;
 if( isset( $_POST['PlugneditBGColor']) &&  strlen( $_POST['PlugneditBGColor'])){$pbgcolor=$_POST['PlugneditBGColor'];} else {$pbgcolor="#ffffff";}
-
 if( isset( $_POST['PlugneditEditorMargin']) &&  strlen( $_POST['PlugneditEditorMargin'])){$pnemarginwidth=$_POST['PlugneditEditorMargin'];} else {$pnemarginwidth="755";}
 if( isset( $_POST['PNEFavi']) &&  strlen( $_POST['PNEFavi'])){
-
 $PNEFavicon='<link rel="icon" type="image/'.substr(strrchr($_POST['PNEFavi'],'.'),1).'" href="'.$_POST['PNEFavi'].'"/>';
 } else {
-
 $PNEFavicon='';
-
 }
 if(isset($_POST['PNEFileName'])) {
-
 $PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../".$pnefilefolder."/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
-
-
 if (file_exists($PNEFile)){
 unlink($PNEFile);}
 if ($_POST['PNEDelete']!=1){
@@ -52,12 +39,8 @@ fwrite($handle, $PNEcontent);
 
 if(isset($_POST['plugnedit_width'])) {
 update_option('plugnedit_width',$_POST['plugnedit_width']);
+update_option('pnemedcount',$_POST['pnemedcount']);
 }
-
-
-
-
-
 ?>
 
 
@@ -116,11 +99,7 @@ function colorToHex(SortC) {
     } else return SortC.replace('#', '');
 }
 
-
-
 SetLoadPNE=1;
-
-
 
 function Loadpne(src,filename,PNEtype, PNEType2){
 document.getElementById('PNELoadpage').src =src+'?a='+Math.floor((Math.random()*100000)+1);
@@ -175,7 +154,7 @@ var favi= innerDoc.getElementsByTagName('link');
 
 	document.getElementById('PNEKeyWords').value=keywords;
 	document.getElementById('PNEDescription').value=description; 
-		document.getElementById('PNEFavi').value=favicon; 
+    document.getElementById('PNEFavi').value=favicon; 
 		
 		
 		//	document.getElementById('PNEHeader').value=head; 
@@ -204,8 +183,7 @@ document.getElementById('marginwidth').value=parseInt(innerDoc.body.style.minWid
 
 if (YBSDPNE==false){
 document.forms["PNEPageBuilder"].submit();
-
- } else {
+} else {
 PNEBSD()
 }
 }
@@ -266,17 +244,12 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <div>
 <div style="width:750px;text-align:justify">
 <h1 style="color:gray;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
-
-<BR>
-
-
+<br>
 <div style="color:#21759B;font-size:12px;font-weight:bolder;padding:20px;background-color:white;width:800px">
-
 <img src="../wp-content/plugins/plugnedit/pnehead.png"><br><br>
 <span style="font-size:20px;color:black;font-weight:bolder">
 Plug N Edit builds 3 types of pages.
 </span>
-
 <br><br><br>
 <span style="font-size:16px;color:black">
 1.  Normal Posts & Pages.</span><br>
@@ -284,11 +257,8 @@ Normal blog post and page inside your WordPress template.
 <br>
 For normal pages go to "Add New Post" or "Add New Page" in wordpress admin menu and click the PNE Page Builder button.<br>
 <br>
-
-
 <span style="font-size:16px;color:black">
 2. Themeless Pages.
-
 </span><br>
 Creates pages inside your WordPress site on a blank page (Short Codes And Plugins Work On Page).
 <br>
@@ -298,31 +268,31 @@ In the editor click the options menu and check the checkbox labeled "Themeless P
  <span style="font-size:16px;color:black">
 3. Independent Pages.
 </span>
-
 <br>
 Creates single pages outside your WordPress Site (No Plugins).
 To create independent pages outside of your WordPress environment, use the page builder below. Click "Create New Page" to start.
-</span><br>
-
-<br>
+</span><br><br>
 <script>
-function checkpneoption(z){
+function checkpneoption(z,k){
+if(/\D/.test(k) || k=='' || k < 0 || k > 2000 ){alert('Number of imports must be numeric and less then 2000');return false;} 
 if(/\D/.test(z) || z==''){alert('Width option must be numeric');return false;} else {
 if (z > 2000 || z < 300){var r = confirm("Typically widths should be between 800 - 1600   Please confirm you want this setting.");
 if (r == true){return true; } else {return false;}
 } else{return true;}
 }
+
+
 }
 </script>
-Width Setting For PlugNedit Pages: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value)" action="#" method="post"><input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
-<input type="submit" name="Update" value="Update">
- </form>
- 
+Width Setting For PlugNedit Pages: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value,document.getElementById('pnemedcount').value); " action="#" method="post">
+<input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
+<br>Number of media files to import: <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
+<br><input type="submit" name="Update" value="Update">
+</form>
 </div>
 <br>
 <span style="color:#21759B;font-size:12px">
-Do not use PlugNedit for any type of sensitive or personal information (General 
-Public Pages Only). <BR> 
+Do not use PlugNedit for any type of sensitive or personal information (General Public Pages Only). <BR> 
 </span>
 
 <span style="color:gray;font-size:12px">
@@ -330,9 +300,6 @@ For blog entries and pages built within your WordPress template, use the button 
 This section of PlugNedit is for creating pages outside of your Wordpress environment. In order to use PlugNedit you will need to import links to your media.
 HTML files are saved in your wordpress root in folder pnehtml. 
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
-
-
-
 </div>
 &nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 18px; background-color: rgb(35, 86, 125); border: 1px solid rgb(0, 0, 0); padding: 3px; border-spacing: 6px; width: 750px;  text-align: left; margin: 3px; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgb(255, 255, 255) 7px 7px 5px; background-image: linear-gradient(rgb(29, 77, 94), rgb(116, 152, 173));"><tr style="border:black 2px solid;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
@@ -386,38 +353,16 @@ return false;
 
 </script>
 <form name="PNEPageBuilder" method="post" action="http://plugnedit.com/wordpress.cfm">
+<input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
 <textarea id="PlugNeditContent" cols="1" rows="1" style="visibility:hidden;display:none" name="PlugNeditContent"></textarea>
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
-
-
 <!--[if IE]>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <![endif] -->
-<?php
-$pages = get_pages(); 
-$pneoutlinks='';
-foreach ( $pages as $page ) {
-
-$pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
-$pneoutlinks=$pneoutlinks . ($page->post_title).';';}
-    $args = array( 	'numberposts' => 100,
-    'orderby' => 'post_date',
-    'order' => 'DESC',
-    'post_type' => 'post',
-    'post_status' => 'publish', );
-
-	$recent_posts = wp_get_recent_posts($args);
-	foreach( $recent_posts as $recent ){ 
-  $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
-    } ?>
-	
-	
-<input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
-
+<input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
-
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
 <input type="hidden" id="marginwidth" name="marginwidth" value="755">
 <input type="hidden" name="PluginType" value="StandAlone">
@@ -427,51 +372,7 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 
 <input name="marginheight" id="marginheight" type="hidden" value="20000">
 
-<textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
-
-<?php 
-if (esc_attr(get_option('upload_path'))==''){
-$stringRplaceplugnedit="../wp-content/uploads";
-$dir = "../wp-content/uploads/*";  
-}else{
-$StringAttPNE=esc_attr(get_option('upload_path'));
-$stringRplaceplugnedit="../$StringAttPNE/"; 
-$dir ="../$StringAttPNE/*";  
-
-}
-
-$plugneditfiles='';
-
-foreach(array_slice((array)glob($dir),0,5000) as $file)  
-
-{ $file=$file;
-if (strtolower(substr($file,-4)) == ".gif" || strtolower(substr($file,-4)) == ".jpg" || strtolower(substr($file,-4))  == ".png" ){
-echo  str_replace($stringRplaceplugnedit,';',$file);
-$plugneditfiles = "$plugneditfiles;$file";}
-if(file_exists($file) && is_dir($file)){
-$dir2 = "$file";   
-foreach(array_slice((array)glob($dir2),0,5000) as $file2)  
-{ $file=$file2;
-if (strtolower(substr($file2,-4)) == ".gif" || strtolower(substr($file2,-4))  == ".jpg" || strtolower(substr($file2,-4))  == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file2";
-echo  str_replace($stringRplaceplugnedit,';',$file2);}}  
-if(file_exists($file2) && is_dir($file2)){
-$dir3 = "$file2/*";  
-foreach(array_slice((array)glob($dir3),0,5000) as $file3)  
-{ $file=$file3;
-if (strtolower(substr($file3,-4))  == ".gif" || strtolower(substr($file3,-4)) == ".jpg" || strtolower(substr($file3,-4)) == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file3";
- echo  str_replace($stringRplaceplugnedit,';',$file3);
- } if(file_exists($file3) && is_dir($file3)){
-$dir4 = "$file3/*";  }  
-foreach(array_slice((array)glob($dir4),0,5000) as $file4)  
-{  $file=$file4;
-if (strtolower(substr($file4,-4)) == ".gif" || strtolower(substr($file4,-4)) == ".jpg" || strtolower(substr($file4,-4))  == ".png" ){
-$plugneditfiles = "$plugneditfiles;$file4";
-echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
-}}}}}}  
-?>
-</textarea>
+<textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none"><?php echo  PNEMedfile(); ?></textarea>
 </form>
 <BR><BR>  &nbsp;&nbsp;<input type="button" name="publish2" id="publish2" class="button-primary" value="  Create New Page  " onClick="javascript:if (document.getElementById('ByPassFiltering')){document.getElementById('ByPassFiltering').value=document.URL;};document.getElementById('PlugNeditReturnUrl').value=document.URL;document.getElementById('PlugNeditContent').value=' ';document.getElementById('PNEUPDATEID1').reset();document.getElementById('PlugNeditFileName').value='';document.forms['PNEPageBuilder'].submit()" >  
 

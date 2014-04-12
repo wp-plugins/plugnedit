@@ -22,15 +22,12 @@ return wpautop($content);
 
 add_filter( 'the_content', 'PNEcheckpost' );
 
-
-
-
 function my_default_editor() {
 $r = 'html'; // html or tinymce
 return $r;}
 
 function my_the_content_filter($content) {
- if (preg_match('/ICG1ADDON/', $content)) {
+if (preg_match('/ICG1ADDON/', $content)) {
 add_filter( 'wp_default_editor', 'my_default_editor' ); }
 return $content;
 }
@@ -43,6 +40,8 @@ add_action('edit_page_form','do_aPlugnedit');
 
 function do_aPlugnedit() {
 if ( current_user_can('unfiltered_html')  ) {
+
+include_once 'pnemed.php';
 add_action( 'admin_footer', 'do_pPlugnedit' );
 }
 }
@@ -129,64 +128,17 @@ of your blog entry. Complex HTML pages should not be imported. If you are new to
  </div><BR><BR>
 <input type="button" id="PNE-page-import" Name="Import Page" value="Import Page" class="button-primary"  onClick="ProcessImportpage();" > &nbsp;&nbsp;<input onClick="document.getElementById('NoEditupper5').style.visibility='hidden'" type="Button" name="Cancel"  value="Cancel" class="button">
 </div>
-
-
 <div id="NoEditupper4" align="center" style="font-size:14px;visibility:hidden;border-bottom-color:black; border-style:solid; position:absolute; background-color:white; top:200px; left:300px; width:400px; height:200px; z-index:10000 ;opacity:1;filter:alpha(opacity=100)" >
-
 <BR><BR><div align="center" id="PlugNeditConfirm">
 PlugNedit needs to import links of your media files in order to use them! </div>
 <div align="center">This may take a moment to process.<BR><BR> </div>
 <input type="button" id="PNE-editor-Import" Name="Import Files" value="Import Files" class="button-primary"  onClick="ProcessUpdatePlugNedit();document.forms['PlugNeditFormGet'].submit();" > <input class="button" id="PNE-editor-NoImport" onClick="document.forms['PlugNeditForm'].submit();" type="Button" Name="Proceed Without Import" value="Proceed Without Import"> <input onClick="document.getElementById('NoEditupper4').style.visibility='hidden';if (document.getElementById('PlugNeditView')){document.getElementById('PlugNeditView').style.visibility='visible'}" type="Button" name="Cancel"  value="Cancel" class="button">
 </div>
-
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">
-<form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm"><textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none">
-<?php 
-if ( current_user_can('upload_files') ) {
-if(isset($_POST['GetPlugneditfiles'])) {
-if (esc_attr(get_option('upload_path'))==''){
-$stringRplaceplugnedit="../wp-content/uploads";
-$dir = "../wp-content/uploads/*";  
-}else{
-$StringAttPNE=esc_attr(get_option('upload_path'));
-$stringRplaceplugnedit="../$StringAttPNE/"; 
-$dir ="../$StringAttPNE/*";  
-}
-
-foreach(array_slice((array)glob($dir),0,5000) as $file)  
-{ $file=$file;
-if (strtolower(substr($file,-4)) == ".gif" || strtolower(substr($file,-4)) == ".jpg" || strtolower(substr($file,-4))  == ".png" ){
-echo  str_replace($stringRplaceplugnedit,';',$file);
-$plugneditfiles = "$plugneditfiles;$file";}
-if(file_exists($file) && is_dir($file)){
-$dir2 = "$file";   
-foreach(array_slice((array)glob($dir2),0,5000) as $file2)  
-{ $file=$file2;
-if (strtolower(substr($file2,-4)) == ".gif" ||strtolower(substr($file2,-4)) == ".jpg" || strtolower(substr($file2,-4))  == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file2";
-echo  str_replace($stringRplaceplugnedit,';',$file2);}}  
-if(file_exists($file2) && is_dir($file2)){
-$dir3 = "$file2/*";  
-foreach(array_slice((array)glob($dir3),0,5000) as $file3)  
-{ $file=$file3;
-if (strtolower(substr($file3,-4)) == ".gif" || strtolower(substr($file3,-4)) == ".jpg" || strtolower(substr($file3,-4))  == ".png" ){
- $plugneditfiles = "$plugneditfiles;$file3";
- echo  str_replace($stringRplaceplugnedit,';',$file3);
- } if(file_exists($file3) && is_dir($file3)){
-$dir4 = "$file3/*";  }  
-foreach(array_slice((array)glob($dir4),0,5000) as $file4)  
-{  $file=$file4;
-if (strtolower(substr($file4,-4)) == ".gif" || strtolower(substr($file4,-4)) == ".jpg" || strtolower(substr($file4,-4))  == ".png" ){
-$plugneditfiles = "$plugneditfiles;$file4";
-echo  str_replace($stringRplaceplugnedit,' ; ',$file4);
-}}}}}}  
-
-}}
-
-?>
-</textarea><?php if (isset($_POST["plugneditcontent"])) { ?>
+<form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm"><textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none"><?php echo  PNEMedfile(); ?></textarea>
+<input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
+<?php if (isset($_POST["plugneditcontent"])) { ?>
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
-
 <script language="JavaScript">
 var Iframeview=''
 if (!document.getElementById("PlugNeditView"))
@@ -219,27 +171,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 <!--[if IE]>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <![endif] -->
-<?php
-
-
-$pages = get_pages(); 
-foreach ( $pages as $page ) {
-$pneoutlinks='';
-$pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
-$pneoutlinks=$pneoutlinks . ($page->post_title).';';}
-    $args = array( 	'numberposts' => 100,
-    'orderby' => 'post_date',
-    'order' => 'DESC',
-    'post_type' => 'post',
-    'post_status' => 'publish', );
-
-	$recent_posts = wp_get_recent_posts($args);
-	foreach( $recent_posts as $recent ){ 
-  $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
-    }?>
-	
-	
-<input type="hidden" name="PNEPageLinks" value="<?php echo $pneoutlinks ?>">
+<input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
@@ -255,9 +187,7 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 document.getElementById('PlugNeditReturnUrl').value=document.URL;
 </script>
 <?php if (isset($_POST['GetPlugneditfiles'])) {?>
-
-<script language="JavaScript"
->
+<script language="JavaScript">
 document.getElementById('UpdatePFiles').value='1';
 document.forms['PlugNeditForm'].submit();
 </script><?php }
