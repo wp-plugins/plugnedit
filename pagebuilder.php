@@ -12,7 +12,7 @@ $pnefilefolder = get_option('pnefolder');
 $pnefilefolder = get_option('pnefolder');
 }
 
-if (strpbrk($pnefilefolder, "\\/?%*:.|\"<>\ ") === FALSE && strlen($pnefilefolder) > 0  ) {
+if (strpbrk(get_option('pnefolder'), "\\/?%*:.|\"<>\ ") === FALSE && strlen(get_option('pnefolder')) > 0  ) {
 } else {
 echo 'Config file is not valid, please email contact@plugnedit.com for directions.';
 exit();
@@ -28,7 +28,7 @@ $PNEFavicon='';
 }
 if(isset($_POST['PNEFileName'])) {
 $PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
-$PNEFile="../".$pnefilefolder."/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
+$PNEFile="../".get_option('pnefolder')."/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 if (file_exists($PNEFile)){
 unlink($PNEFile);}
 if ($_POST['PNEDelete']!=1){
@@ -227,10 +227,10 @@ $PNEStart=$PNEStart+$_GET["PNENEXT"];
 }
 $PNEEnd=$PNEStart+20;
 global $pnefilefolder;
-$dirname = "../".$pnefilefolder;
+$dirname = "../".get_option('pnefolder');
 if (!file_exists('../pnehtml')){ wp_mkdir_p('../pnehtml');};
-$dir = "../".$pnefilefolder."/*";
-$dirnamereplace = "../".$pnefilefolder."/";
+$dir = "../".get_option('pnefolder')."/*";
+$dirnamereplace = "../".get_option('pnefolder')."/";
 $PNEHTMLGlob=glob($dir);
 
 if (is_array($PNEHTMLGlob)){
@@ -304,6 +304,7 @@ Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </s
 &nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
 <table style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 18px; background-color: rgb(35, 86, 125); border: 1px solid rgb(0, 0, 0); padding: 3px; border-spacing: 6px; width: 750px;  text-align: left; margin: 3px; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgb(255, 255, 255) 7px 7px 5px; background-image: linear-gradient(rgb(29, 77, 94), rgb(116, 152, 173));"><tr style="border:black 2px solid;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
+
 $arrayp = explode(';', $plugneditHTMLfiles); 
 foreach($arrayp as $value) 
 {
