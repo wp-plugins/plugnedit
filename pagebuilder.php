@@ -286,7 +286,7 @@ if (r == true){return true; } else {return false;}
 </script>
 Width Setting For PlugNedit Pages: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value,document.getElementById('pnemedcount').value); " action="#" method="post">
 <input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
-<br>Number of media files to import: <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
+<br>Number of media files to import (Higher numbers takes longer to load PlugNedit.): <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
 <br><input type="submit" name="Update" value="Update">
 </form>
 </div>
