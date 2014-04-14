@@ -12,15 +12,15 @@ WYSIWYG HTML Editor, Drag And Drop 3D Visual Editor with Web Page builder.
 
 <strong>What is PlugNedit? </strong>
 
-PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has the features of a word processor and desktop publisher. Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options available. Standard online HTML editors are only based on 2D page editing design with height and width available. 
+PlugNedit is a ready to use WYSIWYG (What You See Is What You Get.) HTML Visual Editor that has the features of a word processor and desktop publisher. Plug & Edit HTML Editor is based on a 3D page building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
 <strong>
 <em>
 Responsive Design, Adaptive Design, Fluid or Fixed Layout?
 </em></strong>
 
-All have their benefits, however if you use the wordpress editor in a responsive template all your pages will be responsive and you lose the benefit of creating Fixed, Fluid and Adaptive layouts.
-Plugnedit allows you to create fixed, Fluid and Adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a fixed page layout.
+All have their benefits, however if you use the wordpress editor in a responsive template all your pages will be Responsive and you lose the benefit of creating Fixed, Fluid and Adaptive layouts.
+Plugnedit allows you to create Fixed, Fluid and Adaptive layouts, along with the responsive pages in any wordpress site. The visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a Fixed page layout.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0&overmarginwidth=800&LoadInlineEditor=1" >
