@@ -4,17 +4,19 @@
 
 add_option('plugnedit_width','1200');
 function Plugnedit_css()
-{
-if ( is_singular() ) {
+{ if ( is_singular() ) {
+$checkpost=get_post(get_the_ID());
+$content=$checkpost->post_content;
+if (preg_match('/ICG1ADDON/', $content)) {		
 $pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
 echo $pnewidthoutput;
-}
-}
+};};};
+
+add_action('wp_head','Plugnedit_css');
 
 remove_filter ('the_content',  'wpautop');
 function PNEcheckpost($content) {
 if (preg_match('/ICG1ADDON/', $content)) {
-add_action('wp_head','Plugnedit_css');
 return $content;
 }
 return wpautop($content);
