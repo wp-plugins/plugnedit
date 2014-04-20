@@ -10,7 +10,7 @@ WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 == Description ==
 
 
-<strong>What is the  PlugNedit HTML Edior? </strong>
+<strong>What is the  PlugNedit HTML Editor? </strong>
 
 PlugNedit is a ready to use WYSIWYG Visual Editor that has the features of a word processor and desktop publisher.The HTML Editor is based on a 3D page  building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
