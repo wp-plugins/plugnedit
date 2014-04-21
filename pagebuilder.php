@@ -40,6 +40,7 @@ fwrite($handle, $PNEcontent);
 if(isset($_POST['plugnedit_width'])) {
 update_option('plugnedit_width',$_POST['plugnedit_width']);
 update_option('pnemedcount',$_POST['pnemedcount']);
+update_option('plugnedit_sitewidth',$_POST['plugnedit_sitewidth']);
 }
 ?>
 
@@ -273,9 +274,9 @@ Creates single pages outside your WordPress Site (No Plugins).
 To create independent pages outside of your WordPress environment, use the page builder below. Click "Create New Page" to start.
 </span><br><br>
 <script>
-function checkpneoption(z,k){
+function checkpneoption(z,k,r){
 if(/\D/.test(k) || k=='' || k < 0 || k > 2000 ){alert('Number of imports must be numeric and less then 2000');return false;} 
-if(/\D/.test(z) || z==''){alert('Width option must be numeric');return false;} else {
+if(/\D/.test(z) || z=='' || /\D/.test(r) || r==''){alert('Width option must be numeric');return false;} else {
 if (z > 2000 || z < 300){var r = confirm("Typically widths should be between 800 - 1600   Please confirm you want this setting.");
 if (r == true){return true; } else {return false;}
 } else{return true;}
@@ -284,13 +285,24 @@ if (r == true){return true; } else {return false;}
 
 }
 </script>
-Width Setting For PlugNedit Pages: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value,document.getElementById('pnemedcount').value); " action="#" method="post">
+Width setting for pages and single post: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value,document.getElementById('pnemedcount').value,document.getElementById('plugnedit_sitewidth').value); " action="#" method="post">
 <input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
+<br>
+Front page width settings for multiple posts. (Default 0 for not in use, standard setting 800-1200 px):
+<br><input id="plugnedit_sitewidth" type="text" value="<?php echo get_option('plugnedit_sitewidth'); ?>" name="plugnedit_sitewidth" style="width:100px" >PX  &nbsp;&nbsp;
+
+
+
 <br>Number of media files to import (Higher numbers takes longer to load PlugNedit.): <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
+
+
+
 <br><input type="submit" name="Update" value="Update">
 </form>
 </div>
 <br>
+
+
 <span style="color:#21759B;font-size:12px">
 Do not use PlugNedit for any type of sensitive or personal information (General Public Pages Only). <BR> 
 </span>
@@ -301,7 +313,12 @@ This section of PlugNedit is for creating pages outside of your Wordpress enviro
 HTML files are saved in your wordpress root in folder pnehtml. 
 Adding HTML or editing file by hand may make it non-editable in Plug N Edit. </span><BR><BR>
 </div>
-&nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a>
+&nbsp;&nbsp;&nbsp;<a href="http://plugNEdit.com" target="_blank" style="font-size:13px">Plug & Edit Home Page</a> &nbsp;&nbsp;&nbsp;<a href="mailto:contact@plugnedit.com" style="font-size:13px">Support Email: Contact@plugnedit.com</a><br><br><br>
+<?php
+if (is_multisite() ) { 
+echo "Multisite can build WordPress pages and post, however the stand alone page builder is not multisite capable.";
+} else {
+?>
 <table style="font-family: Arial, Arial, Helvetica, sans-serif; font-size: 18px; background-color: rgb(35, 86, 125); border: 1px solid rgb(0, 0, 0); padding: 3px; border-spacing: 6px; width: 750px;  text-align: left; margin: 3px; word-wrap: break-word; letter-spacing: normal; line-height: normal; font-weight: normal; color: rgb(0, 0, 0); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; box-shadow: rgb(255, 255, 255) 7px 7px 5px; background-image: linear-gradient(rgb(29, 77, 94), rgb(116, 152, 173));"><tr style="border:black 2px solid;color:white;text-shadow: -1px -1px #333, 1px 1px #333;height:35px"><td style="width:200px">Page Name</td><td>Preview</td><td>URL</td><td>Edit Meta</td><td>Edit Page</td></tr>
 <?php		 
 
@@ -429,7 +446,7 @@ echo "Loadpne('"; echo str_replace(' ', '_',$_POST['PlugNeditFileName']); echo "
 }
 
 
-}}
+}}}
 add_action('admin_menu', 'PNEADDPAGE');
  
 
