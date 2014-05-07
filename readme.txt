@@ -28,7 +28,8 @@ All have their benefits, however if you use the wordpress visual editor in a res
 
 <strong>Whats New?</strong>
 
-  * 600+ google fonts to choose from.<br>Build themeless pages inside the wordpress environment.
+  * 600+ google fonts to choose from.
+  * Build themeless pages inside the wordpress environment.
   * Create Rollover Buttons
   * Clone Items
   * PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
@@ -335,78 +336,72 @@ Settings for width multipost front page.
 
 == Features ==
 
-Inline HTML Editor CKEditor<BR>
-600+ Google fonts. <br>
-Drag and drop images.<BR>
-Gradient Backgrounds.<BR>
-Drag and drop text.<BR>
-Drag and drop videos.<BR>
-Drag and drop embeds.<BR>
-All Editor Items Click And Move.<BR>
-Load WordPress template inline editing.<BR>
-Load Personal templates for inline editing.<BR>
-Graphical user interface<BR>
-Text fonts. <BR>
-Text Size.<BR>
-Text color.<BR>
-Text shadows.<BR>
-Text spacing.<BR>
-Text line spacing.<BR>
-Text align.<BR>
-Box back ground color.<BR>
-Box borders. <BR>
-Box border colors.<BR>
-Box border sizes.<BR>
-Box padding.<BR>
-Box rounded corners.<BR>
-Box transparency.<BR>
-Box drop shadows.<BR>
-Box border styles.<BR>
-Box border widths.<BR>
-Box Resizing - Just click and pull.<BR>
-Picture resizing - Just click and pull.<BR>
-Picture transparency.<BR>
-Picture underlay.<BR>
-Picture overlay.<BR>
-Picture Gallery<BR>
-Image Drop Shadows<BR>
-Image Borders <BR>
-Image Border radius<BR>
-Linking.<BR>
-Layers adjust levels.<BR>
-Layer naming.<BR>
-Layer positioning.<BR>
-Layers linkable.<BR>
-Layer height levels.<BR>
-Layer visibility toggle.<BR>
-Layer deleting.<BR>
-Floating palettes.<BR>
-Side palettes.<BR>
-Embeds for adding html layers.<BR>
-Embeds for paypal.<BR>
-Embeds for youtube.<BR>
-Undo step.<BR>
-Redo step.<BR>
-Auto backup.<BR>
-Inline editing.<BR>
-Get HTML<BR>
-Margin settings.<BR>
-Page background color<BR>
-Duplicate styles.<BR>
-Adjust Margin Width<BR>
-Content Editable<BR>
-HTML Source<BR>
-Mini HTML Editor<BR>
-Full HTML Editor<BR>
-Custom menu options<BR>
-Upload To Free Image Host<BR>
-Multi-Select Layers<BR>
-New Gallery features<br>
-
-
-
-
-
-
-
-
+  * Inline HTML Editor CKEditor
+  * 600+ Google fonts. 
+  * Rollover Buttons.
+  * Clone Items.
+  * Drag and drop images.
+  * Gradient Backgrounds.
+  * Drag and drop text.
+  * Drag and drop videos.
+  * Drag and drop embeds.
+  * All Editor Items Click And Move.
+  * Load WordPress template inline editing.
+  * Load Personal templates for inline editing.
+  * Graphical user interface
+  * Text fonts. 
+  * Text Size.
+  * Text color.
+  * Text shadows.
+  * Text spacing.
+  * Text line spacing.
+  * Text align.
+  * Box back ground color.
+  * Box borders. 
+  * Box border colors.
+  * Box border sizes.
+  * Box padding.
+  * Box rounded corners.
+  * Box transparency.
+  * Box drop shadows.
+  * Box border styles.
+  * Box border widths.
+  * Box Resizing - Just click and pull.
+  * Picture resizing - Just click and pull.
+  * Picture transparency.
+  * Picture underlay.
+  * Picture overlay.
+  * Picture Gallery
+  * Image Drop Shadows
+  * Image Borders 
+  * Image Border radius
+  * Linking.
+  * Layers adjust levels.
+  * Layer naming.
+  * Layer positioning.
+  * Layers linkable.
+  * Layer height levels.
+  * Layer visibility toggle.
+  * Layer deleting.
+  * Floating palettes.
+  * Side palettes.
+  * Embeds for adding html layers.
+  * Embeds for paypal.
+  * Embeds for youtube.
+  * Undo step.
+  * Redo step.
+  * Auto backup.
+  * Inline editing.
+  * Get HTML
+  * Margin settings.
+  * Page background color
+  * Duplicate styles.
+  * Adjust Margin Width
+  * Content Editable
+  * HTML Source
+  * Mini HTML Editor
+  * Full HTML Editor
+  * Custom menu options
+  * Upload To Free Image Host
+  * Multi-Select Layers
+  * New Gallery features
