@@ -1,6 +1,6 @@
 === HTML Editor, Drag & Drop Visual Editor with Web Page Builder WYSIWYG ===
 Contributors: Javascript Tech LLC
-Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless
+Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers
 Requires at least: 3.5
 Tested up to: 3.9
 Stable tag: 4.5.1
@@ -28,7 +28,10 @@ All have their benefits, however if you use the wordpress visual editor in a res
 
 <strong>Whats New?</strong>
 
-600+ google fonts to choose from.<br>PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.<br>Build themeless pages inside the wordpress environment.
+  * 600+ google fonts to choose from.<br>Build themeless pages inside the wordpress environment.
+  * Create Rollover Buttons
+  * Clone Items
+  * PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
 
 
 <strong>About Plugnedit. </strong>
