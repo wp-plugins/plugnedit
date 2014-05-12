@@ -32,6 +32,7 @@ All have their benefits, however if you use the wordpress visual editor in a res
   * Build themeless pages inside the wordpress environment.
   * Create Rollover Buttons
   * Clone Items
+  * Full Guids
   * PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
 
 
