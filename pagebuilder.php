@@ -397,7 +397,7 @@ return false;
 
 <iframe src="" onload="frameloaded()" id="PNELoadpage" style="background-color:white;position:absolute;top:0px;left:0px;visibility:hidden;width:0px;height:0px;z-index:1;overflow:hidden">
 </iframe>
-<div id='PNEMETA'  style="padding:6px;background-color:white;position:absolute;top:100px;left:200px;visibility:hidden;width:600px;height:600px;z-index:10000;border-color:blue;border-width:2px;border:solid">
+<div id='PNEMETA'  style="padding:6px;background-color:white;position:fixed;top:50px;left:200px;visibility:hidden;width:600px;height:600px;z-index:10000;border-color:blue;border-width:2px;border:solid">
 <BR><span style="font-size:16px;font-weight:bold;color:#21759B">File Name:</span><span style="font-size:12px;font-weight:bold"> (Example: ACME Rockets)</span> <BR>
 <form name="PNEUPDATE" id="PNEUPDATEID1" method="post" action="#"  onsubmit="return validateThisForm()">
 <input type="text" id="PNEFileName" name="PNEFileName" value="" onblur="checkField(this)" maxlength="16" size="16" style="font-size:12px;font-weight:bold;color:red"><BR><BR>
