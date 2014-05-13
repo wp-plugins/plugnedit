@@ -34,7 +34,7 @@ All have their benefits, however if you use the wordpress visual editor in a res
   * Clone Items
   * Full Guids
   * PlugNedit Visual editor includes the new inline contenet editable HTML editor, CKEditor.
-
+   
 
 <strong>About Plugnedit. </strong>
 
@@ -411,3 +411,4 @@ Menu position change.
   * Upload To Free Image Host
   * Multi-Select Layers
   * New Gallery features
+  * Constrain Unconstrain features
