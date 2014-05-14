@@ -248,6 +248,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 <br>
 <div style="color:#21759B;font-size:12px;font-weight:bolder;padding:20px;background-color:white;width:800px">
 <img src="../wp-content/plugins/plugnedit/pnehead.png"><br><br>
+<a href="../wp-content/plugins/plugnedit/index.html" target="_blank" style="font-size:18px">Video tutorials & examples.</a><br><br>
 <span style="font-size:20px;color:black;font-weight:bolder">
 Plug N Edit builds 3 types of pages.
 </span>
