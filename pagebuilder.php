@@ -41,19 +41,24 @@ if(isset($_POST['plugnedit_width'])) {
 update_option('plugnedit_width',$_POST['plugnedit_width']);
 update_option('pnemedcount',$_POST['pnemedcount']);
 update_option('plugnedit_sitewidth',$_POST['plugnedit_sitewidth']);
+if(isset($_POST['Pneunincode'])) { $univalue=strtolower($_POST['Pneunincode']);} else {$univalue='';}
+
+update_option('Pneunincode', $univalue);
+
 }
 ?>
 
 
-<script>
-YBSDPNE=false
-</script>
-<!--[if IE]>
-<script>
-YBSDPNE=true
-</script>
-<![endif]-->
+
+
+
+
+
 <script language="JavaScript" type="text/javascript">
+
+<?php if ( get_option('Pneunincode') == 'checked' ) {
+echo 'YBSDPNE=true';  } else {echo 'YBSDPNE=false';}
+?>
 
 function PNEBSD()
 {
@@ -296,7 +301,7 @@ Front page width settings for multiple posts. (Default 0 for not in use, standar
 
 <br>Number of media files to import (Higher numbers takes longer to load PlugNedit.): <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
 
-
+<br>Use Encoded HTML: <input type="checkbox" name="Pneunincode" value="checked" <?php  echo get_option('Pneunincode'); ?>>
 
 <br><input type="submit" name="Update" value="Update">
 </form>
@@ -377,9 +382,13 @@ return false;
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
-<!--[if IE]>
+<?php if ( get_option('Pneunincode') == 'checked' ) {
+?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
-<![endif] -->
+<?php
+}
+
+?>
 <input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">

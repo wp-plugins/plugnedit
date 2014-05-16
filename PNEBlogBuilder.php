@@ -4,6 +4,7 @@
 
 add_option('plugnedit_width','1200');
 add_option('plugnedit_sitewidth','0');
+add_option('Pneunincode','checked');
 
 function Plugnedit_css()
 { if ( is_singular() ) {
@@ -176,17 +177,25 @@ strContent=document.getElementById('plugneditreturncontent').value
 <input type="hidden" id="PlugNeditSiteId"  name="PlugNeditSiteId" value="">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="<?php echo $currentUrl; ?>">
-<!--[if IE]>
+<?php if ( get_option('Pneunincode') == 'checked' ) {
+?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
-<![endif] -->
+<?php
+}
+
+?>
 <input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
 <form action="#" method="post"  name="PlugNeditFormGet">
-<!--[if IE]>
+<?php if ( get_option('Pneunincode') == 'checked' ) {
+?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
-<![endif] -->
+<?php
+}
+
+?>
 <input type="hidden"  name="PlugNeditContent2" id="PlugNeditContent2" value="">
 <input type="hidden"  name="GetPlugneditfiles" value="0">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
