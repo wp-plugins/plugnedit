@@ -99,8 +99,8 @@ try{
  document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent();'+document.getElementById('post').getAttribute('onsubmit')) 
  } catch(err){}
 }
-
-document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="<?php echo $frameurl; ?>" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent;y.document.getElementById('pneadminstyle').setAttribute('href', '<?php echo get_option('pnecsslink'); ?>' );",2000)};ICGWarning='<BR><span style="font-size:13px;color:red;font-weight:bold">Do not forget to click publish or update after editing page. This page should be edited in the PlugNedit Editor only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
+PNEinsertframehtml=SubStringContentPlugnedit+strContent
+document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="<?php echo $frameurl; ?>" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;};ICGWarning='<BR><span style="font-size:13px;color:red;font-weight:bold">Do not forget to click publish or update after editing page. This page should be edited in the PlugNedit Editor only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
 document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" id="PNE-editor" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
@@ -173,7 +173,8 @@ try{
  document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent();'+document.getElementById('post').getAttribute('onsubmit')) 
  } catch(err){}
 }
-document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value;y.document.getElementById('pneadminstyle').setAttribute('href', '<?php echo get_option('pnecsslink'); ?>' );",2000)
+PNEinsertframehtml=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value;
+document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;
 document.getElementById('content').value=document.getElementById('plugneditreturncontent').value
 strContent=document.getElementById('plugneditreturncontent').value
 </script>
