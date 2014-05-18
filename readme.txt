@@ -28,7 +28,7 @@ All have their benefits, however if you use the wordpress visual editor in a res
 
 <strong>Whats New?</strong>
 
-  * CSS imported into editor for exact matching in the editor.
+  * CSS imported into editor for exact matching of styles in editor and page.
   * 600+ google fonts to choose from.
   * Build themeless pages inside the wordpress environment.
   * Create Rollover Buttons
