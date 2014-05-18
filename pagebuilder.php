@@ -27,7 +27,8 @@ $PNEFavicon='<link rel="icon" type="image/'.substr(strrchr($_POST['PNEFavi'],'.'
 $PNEFavicon='';
 }
 if(isset($_POST['PNEFileName'])) {
-$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
+$PNECSSurl = plugin_dir_url( __FILE__ ) . 'css/style.css';
+$PNEcontent = '<!DOCTYPE html><html><head><title>'.$_POST['PNETitle'].'</title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><link rel="stylesheet" type="text/css" href="'.$PNECSSurl.'"><meta name="keywords" content="'.$_POST['PNEKeyWords'].'"><meta name="description" content="'.$_POST['PNEDescription'].'">'.$PNEFavicon.'</head><body style="margin:0px;min-width:'.$pnemarginwidth.'px;background-color:'.$pbgcolor.'"><div id="PNEPageBuilderContent">'.stripslashes($_POST['plugneditcontent']).'</div></body></html>';
 $PNEFile="../".get_option('pnefolder')."/".str_replace(' ', '_', $_POST['PNEFileName']).".htm";
 if (file_exists($PNEFile)){
 unlink($PNEFile);}
@@ -42,21 +43,14 @@ update_option('plugnedit_width',$_POST['plugnedit_width']);
 update_option('pnemedcount',$_POST['pnemedcount']);
 update_option('plugnedit_sitewidth',$_POST['plugnedit_sitewidth']);
 if(isset($_POST['Pneunincode'])) { $univalue=strtolower($_POST['Pneunincode']);} else {$univalue='';}
-
-update_option('Pneunincode', $univalue);
-
+update_option('pneunincode', $univalue);
 }
 ?>
 
 
-
-
-
-
-
 <script language="JavaScript" type="text/javascript">
 
-<?php if ( get_option('Pneunincode') == 'checked' ) {
+<?php if ( get_option('pneunincode') == 'checked' ) {
 echo 'YBSDPNE=true';  } else {echo 'YBSDPNE=false';}
 ?>
 
@@ -291,19 +285,24 @@ if (r == true){return true; } else {return false;}
 
 }
 </script>
+<br><br>
 Width setting for pages and single post: <form  name="PNEoptions" onSubmit="return checkpneoption(document.getElementById('plugnedit_width').value,document.getElementById('pnemedcount').value,document.getElementById('plugnedit_sitewidth').value); " action="#" method="post">
 <input id="plugnedit_width" type="text" value="<?php echo get_option('plugnedit_width'); ?>" name="plugnedit_width" style="width:100px" >PX  &nbsp;&nbsp;
-<br>
+<br><br>
 Front page width settings for multiple posts. (Default 0 for not in use, standard setting 800-1200 px):
 <br><input id="plugnedit_sitewidth" type="text" value="<?php echo get_option('plugnedit_sitewidth'); ?>" name="plugnedit_sitewidth" style="width:100px" >PX  &nbsp;&nbsp;
-
-
-
+<br><br>
+Custom CSS URL <a href="http://plugnedit.com/cssdir.html">How to set custom CSS for plugnedit.</a><br>
+<span style="font-size:11px">Default Setting: <?php echo $PNECSSurl = plugin_dir_url( __FILE__ ) . 'css/style.css'; ?> </span>
+<br>
+This setting cannot be changed in this version.<br>
+<input id="plugnedit_ssurl"   type="text" value="<?php echo get_option('pnecsslink'); ?>" name="plugnedit_cssurl" style="width:300px;font-size:11px" disabled >  &nbsp;&nbsp;
+<br>
 <br>Number of media files to import (Higher numbers takes longer to load PlugNedit.): <br><input id="pnemedcount" type="text" value="<?php echo get_option('pnemedcount'); ?>" name="pnemedcount" style="width:100px" >
-
-<br>Use Encoded HTML: <input type="checkbox" name="Pneunincode" value="checked" <?php  echo get_option('Pneunincode'); ?>>
-
-<br><input type="submit" name="Update" value="Update">
+<br>
+<br>Use Encoded HTML: <input type="checkbox" name="Pneunincode" value="checked" <?php  echo get_option('pneunincode'); ?>> <span style="color:red"> Uncheck if you experience problems saving or loading pages.</span>
+<br>
+<br><input type="submit" name="Update Options" value="Update Options">
 </form>
 </div>
 <br>
@@ -377,12 +376,13 @@ return false;
 
 </script>
 <form name="PNEPageBuilder" method="post" action="http://plugnedit.com/wordpress.cfm">
+<input type="hidden" name="PNEcustomcss" value="<?php echo plugin_dir_url( __FILE__ ) . 'css/style.css' ?>">
 <input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
 <textarea id="PlugNeditContent" cols="1" rows="1" style="visibility:hidden;display:none" name="PlugNeditContent"></textarea>
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
-<?php if ( get_option('Pneunincode') == 'checked' ) {
+<?php if ( get_option('pneunincode') == 'checked' ) {
 ?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <?php

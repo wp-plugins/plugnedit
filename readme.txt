@@ -1,9 +1,9 @@
 === HTML Editor, Drag & Drop Visual Editor with Web Page Builder WYSIWYG ===
 Contributors: Javascript Tech LLC
-Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers
+Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers, css
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 4.5.4
+Stable tag: 4.5.6
 
 WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 
@@ -28,6 +28,7 @@ All have their benefits, however if you use the wordpress visual editor in a res
 
 <strong>Whats New?</strong>
 
+  * CSS imported into editor for exact matching in the editor.
   * 600+ google fonts to choose from.
   * Build themeless pages inside the wordpress environment.
   * Create Rollover Buttons
@@ -132,9 +133,16 @@ Plugnedit stores your web address when you visit, we do not collect names, addre
 
 == Upgrade Notice ==
 
-= 4.5.4 =
+= 4.5.6 =
 
-Encode HTML so users do not need to reload when iframe are in HTML.
+READ FIRST! Important! New CSS matching and user style sheet support, this is the first version with CSS imported into the editor. Nothing looks different on the outside but every part of the program has changed and is effected. The new css version allows for exact matching in WYSIWYG editor with your page.
+ 
+** Known Issue: Table CSS application in chrome (CSS subject to change.).
+** Known Issue: CSS Subject to minor changes.
+** Known Issue: Encoded HTML does not load for all users (Uncheck Encoded HTML Checkbox if you have a problem loading or saving page)
+This version is RC 1.0 of the CSS editor and is subject to possible rollback to old version.
+
+Old plugin Version located at http://plugnedit.com/rollback/plugnedit.zip
 
 
 == Changelog == 

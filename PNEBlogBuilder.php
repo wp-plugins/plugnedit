@@ -4,7 +4,16 @@
 
 add_option('plugnedit_width','1200');
 add_option('plugnedit_sitewidth','0');
-add_option('Pneunincode','checked');
+add_option('pneunincode','checked');
+$PNECSSurl = plugin_dir_url( __FILE__ ) . 'css/style.css';
+add_option('pnecsslink',$PNECSSurl);
+
+
+function pne_load_plugin_css() {
+wp_enqueue_style( 'pnestyles', get_option('pnecsslink') );
+}
+
+add_action( 'wp_enqueue_scripts', 'pne_load_plugin_css' );
 
 function Plugnedit_css()
 { if ( is_singular() ) {
@@ -62,6 +71,8 @@ $host     = $_SERVER['HTTP_HOST'];
 $script   = $_SERVER['SCRIPT_NAME'];
 $params   = $_SERVER['QUERY_STRING'];
 $currentUrl = $protocol . '://' . $host . $script . '?' . $params;
+$frameurl = plugin_dir_url( __FILE__ ) . 'frame.htm'
+
 ?>
 <script language="JavaScript">
 var NewPlugNeditContent=0
@@ -89,7 +100,7 @@ try{
  } catch(err){}
 }
 
-document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent",2000)};ICGWarning='<BR><span style="font-size:13px;color:red;font-weight:bold">Do not forget to click publish or update after editing page. This page should be edited in the PlugNedit Editor only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
+document.getElementById('postdivrich').innerHTML='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="<?php echo $frameurl; ?>" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+strContent;y.document.getElementById('pneadminstyle').setAttribute('href', '<?php echo get_option('pnecsslink'); ?>' );",2000)};ICGWarning='<BR><span style="font-size:13px;color:red;font-weight:bold">Do not forget to click publish or update after editing page. This page should be edited in the PlugNedit Editor only.</span>'; if (document.getElementById('content-tmce')){document.getElementById('content-tmce').style.visibility='hidden' }; if (document.getElementById('edButtonPreview')){document.getElementById('edButtonPreview').style.visibility='hidden' }}
 document.getElementById('edit-slug-box').innerHTML=document.getElementById('edit-slug-box').innerHTML+'<a href="javascript:void(0)" id="PNE-editor" onclick="SMPE()" class="button-primary" >PlugNedit Page Builder</a>'+ICGWarning;
 function SMPE(){
 var strContent=document.getElementById('content').value
@@ -145,6 +156,8 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 </div>
 <input type="hidden" id="plugneditcontent" name="plugneditcontent" value="<?php echo $tempcontent ?>">
 <form id="PlugNeditForm"  name="PlugNeditForm" method="post" action="http://plugnedit.com/wordpress.cfm"><textarea name="plugneditfiles" cols="1" rows="1" style="visibility:hidden;display:none"><?php echo  PNEMedfile(); ?></textarea>
+
+<input type="hidden" name="PNEcustomcss" value="<?php echo plugin_dir_url( __FILE__ ) . 'css/style.css' ?>">
 <input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
 <?php if (isset($_POST["plugneditcontent"])) { ?>
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
@@ -152,7 +165,7 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 var Iframeview=''
 if (!document.getElementById("PlugNeditView"))
 {
-Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'
+Iframeview='<br><br><br><iframe id="PlugNeditView" class="wp-editor-area" src="<?php echo $frameurl; ?>" style="z-index:100000;width:99.9%;height:500px"></iframe><br><input type="button" class="button" value="Show WordPress Editor - WordPress editor uses auto formatting and may distort the look of the page." onclick="document.getElementById(\'wp-content-wrap\').style.visibility=\'visible\';PNEpreserveupdate=false">'
 }
 document.getElementById('wp-content-wrap').style.visibility='hidden'
 if (!document.getElementById('post').getAttribute('onsubmit')){document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent()') } else {
@@ -160,7 +173,7 @@ try{
  document.getElementById('post').setAttribute('onsubmit','PreservePNEcontent();'+document.getElementById('post').getAttribute('onsubmit')) 
  } catch(err){}
 }
-document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value",2000)
+document.getElementById('postdivrich').innerHTML=Iframeview+document.getElementById('postdivrich').innerHTML;var x=document.getElementById("PlugNeditView");var y=(x.contentWindow || x.contentDocument);setTimeout("if (y.document)y=y.document;y.body.innerHTML=SubStringContentPlugnedit+document.getElementById('plugneditreturncontent').value;y.document.getElementById('pneadminstyle').setAttribute('href', '<?php echo get_option('pnecsslink'); ?>' );",2000)
 document.getElementById('content').value=document.getElementById('plugneditreturncontent').value
 strContent=document.getElementById('plugneditreturncontent').value
 </script>
@@ -177,7 +190,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 <input type="hidden" id="PlugNeditSiteId"  name="PlugNeditSiteId" value="">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="<?php echo $currentUrl; ?>">
-<?php if ( get_option('Pneunincode') == 'checked' ) {
+<?php if ( get_option('pneunincode') == 'checked' ) {
 ?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <?php
@@ -189,7 +202,7 @@ strContent=document.getElementById('plugneditreturncontent').value
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>
 <form action="#" method="post"  name="PlugNeditFormGet">
-<?php if ( get_option('Pneunincode') == 'checked' ) {
+<?php if ( get_option('pneunincode') == 'checked' ) {
 ?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
 <?php
