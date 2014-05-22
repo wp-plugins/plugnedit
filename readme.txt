@@ -43,7 +43,7 @@ PlugNedit's visaul Editor provides all the tools of a HTML editor with a twist, 
 
 
 
-[youtube http//www.youtube.com/watch?v=i6L7R3omKDk&hd=1]
+[youtube http://www.youtube.com/watch?v=_LhjBzRcjCM&hd=1]
 
 Read the pros and cons of each layout and decide which format you wish to use from page to page.
 
