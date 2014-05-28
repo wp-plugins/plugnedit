@@ -291,7 +291,7 @@
 
 .pneinline input,
 .pneinline textarea {
-	background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); /* Removing the inner shadow, rounded corners on iOS inputs */
+	background-image: -webkit-linear-gradient(hsla(0,0%,100%,0), hsla(0,0%,100%,0)); 
 }
 
 .pneinline button,
