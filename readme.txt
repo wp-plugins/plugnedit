@@ -135,15 +135,7 @@ Plugnedit stores your web address when you visit, we do not collect names, addre
 
 = 4.5.7 =
 
-READ FIRST! Important! New CSS matching and user style sheet support, this is the first version with CSS imported into the editor. Nothing looks different on the outside but every part of the program has changed and is effected. The new css version allows for exact matching in WYSIWYG editor with your page.
- 
-** Known Issue: Table CSS application in chrome (CSS subject to change.).
-** Known Issue: CSS Subject to minor changes.
-** Known Issue: Encoded HTML does not load for all users (Uncheck Encoded HTML Checkbox if you have a problem loading or saving page)
-This version is RC 1.0 of the CSS editor and is subject to possible rollback to old version.
-
-Old plugin Version located at http://plugnedit.com/rollback/plugnedit.zip
-
+New CSS matching and user style sheet support.
 
 
 == Changelog == 
