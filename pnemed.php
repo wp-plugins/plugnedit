@@ -1,4 +1,3 @@
-
 <?php
 if (is_admin() ) {
 add_option('pnemedcount', '500' ); 
@@ -68,7 +67,7 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 	$recent_posts = wp_get_recent_posts($args);
   foreach( $recent_posts as $recent ){ 
   $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
-   return  $pneoutlinks;
+   return  base64_encode($pneoutlinks);
     } }
 	
 	}

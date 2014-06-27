@@ -3,7 +3,7 @@ Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers, css
 Requires at least: 3.5
 Tested up to: 3.9.1
-Stable tag: 4.5.7
+Stable tag: 4.5.8
 
 WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 
@@ -133,9 +133,9 @@ Plugnedit stores your web address when you visit, we do not collect names, addre
 
 == Upgrade Notice ==
 
-= 4.5.7 =
+= 4.5.8 =
 
-New CSS matching and user style sheet support.
+New support for special character in links.
 
 
 == Changelog == 
@@ -347,6 +347,10 @@ Video Help Page.
 = 4.5.4 =
 
 Encode HTML so users do not need to reload when iframe are in HTML.
+
+= 4.5.8 =
+
+New support for special character in links.
 
 == Features ==
 
