@@ -44,6 +44,12 @@ update_option('pnemedcount',$_POST['pnemedcount']);
 update_option('plugnedit_sitewidth',$_POST['plugnedit_sitewidth']);
 if(isset($_POST['Pneunincode'])) { $univalue=strtolower($_POST['Pneunincode']);} else {$univalue='';}
 update_option('pneunincode', $univalue);
+
+if(isset($_POST['pneautosaves'])) { $pnesavevalue=strtolower($_POST['pneautosaves']);} else {$pnesavevalue='';}
+update_option('pneautosaves', $pnesavevalue);
+
+if(isset($_POST['pnejavascriptzoom'])) { $pnejavavalue=strtolower($_POST['pnejavascriptzoom']);} else {$pnejavavalue='';}
+update_option('pnejavascriptzoom', $pnejavavalue);
 }
 ?>
 
@@ -302,6 +308,19 @@ This setting cannot be changed in this version.<br>
 <br>
 <br>Use Encoded HTML: <input type="checkbox" name="Pneunincode" value="checked" <?php  echo get_option('pneunincode'); ?>> <span style="color:red"> Uncheck if you experience problems saving or loading pages.</span>
 <br>
+
+
+<br><input type="checkbox" name="pneautosaves" value="checked" <?php  echo get_option('pneautosaves'); ?>> Autosave pages on plugnedit server. (Keeps a snapshots of last 120 minutes of work.)
+<br>
+
+<br><input type="checkbox" name="pnejavascriptzoom" value="checked" <?php  echo get_option('pnejavascriptzoom'); ?>> Use javascript to enhance screen fit. (Current version requires this to be enabled for adapted mobile pages.)
+<br>
+
+
+
+
+
+
 <br><input type="submit" name="Update Options" value="Update Options">
 </form>
 </div>
@@ -382,6 +401,9 @@ return false;
 <input type="hidden" id="PlugNeditFileUrl"  name="PlugNeditFileUrl" value="<?php echo esc_attr(get_option('upload_path')); ?>">
 <input type="hidden" id="PlugNeditHomeUrl"  name="PlugNeditHomeUrl" value="<?php echo esc_attr(get_option('home')); ?>">
 <input type="hidden" id="PlugNeditBaseUrl"  name="PlugNeditBaseUrl" value="<?php echo $_SERVER['HTTP_HOST']; ?>">
+
+
+
 <?php if ( get_option('pneunincode') == 'checked' ) {
 ?>
 <input type="hidden" id="PlugNeditBinarycontent"  name="PlugNeditBinarycontent" value="1">
@@ -390,6 +412,7 @@ return false;
 
 ?>
 <input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
+<input type="hidden" name="PNEAutosaves" value="<?php echo get_option('pneautosaves');?>">
 <input type="hidden" name="PlugNeditReturnUrl" id="PlugNeditReturnUrl" value="">
 <input type="hidden" name="PlugNeditFileName" id="PlugNeditFileName" value="">
 <input type="hidden" id="marginwidth" name="marginwidth" value="755">

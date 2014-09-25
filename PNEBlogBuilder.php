@@ -5,36 +5,92 @@
 add_option('plugnedit_width','1200');
 add_option('plugnedit_sitewidth','0');
 add_option('pneunincode','checked');
+add_option('pneautosaves','checked');
+add_option('pnejavascriptzoom','checked');
+
+
 $PNECSSurl = plugin_dir_url( __FILE__ ) . 'css/style.css';
 add_option('pnecsslink',$PNECSSurl);
 
-
+add_action( 'wp_enqueue_scripts', 'pne_load_plugin_css' );
 function pne_load_plugin_css() {
 wp_enqueue_style( 'pnestyles', get_option('pnecsslink') );
 }
 
-add_action( 'wp_enqueue_scripts', 'pne_load_plugin_css' );
+
+add_action( 'wp_enqueue_scripts', 'PNE_jsscripts' );
+function PNE_jsscripts() {
+if (get_option('pnejavascriptzoom') == 'checked'){
+ wp_enqueue_script( 'PNEJava', plugins_url( 'pnejs.js', __FILE__ ));
+};
+
+}
+
+
 
 function Plugnedit_css()
-{ if ( is_singular() ) {
-$checkpost=get_post(get_the_ID());
+{ if ( have_posts() && is_singular() ) {
+$checkpost=get_post();
 $content=$checkpost->post_content;
-if (preg_match('/ICG1ADDON/', $content)) {		
+if (preg_match('/ICG1ADDON/', $content)) {	
+if (!preg_match('/PNEmobilelayout/', $content)) {	
 $pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
 echo $pnewidthoutput;
+};
 };};
-if (!is_singular() && get_option('plugnedit_sitewidth') > 0 ) {
+
+if ( have_posts() && !is_singular() && get_option('plugnedit_sitewidth') > 0 ) {
+$checkpost=get_post();
+$content=$checkpost->post_content;
+if (!preg_match('/PNEmobilelayout/', $content)) {	
 $pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_sitewidth')."px !important; } </style>";
 echo $pnewidthoutput;
+};
 };};
 
 add_action('wp_head','Plugnedit_css');
 
 remove_filter ('the_content',  'wpautop');
+
 function PNEcheckpost($content) {
 if (preg_match('/ICG1ADDON/', $content)) {
+if (preg_match('/PNEmobilelayout/', $content)  &&  ! is_admin()) {
+
+$PNEdoc = new DOMDocument();
+$PNEdoc->loadHTML($content);
+if (wp_is_mobile() ) {
+
+$PNEelement = $PNEdoc->getElementById('PNEfixedlayout');
+$PNEelement2 =  $PNEdoc->getElementById('PNEmobilelayout');
+$PNEelement2 = $PNEelement2->setAttribute('class', 'PNEzoom320');
+$PNEelement3 =  $PNEdoc->getElementById('PNEmobilelayout');
+$PNEelement3 = $PNEelement3->removeAttribute('style');
+$PNEelement4 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+
+$pnemobilewidth = $PNEelement4->getAttribute('data-pnemobilewidth');
+$PNEelement5 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+$pnemobileheight = $PNEelement5->getAttribute('data-pnemobileheight');
+$PNEelement5 = $PNEelement5->setAttribute('style', 'position: static; background-color: transparent; height: '.$pnemobileheight.'; width: '.$pnemobilewidth);
+$PNEelement->parentNode->removeChild($PNEelement);
+
+  $PNEscript = $PNEdoc->createElement ('script');
+  $PNEelement6 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEscript->appendChild ($PNEdoc->createTextNode ('PNESetMobileCSS()'));
+  $PNEelement6 =   $PNEelement6 ->appendChild ($PNEscript);
+
+  $content = $PNEdoc->saveHTML();
+} else 
+{
+
+$PNEelement = $PNEdoc->getElementById('PNEmobilelayout');
+$PNEelement3 = $PNEdoc->getElementById('PNEfixedlayout');
+$PNEelement3 = $PNEelement3->removeAttribute('style');
+$PNEelement->parentNode->removeChild($PNEelement);
+$content = $PNEdoc->saveHTML();
+};
+};	
 return $content;
-}
+};
 return wpautop($content);
 }
 
@@ -159,6 +215,8 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 
 <input type="hidden" name="PNEcustomcss" value="<?php echo plugin_dir_url( __FILE__ ) . 'css/style.css' ?>">
 <input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
+<input type="hidden" name="PNEAdaptive" value="1">
+<input type="hidden" name="PNEAutosaves" value="<?php echo get_option('pneautosaves');?>">
 <?php if (isset($_POST["plugneditcontent"])) { ?>
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
 <script language="JavaScript">
@@ -199,6 +257,8 @@ strContent=document.getElementById('plugneditreturncontent').value
 
 ?>
 <input type="hidden" name="PNEPageLinks" value="<?php echo PNEOlinks();?>">
+
+
 <input type="hidden" name="UpdatePFiles" value="0" id="UpdatePFiles">
 <input type="hidden" name="PlugNeditVersion" value="Version 2.0" id="PlugNeditVersion">
 </form>

@@ -58,7 +58,8 @@ foreach ( $pages as $page ) {
 
 $pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
-    $args = array( 	'numberposts' => 100,
+    $args = array( 	
+    'numberposts' => 1000,
     'orderby' => 'post_date',
     'order' => 'DESC',
     'post_type' => 'post',
