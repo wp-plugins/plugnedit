@@ -16,13 +16,9 @@ function PNESetMobileCSS(){
  {
      
    
- try {
-    viewportwidth=parseInt(document.body.clientWidth);
-   } catch(err){
-   viewportwidth = parseInt(window.innerWidth);
-   }
+viewportwidth = parseInt(elem.parentNode.offsetWidth)
       
-   if (typeof PNEAheight === 'undefined')
+if (typeof PNEAheight === 'undefined')
 {
 PNEAheight=elem.style.height
 };
@@ -31,7 +27,9 @@ if (typeof PNEAwidth === 'undefined')
 {
 PNEAwidth=elem.style.width
 };
-        
+
+
+     
       if (viewportwidth < 240){return;};
       viewportheight = parseInt(window.innerHeight);
       ClassSetting=(viewportwidth/540);
