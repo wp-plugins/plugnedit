@@ -19,12 +19,20 @@ wp_enqueue_style( 'pnestyles', get_option('pnecsslink') );
 
 
 add_action( 'wp_enqueue_scripts', 'PNE_jsscripts' );
+
+
 function PNE_jsscripts() {
 if (get_option('pnejavascriptzoom') == 'checked'){
+if (wp_is_mobile()) {	
+if ( have_posts() && is_singular() ) {
+$checkpost=get_post();
+$content=$checkpost->post_content;
+if (preg_match('/PNEmobilelayout/', $content)) {
  wp_enqueue_script( 'PNEJava', plugins_url( 'pnejs.js', __FILE__ ));
 };
-
-}
+};
+};
+};};
 
 
 
@@ -33,16 +41,18 @@ function Plugnedit_css()
 $checkpost=get_post();
 $content=$checkpost->post_content;
 if (preg_match('/ICG1ADDON/', $content)) {	
-if (!preg_match('/PNEmobilelayout/', $content)) {	
+if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || ! wp_is_mobile() ) {	
+
 $pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
 echo $pnewidthoutput;
+
 };
 };};
 
 if ( have_posts() && !is_singular() && get_option('plugnedit_sitewidth') > 0 ) {
 $checkpost=get_post();
 $content=$checkpost->post_content;
-if (!preg_match('/PNEmobilelayout/', $content)) {	
+if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || ! wp_is_mobile() ) {	
 $pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_sitewidth')."px !important; } </style>";
 echo $pnewidthoutput;
 };
