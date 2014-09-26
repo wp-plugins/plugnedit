@@ -9,6 +9,7 @@ function PNESetMobileCSS(){
  var SpacerWidth;
  var elem=document.getElementById('ICG1ADDONS-Spacer')
 
+
   
 
  if (typeof window.innerWidth != 'undefined')
@@ -21,13 +22,21 @@ function PNESetMobileCSS(){
    viewportwidth = parseInt(window.innerWidth);
    }
       
-   
+   if (typeof PNEAheight === 'undefined')
+{
+PNEAheight=elem.style.height
+};
+
+if (typeof PNEAwidth === 'undefined')
+{
+PNEAwidth=elem.style.width
+};
         
       if (viewportwidth < 240){return;};
       viewportheight = parseInt(window.innerHeight);
       ClassSetting=(viewportwidth/540);
- SpacerHeight= (ClassSetting)*parseInt(elem.style.height);
- SpacerWidth= (ClassSetting)*parseInt(elem.style.width);
+ SpacerHeight= (ClassSetting)*parseInt(PNEAheight);
+ SpacerWidth= (ClassSetting)*parseInt(PNEAwidth);
 
 elem.style.height=SpacerHeight+'px';
 elem.style.width=SpacerWidth+'px';

@@ -22,7 +22,7 @@ add_action( 'wp_enqueue_scripts', 'PNE_jsscripts' );
 
 
 function PNE_jsscripts() {
-if (get_option('pnejavascriptzoom') == 'checked'){
+if (get_option('pnejavascriptzoom') == 'checked'  && ! is_admin()){
 if (wp_is_mobile()) {	
 if ( have_posts() && is_singular() ) {
 $checkpost=get_post();
