@@ -1,16 +1,16 @@
-=== Plug-N-Edit Adaptive Editor - Drag & Drop HTML Visual Editor with Web Page Builder WYSIWYG ===
+=== Plug-N-Edit Responsive Adaptive Editor - Drag & Drop HTML Visual Editor with Web Page Builder WYSIWYG ===
 Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Adaptive, Adaptive Design, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers, css
 Requires at least: 3.5
 Tested up to: 4.0
-Stable tag: 5.0.3
+Stable tag: 5.0.4
 
 WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 
 == Description ==
 
 
-<strong>What Is The PlugNedit Adaptive HTML Editor? </strong>
+<strong>What Is The PlugNedit Responsive Adaptive HTML Editor? </strong>
 
 PlugNedit is a ready to use Adaptive WYSIWYG Visual Editor that has the features of a word processor and desktop publisher.The Adaptive HTML Editor is based on a 3D page building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
@@ -29,7 +29,7 @@ Responsive Design, Adaptive Design, Fluid or Fixed Layout?
 
 
 
-All have their benefits, however if you use the wordpress visual editor in a responsive template all your pages will be Responsive and you lose the benefit of creating Fixed, Fluid and Adaptive layouts. PlugNedit's visual editor allows you to create Fixed, and Adaptive layout, the visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a Fixed page layout.
+All have their benefits, however if you use the wordpress visual editor in a responsive template all your pages will be Responsive and you lose the benefit of creating Fixed, Fluid and Adaptive layouts. PlugNedit's visual editor allows you to create Fixed, Resposive and Adaptive layout, the visual editor works like a graphic design or desktop publisher program; more then a visual HTML editor allowing for drag and drop placement of items on a Fixed page layout.
 
 
 <a href="http://plugnedit.com/wordpress.cfm?justdisplaycontent&FirstTimeEdit=1&page=na&loadpage=true&load=1&backtowordpress=1&fullpageedit=1&marginwidth=0&overmarginwidth=800&LoadInlineEditor=1" >
@@ -37,6 +37,8 @@ All have their benefits, however if you use the wordpress visual editor in a res
 
 
 <strong>Whats New?</strong>
+
+  * Responsive page support.
   * Multi page support for handheld devices.
   * CSS imported into editor for exact matching of styles in editor and page.
   * 600+ google fonts to choose from.
@@ -143,9 +145,9 @@ Plugnedit stores your web address when you visit, we do not collect names, addre
 
 == Upgrade Notice ==
 
-= 5.0.3 =
+= 5.0.4 =
 
-New editor and plugin version that supports Adaptive web pages W/ bug fix for javascript full width, Padding Bottom, support for side mobile menus .
+New editor and plugin version that supports Responsive & Adaptive web pages W/ bug fix for javascript and DomDoc.
 
 == Changelog == 
  
@@ -377,6 +379,11 @@ New editor and plugin version that supports Adaptive web pages W/ bug fix for ja
 = 5.0.3 =
 
 New editor and plugin version that supports Adaptive web pages W/ bug fix for javascript full width, Padding Bottom, support for side mobile menus .
+
+= 5.0.4 =
+
+New editor and plugin version that supports Responsive & Adaptive web pages W/ bug fix for javascript and DomDoc.
+
 
 == Features ==
 

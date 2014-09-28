@@ -7,11 +7,10 @@ add_option('plugnedit_sitewidth','0');
 add_option('pneunincode','checked');
 add_option('pneautosaves','checked');
 add_option('pnejavascriptzoom','checked');
-
+add_option('PNEenhancefit','checked');
 
 $PNECSSurl = plugin_dir_url( __FILE__ ) . 'css/style.css';
 add_option('pnecsslink',$PNECSSurl);
-
 add_action( 'wp_enqueue_scripts', 'pne_load_plugin_css' );
 function pne_load_plugin_css() {
 wp_enqueue_style( 'pnestyles', get_option('pnecsslink') );
@@ -19,20 +18,15 @@ wp_enqueue_style( 'pnestyles', get_option('pnecsslink') );
 
 
 add_action( 'wp_enqueue_scripts', 'PNE_jsscripts' );
-
-
 function PNE_jsscripts() {
-if (get_option('pnejavascriptzoom') == 'checked'  && ! is_admin()){
-if (wp_is_mobile()) {	
-if ( have_posts() && is_singular() ) {
+if ( have_posts()){
 $checkpost=get_post();
 $content=$checkpost->post_content;
-if (preg_match('/PNEmobilelayout/', $content)) {
- wp_enqueue_script( 'PNEJava', plugins_url( 'pnejs.js', __FILE__ ));
-};
-};
-};
+if (preg_match('/pneresponsivelayout/', $content) && ! is_admin() ||  preg_match('/PNEmobilelayout/', $content) && ! is_admin()){
+wp_enqueue_script( 'PNEJava', plugins_url( 'pnejs.js', __FILE__ ));
 };};
+};
+
 
 
 
@@ -41,62 +35,81 @@ function Plugnedit_css()
 $checkpost=get_post();
 $content=$checkpost->post_content;
 if (preg_match('/ICG1ADDON/', $content)) {	
-if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || ! wp_is_mobile() ) {	
-
-$pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
+if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || !wp_is_mobile() ) {	
+$pnewidthoutput="<style id='PNEbodystyle'> body { min-width : ".get_option('plugnedit_width')."px !important; } </style>";
 echo $pnewidthoutput;
-
 };
 };};
 
 if ( have_posts() && !is_singular() && get_option('plugnedit_sitewidth') > 0 ) {
 $checkpost=get_post();
 $content=$checkpost->post_content;
-if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || ! wp_is_mobile() ) {	
-$pnewidthoutput="<style> body { min-width : ".get_option('plugnedit_sitewidth')."px !important; } </style>";
+if (wp_is_mobile() && !preg_match('/PNEmobilelayout/', $content) || ! wp_is_mobile()) {	
+$pnewidthoutput="<style id='PNEbodystyle'> body { min-width : ".get_option('plugnedit_sitewidth')."px !important; } </style>";
 echo $pnewidthoutput;
 };
 };};
 
 add_action('wp_head','Plugnedit_css');
-
 remove_filter ('the_content',  'wpautop');
-
 function PNEcheckpost($content) {
 if (preg_match('/ICG1ADDON/', $content)) {
+if (preg_match('/pneresponsivelayout/', $content)  &&  ! is_admin()) {
+
+  $PNEdoc = new DOMDocument();
+  $PNEdoc->loadHTML($content);
+  $PNEscript = $PNEdoc->createElement ('script');
+  $PNEelement6 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEscript->appendChild($PNEdoc->createTextNode ('PNESetMobileCSS("fixed")'));
+  $PNEelement6 =   $PNEelement6 ->appendChild ($PNEscript);
+  $PNExpath = new DOMXPath($PNEdoc);
+  $PNEbody = $PNExpath->query('/html/body');
+  $content=$PNEdoc->saveXml($PNEbody->item(0));
+
+
+};
+
 if (preg_match('/PNEmobilelayout/', $content)  &&  ! is_admin()) {
 
-$PNEdoc = new DOMDocument();
-$PNEdoc->loadHTML($content);
-if (wp_is_mobile() ) {
+  $PNEdoc = new DOMDocument();
+  $PNEdoc->loadHTML($content);
+  if (wp_is_mobile() ) {
 
-$PNEelement = $PNEdoc->getElementById('PNEfixedlayout');
-$PNEelement2 =  $PNEdoc->getElementById('PNEmobilelayout');
-$PNEelement2 = $PNEelement2->setAttribute('class', 'PNEzoom320');
-$PNEelement3 =  $PNEdoc->getElementById('PNEmobilelayout');
-$PNEelement3 = $PNEelement3->removeAttribute('style');
-$PNEelement4 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEelement = $PNEdoc->getElementById('PNEfixedlayout');
+  $PNEelement2 =  $PNEdoc->getElementById('PNEmobilelayout');
+  $PNEelement2 = $PNEelement2->setAttribute('class', 'PNEzoom320');
+  $PNEelement3 =  $PNEdoc->getElementById('PNEmobilelayout');
+  $PNEelement3 = $PNEelement3->removeAttribute('style');
+  $PNEelement4 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
 
-$pnemobilewidth = $PNEelement4->getAttribute('data-pnemobilewidth');
-$PNEelement5 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
-$pnemobileheight = $PNEelement5->getAttribute('data-pnemobileheight');
-$PNEelement5 = $PNEelement5->setAttribute('style', 'position: static; background-color: transparent; height: '.$pnemobileheight.'; width: '.$pnemobilewidth);
-$PNEelement->parentNode->removeChild($PNEelement);
+  $pnemobilewidth = $PNEelement4->getAttribute('data-pnemobilewidth');
+  $PNEelement5 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $pnemobileheight = $PNEelement5->getAttribute('data-pnemobileheight');
+  $PNEelement5 = $PNEelement5->setAttribute('style', 'position: static; background-color: transparent; height: '.$pnemobileheight.'; width: '.$pnemobilewidth);
+  $PNEelement->parentNode->removeChild($PNEelement);
 
   $PNEscript = $PNEdoc->createElement ('script');
   $PNEelement6 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
   $PNEscript->appendChild ($PNEdoc->createTextNode ('PNESetMobileCSS()'));
   $PNEelement6 =   $PNEelement6 ->appendChild ($PNEscript);
+ 
+     
+  $PNExpath = new DOMXPath($PNEdoc);
+  $PNEbody = $PNExpath->query('/html/body');
+  $content=$PNEdoc->saveXml($PNEbody->item(0));
 
-  $content = $PNEdoc->saveHTML();
+
 } else 
 {
 
-$PNEelement = $PNEdoc->getElementById('PNEmobilelayout');
-$PNEelement3 = $PNEdoc->getElementById('PNEfixedlayout');
-$PNEelement3 = $PNEelement3->removeAttribute('style');
-$PNEelement->parentNode->removeChild($PNEelement);
-$content = $PNEdoc->saveHTML();
+  $PNEelement = $PNEdoc->getElementById('PNEmobilelayout');
+  $PNEelement3 = $PNEdoc->getElementById('PNEfixedlayout');
+  $PNEelement3 = $PNEelement3->removeAttribute('style');
+  $PNEelement->parentNode->removeChild($PNEelement);
+  $PNExpath = new DOMXPath($PNEdoc);
+  $PNEbody = $PNExpath->query('/html/body');
+  $content=$PNEdoc->saveXml($PNEbody->item(0));
+
 };
 };	
 return $content;
@@ -226,6 +239,7 @@ PlugNedit needs to import links of your media files in order to use them! </div>
 <input type="hidden" name="PNEcustomcss" value="<?php echo plugin_dir_url( __FILE__ ) . 'css/style.css' ?>">
 <input type="hidden" name="PNEWpMEd" value="<?php echo get_bloginfo('url'); ?>">
 <input type="hidden" name="PNEAdaptive" value="1">
+<input type="hidden" name="PNEResponsive" value="1">
 <input type="hidden" name="PNEAutosaves" value="<?php echo get_option('pneautosaves');?>">
 <?php if (isset($_POST["plugneditcontent"])) { ?>
 <textarea id="plugneditreturncontent" cols="1" rows="1" style="visibility:hidden;display:none" name="plugneditreturncontent" ><?php if(isset($_POST['PlugNeditBinarycontent'])){$_POST['plugneditcontent'] = base64_decode($_POST['plugneditcontent']); };if(isset($_POST['plugneditcontent'])) { echo stripslashes($_POST['plugneditcontent']); }?></textarea>
