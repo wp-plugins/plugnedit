@@ -58,10 +58,10 @@ if (preg_match('/pneresponsivelayout/', $content)  &&  ! is_admin()) {
 
   $PNEdoc = new DOMDocument();
   $PNEdoc->loadHTML($content);
-  $PNEscript = $PNEdoc->createElement ('script');
-  $PNEelement6 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEscript = $PNEdoc->createElement('script');
+  $PNEelement6 = $PNEdoc->getElementById('ICG1ADDONS-Spacer');
   $PNEscript->appendChild($PNEdoc->createTextNode ('PNESetMobileCSS("fixed")'));
-  $PNEelement6 =   $PNEelement6 ->appendChild ($PNEscript);
+  $PNEelement6 = $PNEelement6 ->appendChild($PNEscript);
   $PNExpath = new DOMXPath($PNEdoc);
   $PNEbody = $PNExpath->query('/html/body');
   $content=$PNEdoc->saveXml($PNEbody->item(0));
@@ -76,27 +76,27 @@ if (preg_match('/PNEmobilelayout/', $content)  &&  ! is_admin()) {
   if (wp_is_mobile() ) {
 
   $PNEelement = $PNEdoc->getElementById('PNEfixedlayout');
-  $PNEelement2 =  $PNEdoc->getElementById('PNEmobilelayout');
+  $PNEelement2 = $PNEdoc->getElementById('PNEmobilelayout');
   $PNEelement2 = $PNEelement2->setAttribute('class', 'PNEzoom320');
-  $PNEelement3 =  $PNEdoc->getElementById('PNEmobilelayout');
+  $PNEelement3 = $PNEdoc->getElementById('PNEmobilelayout');
   $PNEelement3 = $PNEelement3->removeAttribute('style');
-  $PNEelement4 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEelement4 = $PNEdoc->getElementById('ICG1ADDONS-Spacer');
 
   $pnemobilewidth = $PNEelement4->getAttribute('data-pnemobilewidth');
-  $PNEelement5 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEelement5 = $PNEdoc->getElementById('ICG1ADDONS-Spacer');
   $pnemobileheight = $PNEelement5->getAttribute('data-pnemobileheight');
   $PNEelement5 = $PNEelement5->setAttribute('style', 'position: static; background-color: transparent; height: '.$pnemobileheight.'; width: '.$pnemobilewidth);
   $PNEelement->parentNode->removeChild($PNEelement);
 
-  $PNEscript = $PNEdoc->createElement ('script');
-  $PNEelement6 =  $PNEdoc->getElementById('ICG1ADDONS-Spacer');
-  $PNEscript->appendChild ($PNEdoc->createTextNode ('PNESetMobileCSS()'));
-  $PNEelement6 =   $PNEelement6 ->appendChild ($PNEscript);
+  $PNEscript = $PNEdoc->createElement('script');
+  $PNEelement6 = $PNEdoc->getElementById('ICG1ADDONS-Spacer');
+  $PNEscript->appendChild ($PNEdoc->createTextNode('PNESetMobileCSS()'));
+  $PNEelement6 = $PNEelement6 ->appendChild ($PNEscript);
  
      
   $PNExpath = new DOMXPath($PNEdoc);
   $PNEbody = $PNExpath->query('/html/body');
-  $content=$PNEdoc->saveXml($PNEbody->item(0));
+  $content = $PNEdoc->saveXml($PNEbody->item(0));
 
 
 } else 

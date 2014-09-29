@@ -4,6 +4,7 @@ add_option('pnemedcount', '500' );
 
 function PNEMedfile(){
 	$pnemfile='';
+if ( current_user_can( 'unfiltered_html' ) ) {
     if (get_option('pnemedcount') > 0){
     $args = array(
                         'post_type' => 'attachment',
@@ -44,7 +45,7 @@ function PNEMedfile(){
 						
 				  $pnemfile=str_replace(get_bloginfo('url').'/wp-content/uploads/',"[f]","$pnemfile");
 				  $pnemfile=str_replace(get_bloginfo('url'),"[w]","$pnemfile");
-				   }}
+				   }}}
 return $pnemfile;
 }
 
@@ -52,14 +53,15 @@ return $pnemfile;
 
 
 function PNEOlinks(){
-$pages = get_pages(); 
 $pneoutlinks='';
+if ( current_user_can( 'unfiltered_html' ) ) {
+$pages = get_pages(); 
 foreach ( $pages as $page ) {
 
 $pneoutlinks=$pneoutlinks . urlencode(get_page_link( $page->ID )).':';
 $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
     $args = array( 	
-    'numberposts' => 1000,
+    'numberposts' => 100,
     'orderby' => 'post_date',
     'order' => 'DESC',
     'post_type' => 'post',
@@ -68,10 +70,12 @@ $pneoutlinks=$pneoutlinks . ($page->post_title).';';}
 	$recent_posts = wp_get_recent_posts($args);
   foreach( $recent_posts as $recent ){ 
   $pneoutlinks=$pneoutlinks . urlencode(get_permalink($recent["ID"])) .':'. urlencode($recent["post_title"]).';';
-   return  base64_encode($pneoutlinks);
-    } }
-	
-	}
+ 
+    }}
+
+  return  base64_encode($pneoutlinks);
+ }
+}
 
 
 ?>
