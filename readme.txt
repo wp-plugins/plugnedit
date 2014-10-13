@@ -1,4 +1,4 @@
-=== Plug-N-Edit Responsive Adaptive Editor - Drag & Drop HTML Visual Editor with Web Page Builder WYSIWYG ===
+=== Plug-N-Edit Responsive Flux Editor - Drag & Drop HTML Visual Editor with Web Page Builder WYSIWYG ===
 Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Adaptive, Adaptive Design, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers, css
 Requires at least: 3.5
@@ -10,19 +10,19 @@ WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 == Description ==
 
 
-<strong>What Is The PlugNedit Responsive Adaptive HTML Editor? </strong>
+<strong>What Is The PlugNedit Responsive Flux / Adaptive HTML Editor? </strong>
 
 PlugNedit is a ready to use Adaptive WYSIWYG Visual Editor that has features of a word processor and desktop publisher. The Adaptive Responsive HTML Editor is based on a 3D page building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
 
 <strong>What type of pages can be built? </strong>
 
-You can build Adaptive, Adaptive Responsive and Fixed layout pages with the visual editor.
+You can build Adaptive, Responsive Flux and Fixed layout pages with the visual editor.
 
 
-<strong>What Is Adaptive Responsive Design? </strong>
+<strong>What Is Responsive Flux Design? </strong>
 
-Adaptive responsive design does not push elements down the screen, instead it adapts to the screen and resizes the content, this allows for your page design to look the same on all screens.
+Responsive Flux design does not push elements down the screen, instead it adapts to the screen and resizes the content, this allows for your page design to look the same on all screens.
 
 
 <strong>What Is Adaptive Design VS Responsive Design? </strong>
