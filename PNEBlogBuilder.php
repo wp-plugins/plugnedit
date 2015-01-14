@@ -65,7 +65,7 @@ if (preg_match('/pneresponsivelayout/', $content)  &&  ! is_admin()) {
   $PNEelement6 = $PNEelement6 ->appendChild($PNEscript);
   $PNExpath = new DOMXPath($PNEdoc);
   $PNEbody = $PNExpath->query('/html/body');
-  $content = $PNEdoc->saveXml($PNEbody->item(0));
+  $content = $PNEdoc->saveXml($PNEbody->item(0), LIBXML_NOEMPTYTAG);
   } else {
   $content = $content . '<script>PNESetMobileCSS("fixed")<script>';
   
