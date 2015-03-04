@@ -11,7 +11,9 @@
 .pneinline tfoot,
 .pneinline thead, 
 .pneinline tr, 
-.pneinline blockquote 
+.pneinline blockquote,
+.pneinline 
+
  {
 	border: 0px;
 	font-family: inherit;
@@ -26,6 +28,8 @@
 	line-height: normal;
 	border-spacing: 0px;
 	background-color: inherit;
+        text-shadow: none;
+        box-shadow: none;
 }
 
 .pneinline a {
