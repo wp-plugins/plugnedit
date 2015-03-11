@@ -14,7 +14,7 @@ WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 
 PlugNedit is a ready to use Adaptive WYSIWYG Visual Editor that has features of a word processor and desktop publisher. The Adaptive Responsive HTML Editor is based on a 3D page building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
 
-<strong>Show Me A Site built in the 3D editor? </strong>
+<strong>Show Me A Site Built In The 3D Editor? </strong>
 
 
 <a href="http://riskwatch.com/" >
