@@ -10,9 +10,16 @@ WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 == Description ==
 
 
-<strong>What Is The PlugNedit Responsive Flux / Adaptive HTML Editor? </strong>
+<strong>What doese PlugNedit do? </strong>
 
 PlugNedit is a ready to use Adaptive WYSIWYG Visual Editor that has features of a word processor and desktop publisher. The Adaptive Responsive HTML Editor is based on a 3D page building design with height, width and depth options available, standard online HTML editors are only based on 2D page editing design with height and width available. 
+
+
+<strong>When to use Plugnedit?   Read!</strong>
+
+Do not use PlugNEdit for simple pages or text layout, the WordPress editor will suite better for that.
+Use PlugNedit for designer pages, text on graphics or graphical layout pages, plugNedit brings some of the features you would find in a expensive HTML visual builder for free.
+
 
 <strong>Show Me A Site Built In The 3D Editor? </strong>
 
