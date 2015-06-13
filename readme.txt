@@ -2,8 +2,8 @@
 Contributors: Javascript Tech LLC
 Tags: Editor,html editor, CKEditor, Adaptive, Adaptive Design, Publishing, Posts, Visual Editor, Post, Image, Edit, Images, tinymce, WYSIWYG, Web Page Builder,fonts, google fonts. Plugin, Drop Shadow, Admin, Profile, Portfolios, Plugins, Inline, Page Editor, url, navigation, photo, photos, pictures, picture, post editor, Content, Custom, Page, Visual, Font, Font Color, Picture, Placement, HTML, Editor, Plugins, Formatting, Layers, Color, Software, Publish, WordPress, Picture, Page Layout, Publish, Drag And Drop, Drag N Drop, Layout, Shadows, Paypal, Template, Theme, Embeds, javascript, AJAX, Free, Link, Links, Youtube, Style,3D,gradient,landing pages,themeless, Rollovers, css
 Requires at least: 3.5
-Tested up to: 4.0
-Stable tag: 5.0.9
+Tested up to: 4.2.2
+Stable tag: 5.1.0
 
 WYSIWYG HTML Editor, Drag And Drop Visual Editor with Web Page builder.
 
@@ -156,9 +156,9 @@ Plugnedit stores your web address when you visit, we do not collect names, addre
 
 == Upgrade Notice ==
 
-= 5.0.9 =
+= 5.1.0 =
 
-Tag error bug fix for script.
+CSS box size property fix. 
 
 == Changelog == 
  
@@ -411,9 +411,13 @@ Added PHP no empty tags to the dom parser for ifram support.
 
 CSS box and text shadow support.
 
-= 5.0.8 =
+= 5.0.9 =
 
 Tag error bug fix.
+
+= 5.1.0 =
+
+CSS box size property fix. 
 
 == Features ==
 

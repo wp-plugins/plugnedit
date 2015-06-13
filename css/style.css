@@ -30,6 +30,8 @@
 	background-color: inherit;
         text-shadow: none;
         box-shadow: none;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
 }
 
 .pneinline a {
@@ -473,4 +475,22 @@
     transform-origin: 0 0;  
 }
 
+#ICG1ADDON  {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
 
+[id$="moveDivShadow"] {
+  -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+#UpperMovableDrawing {
+  -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
+
+#ICG1ADDONS-Spacer  {
+  -moz-box-sizing: content-box;
+   box-sizing: content-box;
+}
