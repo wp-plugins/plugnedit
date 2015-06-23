@@ -21,6 +21,8 @@ Do not use PlugNEdit for simple pages or text layout, the WordPress editor will 
 Use PlugNedit for designer pages, text on graphics or graphical layout pages, plugNedit brings some of the features you would find in a expensive HTML visual builder for free.
 
 
+[youtube https://youtu.be/pDw4zQocH3c&hd=1]
+
 <strong>Show Me A Site Built In The 3D Editor? </strong>
 
 
@@ -65,8 +67,6 @@ Adaptive pages will look like the page you create in the editor, you are able to
 The PlugNedit  visual Editor provides all the tools of a HTML editor with a twist, the items are easily placed on the page, moved around and stacked on top of each other. The visual editor plugin is useful for anyone that has a WordPress site or stand alone plugin for any site, it's a simple to use WYSIWYG drag and drop visual HTML editor with advanced options. The visual editor contains a new section for building HTML web pages outside your WordPress template ( Landing Page ). Plug & Edit WYSIWYG Drag And Drop Visual HTML Editor does not modify your WordPress editor and is safe to install with other Plugins that do. The editor is located at Plugnedit.com, in order to use media files you will need to import links of your media which are stored temporarily. Plug & Edit Drag And Drop Visual HTML Editor and blog page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries. The WYSIWYG builder is based on floating layers and palette menu control interface that allows for drag and drop movement of text and pictures and the ability to stack text and pictures and videos on top of one another. 
 
 
-
-[youtube https://youtu.be/pDw4zQocH3c&hd=1]
 
 Read the pros and cons of each layout and decide which format you wish to use from page to page.
 
