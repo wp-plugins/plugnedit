@@ -21,7 +21,7 @@ Do not use PlugNEdit for simple pages or text layout, the WordPress editor will 
 Use PlugNedit for designer pages, text on graphics or graphical layout pages, plugNedit brings some of the features you would find in a expensive HTML visual builder for free.
 
 
-[youtube https://youtu.be/pDw4zQocH3c&hd=1]
+[youtube http://www.youtube.com/watch?v=pDw4zQocH3c]
 
 <strong>Show Me A Site Built In The 3D Editor? </strong>
 
