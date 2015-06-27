@@ -57,7 +57,8 @@ if (preg_match('/ICG1ADDON/', $content)) {
 if (preg_match('/pneresponsivelayout/', $content)  &&  ! is_admin()) {
 
   $PNEdoc = new DOMDocument();
-  $PNEdoc->loadHTML($content);
+  $PNEdoc->encoding = 'utf-8';
+  $PNEdoc->loadHTML( utf8_decode( $content ) );
   $PNEscript = $PNEdoc->createElement('script');
   $PNEelement6 = $PNEdoc->getElementById('ICG1ADDONS-Spacer');
   if($PNEelement6 != NULL){
@@ -76,7 +77,8 @@ if (preg_match('/pneresponsivelayout/', $content)  &&  ! is_admin()) {
 if (preg_match('/PNEmobilelayout/', $content)  &&  ! is_admin()) {
 
   $PNEdoc = new DOMDocument();
-  $PNEdoc->loadHTML($content);
+  $PNEdoc->encoding = 'utf-8';
+  $PNEdoc->loadHTML( utf8_decode( $content ) );
   if (wp_is_mobile() ) {
 
   $PNEelement = $PNEdoc->getElementById('PNEfixedlayout');

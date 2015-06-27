@@ -2,7 +2,7 @@
 /*
 Plugin Name: PlugNedit Adaptive Editor
 Plugin URI: Http://plugnedit.com
-Version: 5.1.0
+Version: 5.2.0
 Author: JavaScript Tech
 Description:PlugNedit <strong>Drag N Drop Visual Editor</strong> and web page builder for WordPress is a tool that allows specialized formatting of text on images, and other unique formatting for blog entries.
 */
