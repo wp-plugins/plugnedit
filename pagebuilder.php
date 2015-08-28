@@ -1,6 +1,6 @@
 <?php
 function PNEADDPAGE() {
-add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'unfiltered_html' , __FILE__, 'PnEPageBuilder', plugins_url( 'plugnedit/pneicon.ico' ));
+add_menu_page('Plug N Edit Page Builder', 'Page Builder', 'administrator' , __FILE__, 'PnEPageBuilder', plugins_url( 'plugnedit/pneicon.ico' ));
 }
 
 if (  is_admin() ) {
@@ -249,7 +249,7 @@ $plugneditHTMLfiles = "$plugneditHTMLfiles;$file";}
 ?>
 <div>
 <div style="width:750px;text-align:justify">
-<h1 style="color:gray;font-size:11px;font-style:normal;font-family:Tahoma">Administrator: Only users that are Administrator or Editor Roles can use the editor due to WordPress unfiltered HTML rules. </h1>
+<h1 style="color:gray;font-size:11px;font-style:normal;font-family:Tahoma">Administrator only can use the builder section. </h1>
 <br>
 <div style="color:#21759B;font-size:12px;font-weight:bolder;padding:20px;background-color:white;width:800px">
 <img src="../wp-content/plugins/plugnedit/pnehead.png"><br><br>
